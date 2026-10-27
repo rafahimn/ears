@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
+import { createRoot } from 'react-dom/client';
+import { SocialShowcase } from './SocialShowcase';
 import { homeReferenceMarkup } from './home-reference-markup';
 
 const WHATSAPP = 'https://wa.me/971552052347';
@@ -119,6 +121,14 @@ export function HomeReference() {
 
     root.addEventListener('click', onClick);
     return () => root.removeEventListener('click', onClick);
+  }, []);
+
+  useEffect(() => {
+    const mount = document.getElementById('dars-social-showcase-mount');
+    if (!mount) return;
+    const socialRoot = createRoot(mount);
+    socialRoot.render(<SocialShowcase />);
+    return () => socialRoot.unmount();
   }, []);
 
   return <div className="dars-home-reference" dangerouslySetInnerHTML={{ __html: homeReferenceMarkup }} />;
