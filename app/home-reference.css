@@ -1,0 +1,8022 @@
+
+                .dars-home-reference {
+    --dars-v2-green: #0E352B;
+    --dars-v2-green-deep: #08271F;
+    --dars-v2-green-light: #174B3D;
+
+    --dars-v2-gold: #C49A4A;
+    --dars-v2-gold-light: #D9B96E;
+    --dars-v2-gold-dark: #A97B2E;
+
+    --dars-v2-cream: #F8F5EE;
+    --dars-v2-white: #FFFFFF;
+    --dars-v2-text: #171B19;
+    --dars-v2-muted: #626B66;
+
+    --dars-v2-whatsapp: #18B957;
+    --dars-v2-whatsapp-dark: #109A46;
+}
+
+/* Global link underline reset inside section */
+.dars-hero-v2 a,
+.dars-hero-v2 a:hover,
+.dars-hero-v2 a:focus,
+.dars-hero-v2 a:visited {
+    text-decoration: none !important;
+}
+
+/* Box sizing */
+.dars-hero-v2,
+.dars-hero-v2 * {
+    box-sizing: border-box;
+}
+
+/* Main hero */
+.dars-hero-v2 {
+    position: relative;
+    isolation: isolate;
+    min-height: 790px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    padding: 145px 0 100px;
+
+    background-image:
+        url("/wp-content/uploads/2026/10/2149207752-1-1.jpg");
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Light readable overlay */
+.dars-hero-v2__shade {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(248,245,238,.98) 0%,
+            rgba(248,245,238,.94) 34%,
+            rgba(248,245,238,.78) 62%,
+            rgba(248,245,238,.91) 100%
+        );
+}
+
+/* Ambient premium layers */
+.dars-hero-v2__ambient {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 18% 48%,
+            rgba(196,154,74,.13),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 82% 42%,
+            rgba(255,255,255,.55),
+            transparent 31%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.24),
+            transparent 42%,
+            rgba(255,255,255,.43)
+        );
+}
+
+/* Soft bottom fade */
+.dars-hero-v2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 180px;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(248,245,238,.78)
+        );
+}
+
+/* Main inner */
+.dars-hero-v2__inner {
+    width: min(1250px, calc(100% - 48px));
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.12fr)
+        minmax(410px, .88fr);
+
+    align-items: center;
+    gap: clamp(55px, 7vw, 100px);
+}
+
+/* Left content */
+.dars-hero-v2__content {
+    max-width: 700px;
+
+    animation:
+        darsV2ContentIn .8s cubic-bezier(.2,.7,.2,1) both;
+}
+
+@keyframes darsV2ContentIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Eyebrow */
+.dars-hero-v2__eyebrow {
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--dars-v2-gold-dark);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-hero-v2__eyebrow span {
+    display: inline-block;
+    font-size: 15px;
+
+    animation:
+        darsV2Sparkle 2.2s ease-in-out infinite;
+}
+
+@keyframes darsV2Sparkle {
+    0%,
+    100% {
+        opacity: .65;
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(25deg) scale(1.15);
+    }
+}
+
+/* Heading */
+.dars-hero-v2__title {
+    margin: 0;
+
+    color: var(--dars-v2-text);
+    font-size: clamp(48px, 5.25vw, 73px);
+    font-weight: 800;
+    line-height: 1.01;
+    letter-spacing: -2.8px;
+}
+
+.dars-hero-v2__title span {
+    display: block;
+    margin-top: 5px;
+
+    color: var(--dars-v2-green);
+}
+
+/* Description */
+.dars-hero-v2__description {
+    max-width: 670px;
+    margin: 23px 0 0;
+
+    color: #454C48;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.68;
+}
+
+/* Trust badges */
+.dars-hero-v2__badges {
+    margin-top: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+}
+
+.dars-hero-v2__badge {
+    min-height: 39px;
+    padding: 8px 13px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    border: 1px solid rgba(14,53,43,.12);
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.82);
+    color: #3D4440;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    box-shadow:
+        0 8px 24px rgba(8,39,31,.07),
+        inset 0 1px 0 rgba(255,255,255,.9);
+
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    animation:
+        darsV2BadgeFloat 5s ease-in-out infinite;
+}
+
+.dars-hero-v2__badge:nth-child(2) {
+    animation-delay: .4s;
+}
+
+.dars-hero-v2__badge:nth-child(3) {
+    animation-delay: .8s;
+}
+
+.dars-hero-v2__badge:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+@keyframes darsV2BadgeFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.dars-hero-v2__badge svg {
+    width: 16px;
+    height: 16px;
+
+    fill: none;
+    stroke: var(--dars-v2-green);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-hero-v2__rating strong {
+    color: var(--dars-v2-gold-dark);
+    font-size: 15px;
+}
+
+.dars-hero-v2__stars {
+    color: #D59B08;
+    letter-spacing: .5px;
+}
+
+/* Main actions */
+.dars-hero-v2__actions {
+    margin-top: 29px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.dars-hero-v2__whatsapp,
+.dars-hero-v2__call {
+    min-height: 57px;
+    padding: 0 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    border-radius: 999px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease,
+        border-color .35s ease,
+        color .35s ease;
+}
+
+.dars-hero-v2__whatsapp {
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid var(--dars-v2-whatsapp);
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-v2-whatsapp)
+        );
+
+    color: #06170C;
+
+    box-shadow:
+        0 15px 32px rgba(24,185,87,.24),
+        inset 0 1px 0 rgba(255,255,255,.35);
+}
+
+.dars-hero-v2__whatsapp::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255,255,255,.32);
+    transform: rotate(20deg);
+
+    transition: left .65s ease;
+}
+
+.dars-hero-v2__whatsapp:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-v2-whatsapp),
+            var(--dars-v2-whatsapp-dark)
+        );
+
+    color: #FFFFFF;
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 19px 38px rgba(16,154,70,.31),
+        inset 0 1px 0 rgba(255,255,255,.15);
+}
+
+.dars-hero-v2__whatsapp:hover::before {
+    left: 130%;
+}
+
+.dars-hero-v2__call {
+    border: 1px solid rgba(14,53,43,.15);
+    background: rgba(255,255,255,.84);
+    color: var(--dars-v2-text);
+
+    box-shadow:
+        0 10px 26px rgba(8,39,31,.08);
+
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
+.dars-hero-v2__call:hover {
+    border-color: var(--dars-v2-green);
+    background: var(--dars-v2-green);
+    color: #FFFFFF;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 17px 34px rgba(8,39,31,.22);
+}
+
+.dars-hero-v2__whatsapp svg,
+.dars-hero-v2__call svg {
+    position: relative;
+    z-index: 1;
+
+    width: 21px;
+    height: 21px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-hero-v2__whatsapp span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-hero-v2__button-arrow {
+    margin-left: 3px;
+
+    transition:
+        transform .3s ease;
+}
+
+.dars-hero-v2__whatsapp:hover
+.dars-hero-v2__button-arrow {
+    transform: translateX(4px);
+}
+
+.dars-hero-v2__response {
+    margin: 12px 0 0;
+
+    color: #7B827E;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Quote card */
+.dars-quote-v2 {
+    position: relative;
+    overflow: hidden;
+
+    padding: 32px 31px 27px;
+
+    border: 1px solid rgba(196,154,74,.50);
+    border-radius: 27px;
+
+    background:
+        linear-gradient(
+            155deg,
+            rgba(255,255,255,.96),
+            rgba(248,245,238,.94)
+        );
+
+    box-shadow:
+        0 30px 75px rgba(8,39,31,.14),
+        inset 0 1px 0 rgba(255,255,255,.98);
+
+    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
+
+    animation:
+        darsV2CardIn .85s .12s
+        cubic-bezier(.2,.7,.2,1) both;
+}
+
+@keyframes darsV2CardIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dars-quote-v2::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -85px;
+
+    width: 230px;
+    height: 230px;
+
+    border-radius: 50%;
+
+    background: rgba(217,185,110,.17);
+    filter: blur(20px);
+}
+
+.dars-quote-v2__topline {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 42%;
+    height: 3px;
+
+    border-radius: 0 0 20px 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--dars-v2-gold),
+            transparent
+        );
+
+    transform: translateX(-50%);
+}
+
+.dars-quote-v2__label {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dars-v2-gold-dark);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.dars-quote-v2 h2 {
+    position: relative;
+
+    margin: 17px 0 0;
+
+    color: var(--dars-v2-text);
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -.5px;
+}
+
+.dars-quote-v2__intro {
+    position: relative;
+
+    margin: 7px 0 0;
+
+    color: #888F8B;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dars-quote-v2__step {
+    position: relative;
+
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #4A514D;
+    font-size: 14px;
+}
+
+.dars-quote-v2__step > span {
+    width: 23px;
+    height: 23px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(196,154,74,.50);
+    border-radius: 50%;
+
+    background: rgba(217,185,110,.18);
+    color: var(--dars-v2-gold-dark);
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* Options */
+.dars-quote-v2__options {
+    position: relative;
+
+    margin-top: 11px;
+
+    display: grid;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+.dars-quote-v2__option {
+    position: relative;
+    min-height: 47px;
+    padding: 9px 35px 9px 13px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid rgba(14,53,43,.14);
+    border-radius: 13px;
+
+    background: rgba(255,255,255,.82);
+    color: #434A46;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 14px rgba(8,39,31,.025);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+}
+
+/* No strong hover color */
+.dars-quote-v2__option:hover {
+    border-color: rgba(196,154,74,.62);
+    background: rgba(255,255,255,.96);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 23px rgba(8,39,31,.075);
+}
+
+/* Selected is premium cream, no pink */
+.dars-quote-v2__option.is-active {
+    border-color: var(--dars-v2-gold);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(217,185,110,.20),
+            rgba(255,255,255,.96)
+        );
+
+    color: var(--dars-v2-green-deep);
+
+    box-shadow:
+        0 9px 24px rgba(196,154,74,.13),
+        inset 0 0 0 1px rgba(196,154,74,.08);
+}
+
+.dars-quote-v2__option-icon {
+    width: 21px;
+    height: 21px;
+    flex: 0 0 21px;
+
+    display: grid;
+    place-items: center;
+
+    color: var(--dars-v2-gold-dark);
+}
+
+.dars-quote-v2__option-icon svg {
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-quote-v2__check {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+
+    width: 18px;
+    height: 18px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--dars-v2-gold);
+    color: var(--dars-v2-white);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    opacity: 0;
+    transform:
+        translateY(-50%)
+        scale(.55);
+
+    transition:
+        opacity .3s ease,
+        transform .3s
+        cubic-bezier(.2,.7,.2,1);
+}
+
+.dars-quote-v2__option.is-active
+.dars-quote-v2__check {
+    opacity: 1;
+
+    transform:
+        translateY(-50%)
+        scale(1);
+}
+
+/* Submit button */
+.dars-quote-v2__submit {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 55px;
+    margin-top: 34px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-v2-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 16px 35px rgba(24,185,87,.25),
+        inset 0 1px 0 rgba(255,255,255,.34);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        color .35s ease,
+        background .35s ease;
+}
+
+.dars-quote-v2__submit::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -58%;
+
+    width: 40%;
+    height: 165%;
+
+    background: rgba(255,255,255,.31);
+    transform: rotate(20deg);
+
+    transition:
+        left .65s ease;
+}
+
+.dars-quote-v2__submit:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-v2-whatsapp),
+            var(--dars-v2-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 20px 42px rgba(16,154,70,.31);
+}
+
+.dars-quote-v2__submit:hover::before {
+    left: 130%;
+}
+
+.dars-quote-v2__submit svg {
+    position: relative;
+    z-index: 1;
+
+    width: 20px;
+    height: 20px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-quote-v2__submit span {
+    position: relative;
+    z-index: 1;
+
+    text-decoration: none !important;
+}
+
+.dars-quote-v2__submit-arrow {
+    margin-left: 2px;
+
+    transition:
+        transform .3s ease;
+}
+
+.dars-quote-v2__submit:hover
+.dars-quote-v2__submit-arrow {
+    transform: translateX(4px);
+}
+
+.dars-quote-v2__help {
+    margin: 10px 0 0;
+
+    color: #757D78;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dars-quote-v2__assurance {
+    margin-top: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    color: #929995;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.dars-quote-v2__assurance svg {
+    width: 15px;
+    height: 15px;
+    flex: 0 0 15px;
+
+    fill: none;
+    stroke: var(--dars-v2-gold-dark);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Scroll button */
+.dars-hero-v2__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+
+    color: rgba(23,27,25,.43);
+
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.9px;
+    text-transform: uppercase;
+
+    text-decoration: none !important;
+
+    transform: translateX(-50%);
+
+    transition:
+        color .3s ease;
+}
+
+.dars-hero-v2__scroll:hover {
+    color: var(--dars-v2-gold-dark);
+}
+
+.dars-hero-v2__scroll svg {
+    width: 19px;
+    height: 19px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    animation:
+        darsV2Scroll 1.8s
+        ease-in-out infinite;
+}
+.dars-quote-v2__option,
+.dars-quote-v2__option:hover,
+.dars-quote-v2__option:focus,
+.dars-quote-v2__option.is-active {
+    color: #434A46 !important;
+}
+
+.dars-quote-v2__option.is-active {
+    color: #08271F !important;
+}
+
+.dars-quote-v2__option:hover span,
+.dars-quote-v2__option:hover svg,
+.dars-quote-v2__option:focus span,
+.dars-quote-v2__option:focus svg {
+    color: inherit !important;
+}
+
+.dars-quote-v2__option:hover {
+    background: rgba(255,255,255,.96) !important;
+}
+
+.dars-quote-v2__option.is-active {
+    background: linear-gradient(
+        135deg,
+        rgba(217,185,110,.20),
+        rgba(255,255,255,.96)
+    ) !important;
+}
+@keyframes darsV2Scroll {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .dars-hero-v2 {
+        min-height: auto;
+        padding-top: 132px;
+    }
+
+    .dars-hero-v2__inner {
+        grid-template-columns:
+            minmax(0,1fr)
+            410px;
+
+        gap: 42px;
+    }
+
+    .dars-hero-v2__title {
+        font-size:
+            clamp(44px,5vw,61px);
+    }
+}
+
+/* Stacked tablet */
+@media (max-width: 900px) {
+    .dars-hero-v2 {
+        padding:
+            120px 0 90px;
+
+        background-position:
+            center center;
+    }
+
+    .dars-hero-v2__shade {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(248,245,238,.96) 0%,
+                rgba(248,245,238,.90) 55%,
+                rgba(248,245,238,.97) 100%
+            );
+    }
+
+    .dars-hero-v2__inner {
+        grid-template-columns: 1fr;
+        gap: 47px;
+    }
+
+    .dars-hero-v2__content {
+        max-width: 740px;
+    }
+
+    .dars-quote-v2 {
+        width: 100%;
+        max-width: 640px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .dars-hero-v2 {
+        padding:
+            105px 0 82px;
+
+        background-position:
+            center top;
+    }
+
+    .dars-hero-v2__inner {
+        width:
+            calc(100% - 28px);
+
+        gap: 38px;
+    }
+
+    .dars-hero-v2__eyebrow {
+        margin-bottom: 15px;
+
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        line-height: 1.45;
+    }
+
+    .dars-hero-v2__title {
+        font-size:
+            clamp(37px,10.6vw,48px);
+
+        line-height: 1.03;
+        letter-spacing: -1.7px;
+    }
+
+    .dars-hero-v2__title br {
+        display: none;
+    }
+
+    .dars-hero-v2__title span {
+        margin-top: 7px;
+    }
+
+    .dars-hero-v2__description {
+        margin-top: 18px;
+
+        font-size: 16px;
+        line-height: 1.62;
+    }
+
+    .dars-hero-v2__badges {
+        gap: 8px;
+    }
+
+    .dars-hero-v2__badge {
+        min-height: 36px;
+        padding: 8px 11px;
+
+        font-size: 11px;
+    }
+
+    .dars-hero-v2__actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-hero-v2__whatsapp,
+    .dars-hero-v2__call {
+        width: 100%;
+        min-height: 55px;
+        padding: 0 18px;
+    }
+
+    .dars-hero-v2__response {
+        text-align: center;
+    }
+
+    .dars-quote-v2 {
+        padding:
+            25px 18px 22px;
+
+        border-radius: 22px;
+    }
+
+    .dars-quote-v2 h2 {
+        font-size: 22px;
+    }
+
+    .dars-quote-v2__options {
+        grid-template-columns: 1fr;
+    }
+
+    .dars-quote-v2__option {
+        min-height: 50px;
+    }
+
+    .dars-quote-v2__submit {
+        margin-top: 26px;
+        padding: 0 15px;
+
+        font-size: 13px;
+    }
+
+    .dars-quote-v2__assurance {
+        align-items: flex-start;
+    }
+
+    .dars-hero-v2__scroll {
+        bottom: 10px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 390px) {
+    .dars-hero-v2__title {
+        font-size: 35px;
+    }
+
+    .dars-hero-v2__whatsapp,
+    .dars-hero-v2__call {
+        font-size: 13px;
+    }
+
+    .dars-quote-v2__submit {
+        gap: 7px;
+        font-size: 12px;
+    }
+}
+
+/* Focus */
+.dars-hero-v2 a:focus-visible,
+.dars-quote-v2__option:focus-visible {
+    outline:
+        3px solid
+        rgba(196,154,74,.45);
+
+    outline-offset: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .dars-hero-v2 *,
+    .dars-hero-v2__scroll svg {
+        animation: none !important;
+        transition-duration:
+            .01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-strip-green: #0E352B;
+    --dars-strip-green-dark: #08271F;
+    --dars-strip-gold: #C49A4A;
+    --dars-strip-gold-dark: #A97B2E;
+    --dars-strip-cream: #F8F5EE;
+    --dars-strip-white: #FFFFFF;
+    --dars-strip-text: #202522;
+    --dars-strip-muted: #686E6B;
+    --dars-strip-whatsapp: #18B957;
+    --dars-strip-whatsapp-dark: #109A46;
+}
+
+/* ==============================================
+   BASE
+============================================== */
+.dars-trust-strip,
+.dars-trust-strip * {
+    box-sizing: border-box;
+}
+
+.dars-trust-strip {
+    position: relative;
+    overflow: hidden;
+    background: #F9F7F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-trust-strip a,
+.dars-trust-strip a:hover,
+.dars-trust-strip a:focus,
+.dars-trust-strip a:visited {
+    text-decoration: none !important;
+}
+
+/* ==============================================
+   MARQUEE
+============================================== */
+.dars-trust-marquee {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid rgba(14, 53, 43, 0.10);
+    border-bottom: 1px solid rgba(14, 53, 43, 0.12);
+    background: rgba(255, 255, 255, 0.54);
+    cursor: default;
+}
+
+.dars-trust-marquee__track {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    animation: darsTrustMarquee 34s linear infinite;
+    will-change: transform;
+}
+
+/* Mouse hover করলে animation pause হবে */
+.dars-trust-marquee:hover .dars-trust-marquee__track {
+    animation-play-state: paused;
+}
+
+.dars-trust-marquee__group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.dars-trust-marquee__item {
+    min-height: 74px;
+    padding: 0 37px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #6B6F6D;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.dars-trust-marquee__item:hover {
+    color: var(--dars-strip-green);
+    transform: translateY(-1px);
+}
+
+.dars-trust-marquee__icon {
+    width: 16px;
+    height: 16px;
+
+    display: inline-grid;
+    place-items: center;
+
+    border: 1.5px solid var(--dars-strip-gold);
+    border-radius: 50%;
+
+    color: var(--dars-strip-gold-dark);
+    font-size: 9px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+@keyframes darsTrustMarquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Soft edge fade */
+.dars-trust-marquee::before,
+.dars-trust-marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    width: 90px;
+    height: 74px;
+
+    pointer-events: none;
+}
+
+.dars-trust-marquee::before {
+    left: 0;
+    background:
+        linear-gradient(
+            90deg,
+            #F9F7F2,
+            transparent
+        );
+}
+
+.dars-trust-marquee::after {
+    right: 0;
+    background:
+        linear-gradient(
+            270deg,
+            #F9F7F2,
+            transparent
+        );
+}
+
+/* ==============================================
+   EMERGENCY CTA AREA
+============================================== */
+.dars-emergency-wrap {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 44px 0 70px;
+}
+
+.dars-emergency-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 80px;
+    padding: 14px 26px 14px 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+
+    border: 1px solid rgba(196, 154, 74, 0.42);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            105deg,
+            rgba(255, 247, 241, 0.98),
+            rgba(248, 245, 238, 0.96) 58%,
+            rgba(238, 249, 240, 0.94)
+        );
+
+    box-shadow:
+        0 18px 45px rgba(8, 39, 31, 0.07),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
+}
+
+.dars-emergency-card::before {
+    content: "";
+    position: absolute;
+    right: 110px;
+    bottom: -100px;
+
+    width: 260px;
+    height: 190px;
+
+    border-radius: 50%;
+    background: rgba(24, 185, 87, 0.11);
+    filter: blur(32px);
+    pointer-events: none;
+}
+
+.dars-emergency-card__left {
+    position: relative;
+    z-index: 1;
+
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.dars-emergency-card__icon {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+
+    display: grid;
+    place-items: center;
+
+    border: 7px solid rgba(235, 96, 81, 0.08);
+    border-radius: 16px;
+
+    background: rgba(235, 96, 81, 0.12);
+    color: #DD5148;
+}
+
+.dars-emergency-card__icon svg {
+    width: 21px;
+    height: 21px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-emergency-card__content p {
+    margin: 0;
+
+    color: #505552;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+.dars-emergency-card__content strong {
+    color: var(--dars-strip-text);
+    font-weight: 800;
+}
+
+/* ==============================================
+   CTA BUTTONS
+============================================== */
+.dars-emergency-card__actions {
+    position: relative;
+    z-index: 1;
+
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dars-emergency-card__whatsapp,
+.dars-emergency-card__call {
+    min-height: 44px;
+    padding: 0 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-emergency-card__whatsapp {
+    border: 1px solid var(--dars-strip-whatsapp);
+    background:
+        linear-gradient(
+            135deg,
+            #21C967,
+            var(--dars-strip-whatsapp)
+        );
+
+    color: #06170C;
+
+    box-shadow:
+        0 11px 25px rgba(24, 185, 87, 0.20);
+}
+
+.dars-emergency-card__whatsapp:hover {
+    border-color: var(--dars-strip-whatsapp-dark);
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-strip-whatsapp),
+            var(--dars-strip-whatsapp-dark)
+        );
+
+    color: #FFFFFF;
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 31px rgba(16, 154, 70, 0.27);
+}
+
+.dars-emergency-card__call {
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    background: rgba(255, 255, 255, 0.80);
+    color: var(--dars-strip-text);
+
+    box-shadow: 0 8px 22px rgba(8, 39, 31, 0.05);
+}
+
+.dars-emergency-card__call:hover {
+    border-color: var(--dars-strip-green);
+    background: var(--dars-strip-green);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+
+    box-shadow: 0 14px 28px rgba(8, 39, 31, 0.19);
+}
+
+.dars-emergency-card__whatsapp svg,
+.dars-emergency-card__call svg {
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ==============================================
+   TABLET
+============================================== */
+@media (max-width: 900px) {
+    .dars-trust-marquee__item {
+        min-height: 65px;
+        padding: 0 27px;
+        font-size: 12px;
+    }
+
+    .dars-trust-marquee::before,
+    .dars-trust-marquee::after {
+        height: 65px;
+        width: 50px;
+    }
+
+    .dars-emergency-card {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .dars-emergency-card__actions {
+        width: 100%;
+        padding-left: 67px;
+    }
+}
+
+/* ==============================================
+   MOBILE
+============================================== */
+@media (max-width: 640px) {
+    .dars-trust-marquee__track {
+        animation-duration: 27s;
+    }
+
+    .dars-trust-marquee__item {
+        min-height: 58px;
+        padding: 0 21px;
+        gap: 7px;
+
+        font-size: 10px;
+        letter-spacing: 0.9px;
+    }
+
+    .dars-trust-marquee__icon {
+        width: 14px;
+        height: 14px;
+        font-size: 8px;
+    }
+
+    .dars-trust-marquee::before,
+    .dars-trust-marquee::after {
+        width: 30px;
+        height: 58px;
+    }
+
+    .dars-emergency-wrap {
+        width: calc(100% - 28px);
+        padding: 30px 0 52px;
+    }
+
+    .dars-emergency-card {
+        padding: 18px;
+        gap: 18px;
+        border-radius: 18px;
+    }
+
+    .dars-emergency-card__left {
+        align-items: flex-start;
+        gap: 13px;
+    }
+
+    .dars-emergency-card__icon {
+        width: 45px;
+        height: 45px;
+        flex-basis: 45px;
+
+        border-width: 6px;
+        border-radius: 14px;
+    }
+
+    .dars-emergency-card__content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .dars-emergency-card__content strong {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .dars-emergency-card__actions {
+        width: 100%;
+        padding-left: 0;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-emergency-card__whatsapp,
+    .dars-emergency-card__call {
+        width: 100%;
+        min-height: 48px;
+    }
+}
+
+/* ==============================================
+   ACCESSIBILITY
+============================================== */
+.dars-emergency-card a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.45);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-trust-marquee__track {
+        animation-play-state: paused !important;
+    }
+
+    .dars-trust-strip * {
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                /* =====================================================
+   VARIABLES
+===================================================== */
+
+.dars-services {
+    --dars-service-green: #0e352b;
+    --dars-service-green-dark: #08271f;
+    --dars-service-green-soft: #174b3d;
+
+    --dars-service-gold: #c49a4a;
+    --dars-service-gold-light: #d9b96e;
+    --dars-service-gold-dark: #956b20;
+
+    --dars-service-cream: #f8f5ee;
+    --dars-service-white: #ffffff;
+    --dars-service-text: #191d1b;
+    --dars-service-muted: #6e7471;
+    --dars-service-border: rgba(14, 53, 43, 0.13);
+    --dars-service-whatsapp: #18b957;
+}
+
+
+/* =====================================================
+   BASE
+===================================================== */
+
+.dars-services,
+.dars-services * {
+    box-sizing: border-box;
+}
+
+.dars-services {
+    position: relative;
+    overflow: hidden;
+
+    padding: 100px 0 105px;
+
+    background:
+        radial-gradient(
+            circle at 8% 30%,
+            rgba(196, 154, 74, 0.09),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 92% 72%,
+            rgba(14, 53, 43, 0.05),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #faf8f4 0%,
+            #f7f4ed 100%
+        );
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.dars-services a,
+.dars-services a:hover,
+.dars-services a:focus,
+.dars-services a:visited {
+    text-decoration: none !important;
+}
+
+.dars-services svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-services::before {
+    content: "";
+
+    position: absolute;
+    top: 40px;
+    right: -130px;
+
+    width: 360px;
+    height: 360px;
+
+    border: 1px solid rgba(196, 154, 74, 0.11);
+    border-radius: 50%;
+}
+
+.dars-services::after {
+    content: "";
+
+    position: absolute;
+    top: 100px;
+    right: -80px;
+
+    width: 250px;
+    height: 250px;
+
+    border: 1px solid rgba(196, 154, 74, 0.11);
+    border-radius: 50%;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.dars-services__container {
+    position: relative;
+    z-index: 1;
+
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.dars-services__header {
+    margin-bottom: 48px;
+}
+
+.dars-services__eyebrow {
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dars-service-gold-dark);
+
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-services__eyebrow span {
+    font-size: 15px;
+}
+
+.dars-services__heading-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.dars-services__heading-row > div {
+    max-width: 820px;
+}
+
+.dars-services h2 {
+    margin: 0;
+
+    color: var(--dars-service-text);
+
+    font-size: 50px !important;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.dars-services h2 span {
+    display: block;
+
+    color: var(--dars-service-green);
+}
+
+.dars-services__heading-row p {
+    max-width: 780px;
+    margin: 17px 0 0;
+
+    color: var(--dars-service-muted);
+
+    font-size: 16px;
+    line-height: 1.72;
+}
+
+
+/* HEADER BUTTON */
+
+.dars-services__header-link {
+    min-height: 49px;
+    padding: 0 19px;
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--dars-service-green) !important;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-services__header-link svg {
+    width: 17px;
+    height: 17px;
+}
+
+.dars-services__header-link:hover {
+    border-color: var(--dars-service-green);
+
+    background: var(--dars-service-green);
+    color: #ffffff !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(8, 39, 31, 0.16);
+}
+
+
+/* =====================================================
+   SERVICES GRID
+===================================================== */
+
+.dars-services__grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    align-items: stretch;
+    gap: 20px;
+}
+
+
+/* =====================================================
+   SERVICE CARD
+===================================================== */
+
+.dars-service-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 575px;
+    padding: 0 0 23px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--dars-service-border);
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.87);
+
+    box-shadow:
+        0 12px 32px rgba(8, 39, 31, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.96);
+
+    transition:
+        transform 0.4s cubic-bezier(.2, .7, .2, 1),
+        border-color 0.35s ease,
+        box-shadow 0.4s ease,
+        background 0.35s ease;
+}
+
+.dars-service-card::before {
+    content: "";
+
+    position: absolute;
+    right: 25px;
+    bottom: 76px;
+    left: 25px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(196, 154, 74, 0.36),
+            transparent
+        );
+
+    opacity: 0;
+
+    transition: opacity 0.35s ease;
+}
+
+.dars-service-card:hover {
+    border-color: rgba(196, 154, 74, 0.58);
+
+    background: rgba(255, 255, 255, 0.98);
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 28px 65px rgba(8, 39, 31, 0.12);
+}
+
+.dars-service-card:hover::before {
+    opacity: 1;
+}
+
+.dars-service-card--featured {
+    border-color: rgba(196, 154, 74, 0.62);
+
+    background:
+        linear-gradient(
+            155deg,
+            rgba(255, 251, 240, 0.98),
+            rgba(248, 245, 238, 0.92)
+        );
+
+    box-shadow:
+        0 22px 55px rgba(126, 91, 27, 0.1);
+}
+
+
+/* =====================================================
+   CARD IMAGE
+===================================================== */
+
+.dars-service-card__image {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 235px;
+    flex: 0 0 235px;
+
+    border-radius: 23px 23px 0 0;
+
+    background: #d8d8d3;
+}
+
+.dars-service-card__image::after {
+    content: "";
+
+    position: absolute;
+    inset: 12px;
+    z-index: 3;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+
+    pointer-events: none;
+}
+
+.dars-service-card__image img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition:
+        transform 0.75s cubic-bezier(.2, .7, .2, 1),
+        filter 0.5s ease;
+}
+
+.dars-service-card:hover
+.dars-service-card__image img {
+    transform: scale(1.075);
+
+    filter:
+        saturate(1.08)
+        contrast(1.02);
+}
+
+.dars-service-card__image-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8, 39, 31, 0.04) 25%,
+            rgba(8, 39, 31, 0.84) 100%
+        );
+}
+
+
+/* IMAGE NUMBER */
+
+.dars-service-card__number {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 4;
+
+    min-width: 40px;
+    height: 32px;
+    padding: 0 10px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 999px;
+
+    background: rgba(8, 39, 31, 0.72);
+    color: var(--dars-service-gold-light);
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+
+/* IMAGE LABEL */
+
+.dars-service-card__image-label {
+    position: absolute;
+    right: 18px;
+    bottom: 17px;
+    z-index: 4;
+
+    min-height: 33px;
+    padding: 0 13px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(217, 185, 110, 0.36);
+    border-radius: 999px;
+
+    background: rgba(8, 39, 31, 0.74);
+    color: var(--dars-service-gold-light);
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.dars-service-card:hover
+.dars-service-card__image-label {
+    background: var(--dars-service-gold);
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.dars-service-card__content {
+    position: relative;
+    z-index: 1;
+
+    padding: 25px 25px 0;
+}
+
+.dars-service-card h3 {
+    margin: 0;
+
+    color: var(--dars-service-text);
+
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.28;
+    letter-spacing: -0.4px;
+
+    transition: color 0.3s ease;
+}
+
+.dars-service-card p {
+    margin: 13px 0 0;
+
+    color: var(--dars-service-muted);
+
+    font-size: 13px;
+    line-height: 1.68;
+}
+
+.dars-service-card:hover h3 {
+    color: var(--dars-service-green-dark);
+}
+
+
+/* =====================================================
+   TAGS
+===================================================== */
+
+.dars-service-card__tags {
+    margin-top: 21px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.dars-service-card__tags span {
+    min-height: 26px;
+    padding: 5px 10px;
+
+    display: inline-flex;
+    align-items: center;
+
+    border: 1px solid rgba(14, 53, 43, 0.1);
+    border-radius: 999px;
+
+    background: rgba(14, 53, 43, 0.035);
+    color: #555c58;
+
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.dars-service-card:hover
+.dars-service-card__tags span {
+    border-color: rgba(196, 154, 74, 0.27);
+
+    background: rgba(217, 185, 110, 0.1);
+    color: var(--dars-service-green);
+}
+
+
+/* =====================================================
+   CARD LINK
+===================================================== */
+
+.dars-service-card__link {
+    position: relative;
+    z-index: 2;
+
+    margin: auto 25px 0;
+    padding-top: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    color: var(--dars-service-gold-dark) !important;
+
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.dars-service-card__arrow {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(196, 154, 74, 0.35);
+    border-radius: 50%;
+
+    background: rgba(217, 185, 110, 0.11);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.dars-service-card__arrow svg {
+    width: 17px;
+    height: 17px;
+}
+
+.dars-service-card:hover
+.dars-service-card__arrow {
+    border-color: var(--dars-service-gold);
+
+    background: var(--dars-service-gold);
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   BOTTOM BAR
+===================================================== */
+
+.dars-services__bottom {
+    margin-top: 29px;
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 1px solid rgba(14, 53, 43, 0.1);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.67);
+
+    box-shadow:
+        0 12px 32px rgba(8, 39, 31, 0.045);
+}
+
+.dars-services__bottom-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dars-services__bottom-icon {
+    width: 41px;
+    height: 41px;
+    flex: 0 0 41px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: rgba(217, 185, 110, 0.16);
+    color: var(--dars-service-gold-dark);
+}
+
+.dars-services__bottom-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.dars-services__bottom p {
+    margin: 0;
+
+    color: #5e6561;
+
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+
+/* WHATSAPP BUTTON */
+
+.dars-services__whatsapp {
+    min-height: 46px;
+    padding: 0 19px;
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border-radius: 999px;
+
+    background: var(--dars-service-whatsapp);
+    color: #ffffff !important;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    box-shadow:
+        0 10px 24px rgba(24, 185, 87, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-services__whatsapp svg {
+    width: 16px;
+    height: 16px;
+}
+
+.dars-services__whatsapp:hover {
+    background: #109a46;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 28px rgba(16, 154, 70, 0.26);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+    .dars-services__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .dars-service-card {
+        min-height: 560px;
+    }
+
+    .dars-service-card__image {
+        height: 230px;
+        flex-basis: 230px;
+    }
+}
+
+@media (max-width: 760px) {
+    .dars-services {
+        padding: 75px 0 78px;
+    }
+
+    .dars-services__heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .dars-services__header-link {
+        min-height: 45px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 640px) {
+    .dars-services {
+        padding: 68px 0 72px;
+    }
+
+    .dars-services__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-services__header {
+        margin-bottom: 32px;
+    }
+
+    .dars-services__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.3px;
+    }
+
+    .dars-services h2 {
+        font-size: 31px !important;
+        line-height: 1.12;
+        letter-spacing: -0.9px;
+    }
+
+    .dars-services__heading-row p {
+        margin-top: 13px;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .dars-services__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .dars-service-card {
+        min-height: auto;
+        padding-bottom: 20px;
+
+        border-radius: 21px;
+    }
+
+    .dars-service-card__image {
+        height: 220px;
+        flex-basis: 220px;
+
+        border-radius: 20px 20px 0 0;
+    }
+
+    .dars-service-card__image::after {
+        inset: 10px;
+
+        border-radius: 13px;
+    }
+
+    .dars-service-card__content {
+        padding: 22px 20px 0;
+    }
+
+    .dars-service-card h3 {
+        font-size: 21px;
+    }
+
+    .dars-service-card p {
+        font-size: 13px;
+    }
+
+    .dars-service-card__tags {
+        margin-top: 19px;
+    }
+
+    .dars-service-card__link {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-top: 22px;
+    }
+
+    .dars-service-card::before {
+        right: 20px;
+        left: 20px;
+    }
+
+    .dars-services__bottom {
+        padding: 18px;
+
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-services__bottom-text {
+        align-items: flex-start;
+    }
+
+    .dars-services__whatsapp {
+        width: 100%;
+        min-height: 49px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 390px) {
+    .dars-service-card__image {
+        height: 200px;
+        flex-basis: 200px;
+    }
+
+    .dars-service-card__image-label {
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .dars-service-card__number {
+        top: 14px;
+        left: 14px;
+    }
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+.dars-services a:focus-visible {
+    outline:
+        3px solid rgba(196, 154, 74, 0.46);
+
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-services *,
+    .dars-services *::before,
+    .dars-services *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-pkg-green: #0E352B;
+    --dars-pkg-green-dark: #08271F;
+    --dars-pkg-gold: #C49A4A;
+    --dars-pkg-gold-light: #E4CA75;
+    --dars-pkg-gold-dark: #946A18;
+    --dars-pkg-cream: #F8F5EE;
+    --dars-pkg-white: #FFFFFF;
+    --dars-pkg-text: #191D1B;
+    --dars-pkg-muted: #6B716E;
+    --dars-pkg-whatsapp: #18B957;
+    --dars-pkg-whatsapp-dark: #109A46;
+}
+
+/* =====================================================
+   BASE
+===================================================== */
+.dars-packages-v3,
+.dars-packages-v3 * {
+    box-sizing: border-box;
+}
+
+.dars-packages-v3 {
+    position: relative;
+    overflow: hidden;
+    padding: 92px 0 96px;
+
+    background:
+        radial-gradient(
+            circle at 88% 30%,
+            rgba(196, 154, 74, 0.09),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #FAF8F4 0%,
+            #F7F4ED 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-packages-v3 a,
+.dars-packages-v3 a:hover,
+.dars-packages-v3 a:focus,
+.dars-packages-v3 a:visited {
+    text-decoration: none !important;
+}
+
+.dars-packages-v3__container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+.dars-packages-v3__header {
+    max-width: 800px;
+    margin-bottom: 42px;
+}
+
+.dars-packages-v3__eyebrow {
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dars-pkg-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-packages-v3__header h2 {
+    margin: 0;
+
+    color: var(--dars-pkg-text);
+    font-size: clamp(38px, 4.3vw, 55px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.dars-packages-v3__header p {
+    max-width: 760px;
+    margin: 14px 0 0;
+
+    color: var(--dars-pkg-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =====================================================
+   MAIN PANEL
+===================================================== */
+.dars-packages-v3__panel {
+    position: relative;
+    overflow: hidden;
+    padding: 29px;
+
+    border: 1px solid rgba(196, 154, 74, 0.52);
+    border-radius: 27px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 252, 243, 0.97),
+            rgba(255, 255, 255, 0.93)
+        );
+
+    box-shadow:
+        0 30px 75px rgba(8, 39, 31, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.dars-packages-v3__panel::before {
+    content: "";
+    position: absolute;
+    top: -145px;
+    left: -120px;
+
+    width: 360px;
+    height: 360px;
+
+    border-radius: 50%;
+    background: rgba(217, 185, 110, 0.12);
+    filter: blur(35px);
+
+    pointer-events: none;
+}
+
+/* =====================================================
+   TABS
+===================================================== */
+.dars-packages-v3__tabs {
+    position: relative;
+    z-index: 2;
+
+    width: min(100%, 560px);
+    padding: 4px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    border: 1px solid rgba(14, 53, 43, 0.13);
+    border-radius: 999px;
+
+    background: rgba(14, 53, 43, 0.045);
+}
+
+/* Strong Elementor/theme reset */
+.dars-packages-v3__tabs .dars-packages-v3__tab,
+.dars-packages-v3__tabs .dars-packages-v3__tab:hover,
+.dars-packages-v3__tabs .dars-packages-v3__tab:focus,
+.dars-packages-v3__tabs .dars-packages-v3__tab:active {
+    min-height: 46px;
+    padding: 7px 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    border: 1px solid transparent !important;
+    border-radius: 999px !important;
+
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    color: #666C68 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+
+    box-shadow: none !important;
+    outline: none;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-packages-v3__tabs .dars-packages-v3__tab:hover {
+    background: rgba(196, 154, 74, 0.09) !important;
+    color: var(--dars-pkg-green) !important;
+}
+
+/* Active tab */
+.dars-packages-v3__tabs .dars-packages-v3__tab.is-active,
+.dars-packages-v3__tabs .dars-packages-v3__tab.is-active:hover,
+.dars-packages-v3__tabs .dars-packages-v3__tab.is-active:focus,
+.dars-packages-v3__tabs .dars-packages-v3__tab.is-active:active {
+    border-color: #B8892F !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-pkg-gold-light),
+            #D7AE4E
+        ) !important;
+
+    color: #171A17 !important;
+
+    box-shadow:
+        0 9px 24px rgba(148, 106, 22, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.62) !important;
+
+    transform: translateY(-1px);
+}
+
+.dars-packages-v3__tab span,
+.dars-packages-v3__tab:hover span,
+.dars-packages-v3__tab:focus span,
+.dars-packages-v3__tab.is-active span {
+    color: inherit !important;
+}
+
+/* Badge */
+.dars-packages-v3__tab small,
+.dars-packages-v3__tab:hover small {
+    padding: 5px 8px;
+
+    border-radius: 999px;
+
+    background: rgba(14, 53, 43, 0.09) !important;
+    color: var(--dars-pkg-gold-dark) !important;
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.dars-packages-v3__tab.is-active small,
+.dars-packages-v3__tab.is-active:hover small {
+    background: var(--dars-pkg-green) !important;
+    color: #FFFFFF !important;
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+.dars-packages-v3__content {
+    position: relative;
+    z-index: 1;
+    margin-top: 28px;
+}
+
+.dars-packages-v3__content.is-active {
+    animation: darsPackagePanelReveal 0.48s ease both;
+}
+
+@keyframes darsPackagePanelReveal {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dars-packages-v3__content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+    align-items: center;
+    gap: clamp(45px, 6vw, 86px);
+}
+
+/* =====================================================
+   PRICE
+===================================================== */
+.dars-packages-v3__price {
+    padding: 14px 0 8px;
+}
+
+.dars-packages-v3__price-label {
+    display: block;
+
+    color: #858B87;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.dars-packages-v3__price-number {
+    min-height: 76px;
+    margin-top: 12px;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--dars-pkg-text);
+    font-size: clamp(55px, 6vw, 76px);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -3px;
+
+    font-variant-numeric: tabular-nums;
+    transform-origin: left center;
+}
+
+.dars-packages-v3__content.is-active
+.dars-packages-v3__price-number {
+    animation: darsPriceReveal 0.55s ease both;
+}
+
+@keyframes darsPriceReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.96);
+        filter: blur(3px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.dars-packages-v3__price-note {
+    margin-top: 12px;
+
+    color: var(--dars-pkg-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.dars-packages-v3__price p {
+    max-width: 530px;
+    margin: 7px 0 0;
+
+    color: var(--dars-pkg-muted);
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* =====================================================
+   SPECS
+===================================================== */
+.dars-packages-v3__specs {
+    display: grid;
+    gap: 8px;
+}
+
+.dars-packages-v3__spec {
+    min-height: 47px;
+    padding: 10px 15px;
+
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    align-items: center;
+    gap: 18px;
+
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    border-radius: 13px;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-packages-v3__spec:hover {
+    border-color: rgba(196, 154, 74, 0.53);
+    background: rgba(255, 255, 255, 0.98);
+
+    transform: translateX(-3px);
+
+    box-shadow: 0 9px 23px rgba(8, 39, 31, 0.06);
+}
+
+.dars-packages-v3__spec span {
+    color: #898F8B;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.dars-packages-v3__spec strong {
+    color: #262B28;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: right;
+}
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+.dars-packages-v3__actions {
+    margin-top: 24px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.dars-packages-v3__whatsapp,
+.dars-packages-v3__build {
+    min-height: 54px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+
+    text-decoration: none !important;
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-packages-v3__whatsapp {
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid var(--dars-pkg-whatsapp);
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-pkg-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    box-shadow:
+        0 15px 32px rgba(24, 185, 87, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.34);
+}
+
+.dars-packages-v3__whatsapp::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255, 255, 255, 0.31);
+    transform: rotate(20deg);
+
+    transition: left 0.65s ease;
+}
+
+.dars-packages-v3__whatsapp:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-pkg-whatsapp),
+            var(--dars-pkg-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 20px 39px rgba(16, 154, 70, 0.30);
+}
+
+.dars-packages-v3__whatsapp:hover::before {
+    left: 130%;
+}
+
+.dars-packages-v3__build {
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    background: rgba(255, 255, 255, 0.82);
+    color: var(--dars-pkg-text) !important;
+
+    box-shadow: 0 9px 23px rgba(8, 39, 31, 0.05);
+}
+
+.dars-packages-v3__build:hover {
+    border-color: var(--dars-pkg-green);
+    background: var(--dars-pkg-green);
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 16px 32px rgba(8, 39, 31, 0.18);
+}
+
+.dars-packages-v3__whatsapp svg,
+.dars-packages-v3__build svg {
+    position: relative;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-packages-v3__whatsapp span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-packages-v3__action-arrow,
+.dars-packages-v3__build svg {
+    transition: transform 0.3s ease;
+}
+
+.dars-packages-v3__whatsapp:hover
+.dars-packages-v3__action-arrow,
+.dars-packages-v3__build:hover svg {
+    transform: translateX(4px);
+}
+
+/* =====================================================
+   FEATURE CARDS
+===================================================== */
+.dars-packages-v3__features {
+    margin-top: 17px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.dars-packages-v3__feature {
+    min-height: 185px;
+    padding: 20px 18px;
+
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.84);
+
+    box-shadow:
+        0 10px 28px rgba(8, 39, 31, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.97);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-packages-v3__feature:hover {
+    border-color: rgba(196, 154, 74, 0.49);
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 21px 45px rgba(8, 39, 31, 0.09);
+}
+
+.dars-packages-v3__feature-icon {
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: rgba(217, 185, 110, 0.17);
+    color: var(--dars-pkg-gold-dark);
+}
+
+.dars-packages-v3__feature-icon svg {
+    width: 19px;
+    height: 19px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-packages-v3__feature > span {
+    display: block;
+    margin-top: 15px;
+
+    color: #898F8B;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.dars-packages-v3__feature h3 {
+    margin: 7px 0 0;
+
+    color: var(--dars-pkg-text);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.dars-packages-v3__feature p {
+    margin: 8px 0 0;
+
+    color: var(--dars-pkg-muted);
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+.dars-packages-v3__disclaimer {
+    margin: 14px 0 0;
+
+    color: #888E8B;
+    font-size: 10px;
+    line-height: 1.55;
+    text-align: center;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+@media (max-width: 950px) {
+    .dars-packages-v3__content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .dars-packages-v3__features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+@media (max-width: 640px) {
+    .dars-packages-v3 {
+        padding: 68px 0 70px;
+    }
+
+    .dars-packages-v3__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-packages-v3__header {
+        margin-bottom: 29px;
+    }
+
+    .dars-packages-v3__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.4px;
+    }
+
+    .dars-packages-v3__header h2 {
+        font-size: 35px;
+        letter-spacing: -1.2px;
+    }
+
+    .dars-packages-v3__header p {
+        font-size: 14px;
+    }
+
+    .dars-packages-v3__panel {
+        padding: 19px 16px 18px;
+        border-radius: 22px;
+    }
+
+    .dars-packages-v3__tabs {
+        width: 100%;
+    }
+
+    .dars-packages-v3__tabs
+    .dars-packages-v3__tab {
+        min-height: 50px;
+        padding: 7px 8px;
+
+        flex-direction: column;
+        gap: 4px;
+
+        font-size: 11px !important;
+    }
+
+    .dars-packages-v3__tab small {
+        padding: 4px 6px;
+        font-size: 6px;
+    }
+
+    .dars-packages-v3__content {
+        margin-top: 23px;
+    }
+
+    .dars-packages-v3__price-number {
+        min-height: 60px;
+        font-size: 55px;
+    }
+
+    .dars-packages-v3__spec {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 12px 13px;
+    }
+
+    .dars-packages-v3__spec strong {
+        text-align: left;
+    }
+
+    .dars-packages-v3__actions {
+        grid-template-columns: 1fr;
+    }
+
+    .dars-packages-v3__whatsapp,
+    .dars-packages-v3__build {
+        min-height: 51px;
+        padding: 0 15px;
+        font-size: 12px;
+    }
+
+    .dars-packages-v3__features {
+        grid-template-columns: 1fr;
+    }
+
+    .dars-packages-v3__feature {
+        min-height: auto;
+    }
+}
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+.dars-packages-v3__tab:focus-visible,
+.dars-packages-v3 a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.48) !important;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-packages-v3 *,
+    .dars-packages-v3 *::before,
+    .dars-packages-v3 *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-process-green: #0E352B;
+    --dars-process-green-dark: #08271F;
+    --dars-process-green-soft: #174B3D;
+
+    --dars-process-gold: #C49A4A;
+    --dars-process-gold-light: #E2C678;
+    --dars-process-gold-dark: #946A18;
+
+    --dars-process-cream: #F8F5EE;
+    --dars-process-white: #FFFFFF;
+    --dars-process-text: #191D1B;
+    --dars-process-muted: #6B716E;
+    --dars-process-whatsapp: #18B957;
+    --dars-process-whatsapp-dark: #109A46;
+}
+
+/* =====================================================
+   BASE
+===================================================== */
+.dars-process,
+.dars-process * {
+    box-sizing: border-box;
+}
+
+.dars-process {
+    position: relative;
+    overflow: hidden;
+    padding: 94px 0 92px;
+
+    background:
+        radial-gradient(
+            circle at 14% 28%,
+            rgba(196, 154, 74, 0.08),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #FAF8F4 0%,
+            #F7F4ED 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-process a,
+.dars-process a:hover,
+.dars-process a:focus,
+.dars-process a:visited {
+    text-decoration: none !important;
+}
+
+.dars-process::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -130px;
+
+    width: 380px;
+    height: 380px;
+
+    border: 1px solid rgba(196, 154, 74, 0.10);
+    border-radius: 50%;
+}
+
+.dars-process::after {
+    content: "";
+    position: absolute;
+    top: 105px;
+    right: -60px;
+
+    width: 240px;
+    height: 240px;
+
+    border: 1px solid rgba(196, 154, 74, 0.10);
+    border-radius: 50%;
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+.dars-process__container {
+    position: relative;
+    z-index: 1;
+
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+.dars-process__header {
+    margin-bottom: 46px;
+}
+
+.dars-process__eyebrow {
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dars-process-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-process__heading-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.dars-process__heading-row > div:first-child {
+    max-width: 760px;
+}
+
+.dars-process h2 {
+    margin: 0;
+
+    color: var(--dars-process-text);
+    font-size: clamp(38px, 4.4vw, 56px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.9px;
+}
+
+.dars-process__heading-row p {
+    max-width: 720px;
+    margin: 14px 0 0;
+
+    color: var(--dars-process-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.dars-process__status {
+    min-height: 42px;
+    padding: 0 16px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(14, 53, 43, 0.12);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--dars-process-green);
+
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.dars-process__status-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background: var(--dars-process-whatsapp);
+
+    box-shadow: 0 0 0 6px rgba(24, 185, 87, 0.10);
+
+    animation: darsProcessPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes darsProcessPulse {
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(24, 185, 87, 0.10);
+    }
+
+    50% {
+        transform: scale(1.12);
+        box-shadow: 0 0 0 10px rgba(24, 185, 87, 0.04);
+    }
+}
+
+/* =====================================================
+   PROCESS GRID
+===================================================== */
+.dars-process__grid {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* Connecting line */
+.dars-process__line {
+    position: absolute;
+    top: 56px;
+    left: 12%;
+    right: 12%;
+    z-index: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(196, 154, 74, 0.46),
+            rgba(196, 154, 74, 0.46),
+            transparent
+        );
+}
+
+.dars-process__line span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 110px;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--dars-process-gold),
+            transparent
+        );
+
+    transform: translateY(-50%);
+
+    animation: darsProcessLineMove 4.2s linear infinite;
+}
+
+@keyframes darsProcessLineMove {
+    from {
+        left: -5%;
+    }
+
+    to {
+        left: 94%;
+    }
+}
+
+/* =====================================================
+   PROCESS CARD
+===================================================== */
+.dars-process-card {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    min-height: 285px;
+    padding: 28px 27px 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(14, 53, 43, 0.13);
+    border-radius: 23px;
+
+    background: rgba(255, 255, 255, 0.87);
+
+    box-shadow:
+        0 14px 36px rgba(8, 39, 31, 0.045),
+        inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.4s cubic-bezier(.2,.7,.2,1),
+        border-color 0.35s ease,
+        box-shadow 0.4s ease,
+        background 0.35s ease;
+}
+
+.dars-process-card::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: -90px;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    background: rgba(217, 185, 110, 0.12);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+.dars-process-card:hover {
+    border-color: rgba(196, 154, 74, 0.56);
+    background: rgba(255, 255, 255, 0.98);
+
+    transform: translateY(-9px);
+
+    box-shadow:
+        0 28px 62px rgba(8, 39, 31, 0.11),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.dars-process-card:hover::before {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* Featured middle card */
+.dars-process-card--featured {
+    border-color: rgba(196, 154, 74, 0.62);
+
+    background:
+        linear-gradient(
+            150deg,
+            rgba(255, 252, 243, 0.98),
+            rgba(255, 255, 255, 0.92)
+        );
+
+    box-shadow:
+        0 22px 55px rgba(126, 91, 27, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Card number */
+.dars-process-card__number {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+
+    color: rgba(196, 154, 74, 0.22);
+
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1;
+
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.dars-process-card:hover .dars-process-card__number {
+    color: rgba(196, 154, 74, 0.34);
+    transform: translateY(-3px);
+}
+
+/* Icon */
+.dars-process-card__icon {
+    position: relative;
+    z-index: 1;
+
+    width: 51px;
+    height: 51px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(196, 154, 74, 0.38);
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(217, 185, 110, 0.16)
+        );
+
+    color: var(--dars-process-gold-dark);
+
+    box-shadow: 0 9px 22px rgba(126, 91, 27, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease;
+}
+
+.dars-process-card:hover .dars-process-card__icon {
+    background:
+        linear-gradient(
+            145deg,
+            var(--dars-process-gold-light),
+            var(--dars-process-gold)
+        );
+
+    color: #FFFFFF;
+
+    transform: translateY(-3px) rotate(-4deg);
+}
+
+.dars-process-card__icon svg {
+    width: 23px;
+    height: 23px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Card content */
+.dars-process-card__label {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+    margin-top: 19px;
+
+    color: var(--dars-process-gold-dark);
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.dars-process-card h3 {
+    position: relative;
+    z-index: 1;
+
+    margin: 9px 0 0;
+
+    color: var(--dars-process-text);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.35px;
+}
+
+.dars-process-card p {
+    position: relative;
+    z-index: 1;
+
+    margin: 11px 0 0;
+
+    color: var(--dars-process-muted);
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* Card foot */
+.dars-process-card__foot {
+    position: relative;
+    z-index: 1;
+
+    margin-top: auto;
+    padding-top: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+
+    color: var(--dars-process-green);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.dars-process-card__foot svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: var(--dars-process-gold-dark);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    transition: transform 0.3s ease;
+}
+
+.dars-process-card:hover .dars-process-card__foot svg {
+    transform: translateX(4px);
+}
+
+/* =====================================================
+   BOTTOM CTA
+===================================================== */
+.dars-process__bottom {
+    margin-top: 25px;
+    padding: 17px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 1px solid rgba(14, 53, 43, 0.10);
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.69);
+
+    box-shadow: 0 13px 34px rgba(8, 39, 31, 0.045);
+}
+
+.dars-process__bottom-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dars-process__bottom-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 13px;
+
+    background: rgba(217, 185, 110, 0.16);
+    color: var(--dars-process-gold-dark);
+}
+
+.dars-process__bottom-icon svg {
+    width: 20px;
+    height: 20px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-process__bottom-note p {
+    margin: 0;
+
+    color: #5F6662;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+/* WhatsApp CTA */
+.dars-process__cta {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 49px;
+    padding: 0 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-process-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    box-shadow:
+        0 13px 29px rgba(24, 185, 87, 0.21),
+        inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-process__cta::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255, 255, 255, 0.31);
+    transform: rotate(20deg);
+
+    transition: left 0.65s ease;
+}
+
+.dars-process__cta:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-process-whatsapp),
+            var(--dars-process-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 18px 36px rgba(16, 154, 70, 0.28);
+}
+
+.dars-process__cta:hover::before {
+    left: 130%;
+}
+
+.dars-process__cta svg {
+    position: relative;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-process__cta span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-process__cta-arrow {
+    transition: transform 0.3s ease;
+}
+
+.dars-process__cta:hover .dars-process__cta-arrow {
+    transform: translateX(4px);
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+@media (max-width: 900px) {
+    .dars-process__heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dars-process__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dars-process__line {
+        top: 60px;
+        bottom: 60px;
+        left: 25px;
+        right: auto;
+
+        width: 1px;
+        height: auto;
+
+        background:
+            linear-gradient(
+                180deg,
+                transparent,
+                rgba(196, 154, 74, 0.46),
+                transparent
+            );
+    }
+
+    .dars-process__line span {
+        top: -5%;
+        left: 50%;
+
+        width: 2px;
+        height: 90px;
+
+        background:
+            linear-gradient(
+                180deg,
+                transparent,
+                var(--dars-process-gold),
+                transparent
+            );
+
+        transform: translateX(-50%);
+
+        animation: darsProcessLineMoveMobile 4.2s linear infinite;
+    }
+
+    @keyframes darsProcessLineMoveMobile {
+        from {
+            top: -5%;
+        }
+
+        to {
+            top: 92%;
+        }
+    }
+
+    .dars-process-card {
+        min-height: 255px;
+    }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+@media (max-width: 640px) {
+    .dars-process {
+        padding: 68px 0 70px;
+    }
+
+    .dars-process__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-process__header {
+        margin-bottom: 31px;
+    }
+
+    .dars-process__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.4px;
+    }
+
+    .dars-process h2 {
+        font-size: 35px;
+        letter-spacing: -1.2px;
+    }
+
+    .dars-process__heading-row p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .dars-process__status {
+        min-height: 39px;
+        padding: 0 14px;
+
+        font-size: 10px;
+    }
+
+    .dars-process-card {
+        min-height: auto;
+        padding: 24px 21px 21px;
+        border-radius: 21px;
+    }
+
+    .dars-process-card__number {
+        font-size: 45px;
+    }
+
+    .dars-process-card h3 {
+        font-size: 19px;
+    }
+
+    .dars-process__bottom {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-process__bottom-note {
+        align-items: flex-start;
+    }
+
+    .dars-process__cta {
+        width: 100%;
+        min-height: 50px;
+    }
+}
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+.dars-process a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.48);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-process *,
+    .dars-process *::before,
+    .dars-process *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-why-green: #0E352B;
+    --dars-why-green-dark: #08271F;
+    --dars-why-green-soft: #174B3D;
+
+    --dars-why-gold: #C49A4A;
+    --dars-why-gold-light: #E2C678;
+    --dars-why-gold-dark: #946A18;
+
+    --dars-why-cream: #F8F5EE;
+    --dars-why-white: #FFFFFF;
+    --dars-why-text: #191D1B;
+    --dars-why-muted: #6B716E;
+
+    --dars-why-whatsapp: #18B957;
+    --dars-why-whatsapp-dark: #109A46;
+}
+
+/* =====================================================
+   BASE
+===================================================== */
+.dars-why,
+.dars-why * {
+    box-sizing: border-box;
+}
+
+.dars-why {
+    position: relative;
+    overflow: hidden;
+    padding: 94px 0 96px;
+
+    background:
+        radial-gradient(
+            circle at 10% 18%,
+            rgba(196, 154, 74, 0.09),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #FAF8F4 0%,
+            #F7F4ED 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-why a,
+.dars-why a:hover,
+.dars-why a:focus,
+.dars-why a:visited {
+    text-decoration: none !important;
+}
+
+.dars-why::before {
+    content: "";
+    position: absolute;
+    right: -145px;
+    bottom: -145px;
+
+    width: 410px;
+    height: 410px;
+
+    border: 1px solid rgba(196, 154, 74, 0.10);
+    border-radius: 50%;
+}
+
+.dars-why::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+
+    width: 240px;
+    height: 240px;
+
+    border: 1px solid rgba(196, 154, 74, 0.10);
+    border-radius: 50%;
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+.dars-why__container {
+    position: relative;
+    z-index: 1;
+
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+.dars-why__header {
+    margin-bottom: 45px;
+}
+
+.dars-why__eyebrow {
+    max-width: 820px;
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dars-why-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-why__heading-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.dars-why__heading-row > div {
+    max-width: 850px;
+}
+
+.dars-why h2 {
+    margin: 0;
+
+    color: var(--dars-why-text);
+    font-size: clamp(37px, 4.2vw, 54px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.dars-why__heading-row p {
+    max-width: 770px;
+    margin: 14px 0 0;
+
+    color: var(--dars-why-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.dars-why__header-link {
+    min-height: 47px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--dars-why-green) !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-why__header-link svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-why__header-link:hover {
+    border-color: var(--dars-why-green);
+    background: var(--dars-why-green);
+    color: #FFFFFF !important;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+.dars-why__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* =====================================================
+   FEATURE CARD
+===================================================== */
+.dars-why-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 250px;
+    padding: 25px 24px 23px;
+
+    border: 1px solid rgba(14, 53, 43, 0.13);
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.87);
+
+    box-shadow:
+        0 12px 34px rgba(8, 39, 31, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.4s cubic-bezier(.2,.7,.2,1),
+        border-color 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.4s ease;
+}
+
+.dars-why-card::before {
+    content: "";
+    position: absolute;
+    top: -95px;
+    right: -95px;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    background: rgba(217, 185, 110, 0.13);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+.dars-why-card:hover {
+    border-color: rgba(196, 154, 74, 0.56);
+    background: rgba(255, 255, 255, 0.98);
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 27px 60px rgba(8, 39, 31, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.dars-why-card:hover::before {
+    opacity: 1;
+    transform: scale(1.17);
+}
+
+/* Featured card */
+.dars-why-card--featured {
+    border-color: rgba(196, 154, 74, 0.62);
+
+    background:
+        linear-gradient(
+            150deg,
+            rgba(255, 251, 239, 0.98),
+            rgba(248, 245, 238, 0.92)
+        );
+
+    box-shadow:
+        0 22px 53px rgba(126, 91, 27, 0.09),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Number */
+.dars-why-card__number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+
+    color: rgba(196, 154, 74, 0.20);
+
+    font-size: 37px;
+    font-weight: 800;
+    line-height: 1;
+
+    transition:
+        color 0.35s ease,
+        transform 0.35s ease;
+}
+
+.dars-why-card:hover .dars-why-card__number {
+    color: rgba(196, 154, 74, 0.34);
+    transform: translateY(-3px);
+}
+
+/* Icon */
+.dars-why-card__icon {
+    position: relative;
+    z-index: 1;
+
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(196, 154, 74, 0.36);
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.96),
+            rgba(217, 185, 110, 0.17)
+        );
+
+    color: var(--dars-why-gold-dark);
+
+    box-shadow: 0 9px 22px rgba(126, 91, 27, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease;
+}
+
+.dars-why-card:hover .dars-why-card__icon {
+    background:
+        linear-gradient(
+            145deg,
+            var(--dars-why-gold-light),
+            var(--dars-why-gold)
+        );
+
+    color: #FFFFFF;
+    transform: translateY(-3px) rotate(-4deg);
+}
+
+.dars-why-card__icon svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Content */
+.dars-why-card h3 {
+    position: relative;
+    z-index: 1;
+
+    margin: 18px 0 0;
+
+    color: var(--dars-why-text);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+}
+
+.dars-why-card p {
+    position: relative;
+    z-index: 1;
+
+    margin: 10px 0 0;
+
+    color: var(--dars-why-muted);
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* Keep text readable on hover */
+.dars-why-card:hover h3 {
+    color: var(--dars-why-green-dark);
+}
+
+.dars-why-card:hover p {
+    color: var(--dars-why-muted);
+}
+
+/* Last row alignment */
+.dars-why-card:nth-child(5) {
+    grid-column: 1 / 2;
+}
+
+.dars-why-card:nth-child(6) {
+    grid-column: 2 / 3;
+}
+
+/* =====================================================
+   BOTTOM CTA
+===================================================== */
+.dars-why__bottom {
+    margin-top: 25px;
+    padding: 18px 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 1px solid rgba(14, 53, 43, 0.10);
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.69);
+
+    box-shadow: 0 13px 34px rgba(8, 39, 31, 0.045);
+}
+
+.dars-why__bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.dars-why__bottom-icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: rgba(217, 185, 110, 0.17);
+    color: var(--dars-why-gold-dark);
+}
+
+.dars-why__bottom-icon svg {
+    width: 21px;
+    height: 21px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-why__bottom-content strong {
+    display: block;
+
+    color: var(--dars-why-text);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dars-why__bottom-content p {
+    margin: 4px 0 0;
+
+    color: #646B67;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* WhatsApp CTA */
+.dars-why__whatsapp {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 49px;
+    padding: 0 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-why-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    box-shadow:
+        0 13px 29px rgba(24, 185, 87, 0.21),
+        inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-why__whatsapp::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255, 255, 255, 0.31);
+    transform: rotate(20deg);
+
+    transition: left 0.65s ease;
+}
+
+.dars-why__whatsapp:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-why-whatsapp),
+            var(--dars-why-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 18px 36px rgba(16, 154, 70, 0.28);
+}
+
+.dars-why__whatsapp:hover::before {
+    left: 130%;
+}
+
+.dars-why__whatsapp svg {
+    position: relative;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-why__whatsapp span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-why__whatsapp-arrow {
+    transition: transform 0.3s ease;
+}
+
+.dars-why__whatsapp:hover .dars-why__whatsapp-arrow {
+    transform: translateX(4px);
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+@media (max-width: 1050px) {
+    .dars-why__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dars-why-card:nth-child(5),
+    .dars-why-card:nth-child(6) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .dars-why__heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+@media (max-width: 640px) {
+    .dars-why {
+        padding: 68px 0 70px;
+    }
+
+    .dars-why__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-why__header {
+        margin-bottom: 31px;
+    }
+
+    .dars-why__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.4px;
+    }
+
+    .dars-why h2 {
+        font-size: 34px;
+        letter-spacing: -1.2px;
+    }
+
+    .dars-why__heading-row p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .dars-why__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .dars-why-card {
+        min-height: auto;
+        padding: 23px 21px 22px;
+        border-radius: 20px;
+    }
+
+    .dars-why-card h3 {
+        font-size: 18px;
+    }
+
+    .dars-why__bottom {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-why__bottom-content {
+        align-items: flex-start;
+    }
+
+    .dars-why__whatsapp {
+        width: 100%;
+        min-height: 50px;
+    }
+}
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+.dars-why a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.48);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-why *,
+    .dars-why *::before,
+    .dars-why *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-review-green: #0E352B;
+    --dars-review-green-dark: #08271F;
+    --dars-review-gold: #C49A4A;
+    --dars-review-gold-light: #E2C678;
+    --dars-review-gold-dark: #946A18;
+    --dars-review-white: #FFFFFF;
+    --dars-review-text: #191D1B;
+    --dars-review-muted: #6B716E;
+    --dars-review-whatsapp: #18B957;
+    --dars-review-whatsapp-dark: #109A46;
+}
+
+.dars-reviews,
+.dars-reviews * {
+    box-sizing: border-box;
+}
+
+.dars-reviews {
+    position: relative;
+    overflow: hidden;
+    padding: 94px 0 96px;
+
+    background:
+        radial-gradient(
+            circle at 88% 18%,
+            rgba(196, 154, 74, 0.08),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #FAF8F4 0%,
+            #F7F4ED 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-reviews a,
+.dars-reviews a:hover,
+.dars-reviews a:focus,
+.dars-reviews a:visited {
+    text-decoration: none !important;
+}
+
+.dars-reviews__container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* Header */
+.dars-reviews__header {
+    margin-bottom: 38px;
+}
+
+.dars-reviews__eyebrow {
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dars-review-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-reviews__heading-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.dars-reviews__heading-row > div {
+    max-width: 790px;
+}
+
+.dars-reviews h2 {
+    margin: 0;
+
+    color: var(--dars-review-text);
+    font-size: clamp(38px, 4.3vw, 55px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.dars-reviews__heading-row p {
+    max-width: 750px;
+    margin: 14px 0 0;
+
+    color: var(--dars-review-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.dars-reviews__header-link {
+    min-height: 47px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--dars-review-green) !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-reviews__header-link svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-reviews__header-link:hover {
+    border-color: var(--dars-review-green);
+    background: var(--dars-review-green);
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+
+    box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
+}
+
+/* Summary */
+.dars-reviews__summary {
+    min-height: 72px;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    border: 1px solid rgba(14, 53, 43, 0.13);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.83);
+
+    box-shadow:
+        0 12px 32px rgba(8, 39, 31, 0.045),
+        inset 0 1px 0 rgba(255, 255, 255, 0.98);
+}
+
+.dars-reviews__summary-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.dars-reviews__summary-icon {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 13px;
+    background: rgba(217, 185, 110, 0.17);
+    color: var(--dars-review-gold-dark);
+}
+
+.dars-reviews__summary-icon svg {
+    width: 20px;
+    height: 20px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-reviews__stars {
+    color: #C88B00;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.dars-reviews__score {
+    color: var(--dars-review-text);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.dars-reviews__score-text {
+    color: var(--dars-review-muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dars-reviews__count {
+    padding: 8px 12px;
+
+    border-radius: 999px;
+
+    background: rgba(14, 53, 43, 0.06);
+    color: #525955;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.dars-reviews__google-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 auto;
+
+    color: var(--dars-review-gold-dark) !important;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.dars-reviews__google-link svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    transition: transform 0.3s ease;
+}
+
+.dars-reviews__google-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* Review grid */
+.dars-reviews__grid {
+    margin-top: 17px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.dars-review-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 280px;
+    padding: 26px 26px 23px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(14, 53, 43, 0.13);
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.87);
+
+    box-shadow:
+        0 12px 34px rgba(8, 39, 31, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+    transition:
+        transform 0.4s cubic-bezier(.2,.7,.2,1),
+        border-color 0.35s ease,
+        box-shadow 0.4s ease;
+}
+
+.dars-review-card::before {
+    content: "";
+    position: absolute;
+    top: -95px;
+    right: -95px;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    background: rgba(217, 185, 110, 0.12);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.5s ease;
+}
+
+.dars-review-card:hover {
+    border-color: rgba(196, 154, 74, 0.56);
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 27px 60px rgba(8, 39, 31, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.dars-review-card:hover::before {
+    opacity: 1;
+    transform: scale(1.18);
+}
+
+.dars-review-card--featured {
+    border-color: rgba(196, 154, 74, 0.60);
+
+    background:
+        linear-gradient(
+            150deg,
+            rgba(255, 251, 239, 0.98),
+            rgba(255, 255, 255, 0.92)
+        );
+}
+
+.dars-review-card__top {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.dars-review-card__stars {
+    color: #C88B00;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.dars-review-card__quote {
+    color: rgba(196, 154, 74, 0.25);
+
+    font-size: 55px;
+    font-family: Georgia, serif;
+    line-height: 0.7;
+}
+
+.dars-review-card__text {
+    position: relative;
+    z-index: 1;
+
+    margin: 19px 0 0;
+
+    color: #555C58;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.dars-review-card__footer {
+    position: relative;
+    z-index: 1;
+
+    margin-top: auto;
+    padding-top: 22px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border-top: 1px solid rgba(14, 53, 43, 0.10);
+}
+
+.dars-review-card__avatar {
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--dars-review-gold-light),
+            var(--dars-review-gold)
+        );
+
+    color: #FFFFFF;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.dars-review-card__footer h3 {
+    margin: 0;
+
+    color: var(--dars-review-text);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.dars-review-card__footer span,
+.dars-review-card__footer small {
+    display: block;
+}
+
+.dars-review-card__footer span {
+    margin-top: 3px;
+
+    color: #777E7A;
+    font-size: 11px;
+}
+
+.dars-review-card__footer small {
+    margin-top: 3px;
+
+    color: var(--dars-review-gold-dark);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* Bottom CTA */
+.dars-reviews__bottom {
+    margin-top: 24px;
+    padding: 18px 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 1px solid rgba(14, 53, 43, 0.10);
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.69);
+
+    box-shadow: 0 13px 34px rgba(8, 39, 31, 0.045);
+}
+
+.dars-reviews__bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.dars-reviews__bottom-icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: rgba(217, 185, 110, 0.17);
+    color: var(--dars-review-gold-dark);
+}
+
+.dars-reviews__bottom-icon svg {
+    width: 21px;
+    height: 21px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-reviews__bottom-content strong {
+    display: block;
+
+    color: var(--dars-review-text);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dars-reviews__bottom-content p {
+    margin: 4px 0 0;
+
+    color: #646B67;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.dars-reviews__whatsapp {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 49px;
+    padding: 0 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-review-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    box-shadow:
+        0 13px 29px rgba(24, 185, 87, 0.21),
+        inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-reviews__whatsapp::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255, 255, 255, 0.31);
+    transform: rotate(20deg);
+
+    transition: left 0.65s ease;
+}
+
+.dars-reviews__whatsapp:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-review-whatsapp),
+            var(--dars-review-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 18px 36px rgba(16, 154, 70, 0.28);
+}
+
+.dars-reviews__whatsapp:hover::before {
+    left: 130%;
+}
+
+.dars-reviews__whatsapp svg {
+    position: relative;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-reviews__whatsapp span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-reviews__whatsapp-arrow {
+    transition: transform 0.3s ease;
+}
+
+.dars-reviews__whatsapp:hover
+.dars-reviews__whatsapp-arrow {
+    transform: translateX(4px);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .dars-reviews__heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .dars-reviews__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .dars-reviews {
+        padding: 68px 0 70px;
+    }
+
+    .dars-reviews__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-reviews__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.4px;
+    }
+
+    .dars-reviews h2 {
+        font-size: 35px;
+        letter-spacing: -1.2px;
+    }
+
+    .dars-reviews__heading-row p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .dars-reviews__summary {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .dars-reviews__summary-left {
+        align-items: center;
+    }
+
+    .dars-reviews__google-link {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .dars-review-card {
+        min-height: auto;
+        padding: 23px 21px 22px;
+    }
+
+    .dars-reviews__bottom {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-reviews__bottom-content {
+        align-items: flex-start;
+    }
+
+    .dars-reviews__whatsapp {
+        width: 100%;
+        min-height: 50px;
+    }
+}
+
+/* Accessibility */
+.dars-reviews a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.48);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-reviews *,
+    .dars-reviews *::before,
+    .dars-reviews *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-faq-green: #0E352B;
+    --dars-faq-green-dark: #08271F;
+    --dars-faq-gold: #C49A4A;
+    --dars-faq-gold-light: #E2C678;
+    --dars-faq-gold-dark: #946A18;
+    --dars-faq-white: #FFFFFF;
+    --dars-faq-text: #191D1B;
+    --dars-faq-muted: #6B716E;
+    --dars-faq-whatsapp: #18B957;
+    --dars-faq-whatsapp-dark: #109A46;
+}
+
+.dars-faq,
+.dars-faq * {
+    box-sizing: border-box;
+}
+
+.dars-faq {
+    position: relative;
+    overflow: hidden;
+    padding: 94px 0 96px;
+
+    background:
+        radial-gradient(
+            circle at 86% 18%,
+            rgba(196, 154, 74, 0.08),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #FAF8F4 0%,
+            #F7F4ED 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-faq a,
+.dars-faq a:hover,
+.dars-faq a:focus,
+.dars-faq a:visited {
+    text-decoration: none !important;
+}
+
+.dars-faq__container {
+    width: min(1040px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* Header */
+.dars-faq__header {
+    margin-bottom: 39px;
+}
+
+.dars-faq__eyebrow {
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--dars-faq-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-faq__heading-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.dars-faq__heading-row > div {
+    max-width: 760px;
+}
+
+.dars-faq h2 {
+    margin: 0;
+
+    color: var(--dars-faq-text);
+    font-size: clamp(38px, 4.3vw, 54px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.dars-faq__heading-row p {
+    max-width: 730px;
+    margin: 14px 0 0;
+
+    color: var(--dars-faq-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.dars-faq__header-link {
+    min-height: 47px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--dars-faq-green) !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-faq__header-link svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-faq__header-link:hover {
+    border-color: var(--dars-faq-green);
+    background: var(--dars-faq-green);
+    color: #FFFFFF !important;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
+}
+
+/* Accordion */
+.dars-faq__accordion {
+    display: grid;
+    gap: 9px;
+}
+
+.dars-faq-item {
+    overflow: hidden;
+
+    border: 1px solid rgba(14, 53, 43, 0.13);
+    border-radius: 17px;
+
+    background: rgba(255, 255, 255, 0.86);
+
+    box-shadow:
+        0 8px 24px rgba(8, 39, 31, 0.025),
+        inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+    transition:
+        border-color 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease,
+        transform 0.35s ease;
+}
+
+.dars-faq-item:hover {
+    border-color: rgba(196, 154, 74, 0.46);
+    transform: translateY(-1px);
+}
+
+.dars-faq-item.is-open {
+    border-color: rgba(196, 154, 74, 0.65);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 251, 240, 0.98),
+            rgba(255, 255, 255, 0.93)
+        );
+
+    box-shadow:
+        0 18px 42px rgba(8, 39, 31, 0.07),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Button theme reset */
+.dars-faq-item__question,
+.dars-faq-item__question:hover,
+.dars-faq-item__question:focus,
+.dars-faq-item__question:active {
+    width: 100%;
+    min-height: 62px;
+    padding: 17px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+    background-image: none !important;
+
+    color: var(--dars-faq-text) !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    line-height: 1.4 !important;
+    text-align: left !important;
+    text-transform: none !important;
+
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.dars-faq-item__question > span:first-child {
+    color: inherit !important;
+}
+
+.dars-faq-item__icon {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(217, 185, 110, 0.14);
+    color: var(--dars-faq-gold-dark);
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.4s cubic-bezier(.2,.7,.2,1);
+}
+
+.dars-faq-item.is-open .dars-faq-item__icon {
+    background: var(--dars-faq-gold);
+    color: #FFFFFF;
+    transform: rotate(180deg);
+}
+
+.dars-faq-item__icon svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Answer */
+.dars-faq-item__answer {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+
+    transition:
+        grid-template-rows 0.42s cubic-bezier(.2,.7,.2,1),
+        opacity 0.3s ease;
+}
+
+.dars-faq-item.is-open .dars-faq-item__answer {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.dars-faq-item__answer-inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.dars-faq-item__answer-inner p {
+    margin: 0;
+    padding: 0 72px 20px 20px;
+
+    color: var(--dars-faq-muted);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+/* Bottom CTA */
+.dars-faq__bottom {
+    margin-top: 25px;
+    padding: 18px 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 1px solid rgba(14, 53, 43, 0.10);
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.70);
+
+    box-shadow: 0 13px 34px rgba(8, 39, 31, 0.045);
+}
+
+.dars-faq__bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.dars-faq__bottom-icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: rgba(217, 185, 110, 0.17);
+    color: var(--dars-faq-gold-dark);
+}
+
+.dars-faq__bottom-icon svg {
+    width: 21px;
+    height: 21px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-faq__bottom-content strong {
+    display: block;
+
+    color: var(--dars-faq-text);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dars-faq__bottom-content p {
+    margin: 4px 0 0;
+
+    color: #646B67;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.dars-faq__whatsapp {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 49px;
+    padding: 0 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-faq-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    box-shadow:
+        0 13px 29px rgba(24, 185, 87, 0.21),
+        inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-faq__whatsapp::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255, 255, 255, 0.31);
+    transform: rotate(20deg);
+
+    transition: left 0.65s ease;
+}
+
+.dars-faq__whatsapp:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-faq-whatsapp),
+            var(--dars-faq-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+    transform: translateY(-3px);
+
+    box-shadow: 0 18px 36px rgba(16, 154, 70, 0.28);
+}
+
+.dars-faq__whatsapp:hover::before {
+    left: 130%;
+}
+
+.dars-faq__whatsapp svg {
+    position: relative;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-faq__whatsapp span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-faq__whatsapp-arrow {
+    transition: transform 0.3s ease;
+}
+
+.dars-faq__whatsapp:hover .dars-faq__whatsapp-arrow {
+    transform: translateX(4px);
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    .dars-faq__heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .dars-faq {
+        padding: 68px 0 70px;
+    }
+
+    .dars-faq__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-faq__header {
+        margin-bottom: 30px;
+    }
+
+    .dars-faq__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.4px;
+    }
+
+    .dars-faq h2 {
+        font-size: 35px;
+        letter-spacing: -1.2px;
+    }
+
+    .dars-faq__heading-row p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .dars-faq-item__question,
+    .dars-faq-item__question:hover,
+    .dars-faq-item__question:focus {
+        min-height: 58px;
+        padding: 15px 15px;
+
+        gap: 14px;
+
+        font-size: 14px !important;
+    }
+
+    .dars-faq-item__icon {
+        width: 29px;
+        height: 29px;
+        flex-basis: 29px;
+    }
+
+    .dars-faq-item__answer-inner p {
+        padding: 0 15px 18px;
+        font-size: 12px;
+    }
+
+    .dars-faq__bottom {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-faq__bottom-content {
+        align-items: flex-start;
+    }
+
+    .dars-faq__whatsapp {
+        width: 100%;
+        min-height: 50px;
+    }
+}
+
+/* Accessibility */
+.dars-faq-item__question:focus-visible,
+.dars-faq a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.48) !important;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-faq *,
+    .dars-faq *::before,
+    .dars-faq *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-cover-green: #0E352B;
+    --dars-cover-green-dark: #08271F;
+    --dars-cover-gold: #C49A4A;
+    --dars-cover-gold-light: #E2C678;
+    --dars-cover-gold-dark: #946A18;
+    --dars-cover-white: #FFFFFF;
+    --dars-cover-text: #191D1B;
+    --dars-cover-muted: #6B716E;
+    --dars-cover-whatsapp: #18B957;
+    --dars-cover-whatsapp-dark: #109A46;
+}
+
+.dars-coverage,
+.dars-coverage * {
+    box-sizing: border-box;
+}
+
+.dars-coverage {
+    position: relative;
+    overflow: hidden;
+    padding: 92px 0 94px;
+
+    background:
+        radial-gradient(
+            circle at 12% 30%,
+            rgba(196, 154, 74, 0.08),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #FAF8F4 0%,
+            #F7F4ED 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-coverage a,
+.dars-coverage a:hover,
+.dars-coverage a:focus,
+.dars-coverage a:visited {
+    text-decoration: none !important;
+}
+
+.dars-coverage__container {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* Header */
+.dars-coverage__header {
+    margin-bottom: 39px;
+}
+
+.dars-coverage__eyebrow {
+    max-width: 800px;
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    color: var(--dars-cover-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 1.9px;
+    text-transform: uppercase;
+}
+
+.dars-coverage__heading-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.dars-coverage__heading-row > div {
+    max-width: 760px;
+}
+
+.dars-coverage h2 {
+    margin: 0;
+
+    color: var(--dars-cover-text);
+    font-size: clamp(38px, 4.3vw, 54px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.8px;
+}
+
+.dars-coverage__heading-row p {
+    max-width: 700px;
+    margin: 14px 0 0;
+
+    color: var(--dars-cover-muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.dars-coverage__main-cta {
+    min-height: 47px;
+    padding: 0 18px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--dars-cover-green) !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-coverage__main-cta svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-coverage__main-cta:hover {
+    border-color: var(--dars-cover-green);
+    background: var(--dars-cover-green);
+    color: #FFFFFF !important;
+
+    transform: translateY(-2px);
+    box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
+}
+
+/* Grid */
+.dars-coverage__grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 11px;
+}
+
+/* Cards */
+.dars-coverage-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 61px;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid rgba(14, 53, 43, 0.13);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.86);
+    color: var(--dars-cover-text) !important;
+
+    box-shadow:
+        0 9px 26px rgba(8, 39, 31, 0.035),
+        inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-coverage-card::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    right: -65px;
+
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+    background: rgba(217, 185, 110, 0.14);
+
+    opacity: 0;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.45s ease;
+}
+
+.dars-coverage-card:hover {
+    border-color: rgba(196, 154, 74, 0.58);
+    background: rgba(255, 255, 255, 0.98);
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 18px 38px rgba(8, 39, 31, 0.09);
+}
+
+.dars-coverage-card:hover::before {
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+.dars-coverage-card.is-featured {
+    border-color: rgba(196, 154, 74, 0.60);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 251, 240, 0.98),
+            rgba(255, 255, 255, 0.91)
+        );
+}
+
+.dars-coverage-card__icon {
+    position: relative;
+    z-index: 1;
+
+    width: 27px;
+    height: 27px;
+    flex: 0 0 27px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 9px;
+
+    background: rgba(217, 185, 110, 0.16);
+    color: var(--dars-cover-gold-dark);
+}
+
+.dars-coverage-card__icon svg {
+    width: 15px;
+    height: 15px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-coverage-card__name {
+    position: relative;
+    z-index: 1;
+
+    min-width: 0;
+    flex: 1;
+
+    color: inherit !important;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dars-coverage-card__arrow {
+    position: relative;
+    z-index: 1;
+
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    color: #A0A5A2;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.dars-coverage-card__arrow svg {
+    width: 15px;
+    height: 15px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-coverage-card:hover .dars-coverage-card__arrow {
+    background: var(--dars-cover-gold);
+    color: #FFFFFF;
+
+    transform: translateX(3px);
+}
+
+/* Bottom CTA */
+.dars-coverage__bottom {
+    margin-top: 24px;
+    padding: 18px 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 1px solid rgba(14, 53, 43, 0.10);
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.70);
+
+    box-shadow: 0 13px 34px rgba(8, 39, 31, 0.045);
+}
+
+.dars-coverage__bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.dars-coverage__bottom-icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: rgba(217, 185, 110, 0.17);
+    color: var(--dars-cover-gold-dark);
+}
+
+.dars-coverage__bottom-icon svg {
+    width: 21px;
+    height: 21px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-coverage__bottom-content strong {
+    display: block;
+
+    color: var(--dars-cover-text);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dars-coverage__bottom-content p {
+    margin: 4px 0 0;
+
+    color: #646B67;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.dars-coverage__whatsapp {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 49px;
+    padding: 0 19px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    flex: 0 0 auto;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-cover-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    box-shadow:
+        0 13px 29px rgba(24, 185, 87, 0.21),
+        inset 0 1px 0 rgba(255, 255, 255, 0.34);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-coverage__whatsapp::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255, 255, 255, 0.31);
+    transform: rotate(20deg);
+
+    transition: left 0.65s ease;
+}
+
+.dars-coverage__whatsapp:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-cover-whatsapp),
+            var(--dars-cover-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+    transform: translateY(-3px);
+
+    box-shadow: 0 18px 36px rgba(16, 154, 70, 0.28);
+}
+
+.dars-coverage__whatsapp:hover::before {
+    left: 130%;
+}
+
+.dars-coverage__whatsapp svg {
+    position: relative;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-coverage__whatsapp span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-coverage__whatsapp-arrow {
+    transition: transform 0.3s ease;
+}
+
+.dars-coverage__whatsapp:hover
+.dars-coverage__whatsapp-arrow {
+    transform: translateX(4px);
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+    .dars-coverage__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .dars-coverage__heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .dars-coverage {
+        padding: 68px 0 70px;
+    }
+
+    .dars-coverage__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-coverage__header {
+        margin-bottom: 30px;
+    }
+
+    .dars-coverage__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.35px;
+    }
+
+    .dars-coverage h2 {
+        font-size: 35px;
+        letter-spacing: -1.2px;
+    }
+
+    .dars-coverage__heading-row p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .dars-coverage__grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .dars-coverage-card {
+        min-height: 59px;
+    }
+
+    .dars-coverage__bottom {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-coverage__bottom-content {
+        align-items: flex-start;
+    }
+
+    .dars-coverage__whatsapp {
+        width: 100%;
+        min-height: 50px;
+    }
+}
+
+/* Accessibility */
+.dars-coverage a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.48);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-coverage *,
+    .dars-coverage *::before,
+    .dars-coverage *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+                .dars-home-reference {
+    --dars-cta-green: #0E352B;
+    --dars-cta-green-dark: #08271F;
+    --dars-cta-gold: #C49A4A;
+    --dars-cta-gold-light: #E2C678;
+    --dars-cta-gold-dark: #946A18;
+    --dars-cta-white: #FFFFFF;
+    --dars-cta-text: #191D1B;
+    --dars-cta-muted: #676E6A;
+    --dars-cta-whatsapp: #18B957;
+    --dars-cta-whatsapp-dark: #109A46;
+}
+
+.dars-final-cta,
+.dars-final-cta * {
+    box-sizing: border-box;
+}
+
+.dars-final-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 86px 0 94px;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(196, 154, 74, 0.08),
+            transparent 36%
+        ),
+        linear-gradient(
+            180deg,
+            #FAF8F4 0%,
+            #F5F2EA 100%
+        );
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dars-final-cta a,
+.dars-final-cta a:hover,
+.dars-final-cta a:focus,
+.dars-final-cta a:visited {
+    text-decoration: none !important;
+}
+
+.dars-final-cta__container {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.dars-final-cta__box {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    min-height: 470px;
+    padding: 66px 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(196, 154, 74, 0.55);
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 250, 236, 0.97) 0%,
+            rgba(255, 255, 255, 0.96) 48%,
+            rgba(255, 253, 247, 0.97) 100%
+        );
+
+    box-shadow:
+        0 35px 85px rgba(8, 39, 31, 0.13),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Decorative top line */
+.dars-final-cta__box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 42%;
+    height: 3px;
+
+    border-radius: 0 0 30px 30px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--dars-cta-gold),
+            transparent
+        );
+
+    transform: translateX(-50%);
+}
+
+/* Inner border */
+.dars-final-cta__box::after {
+    content: "";
+    position: absolute;
+    inset: 14px;
+
+    z-index: -1;
+
+    border: 1px solid rgba(196, 154, 74, 0.10);
+    border-radius: 22px;
+
+    pointer-events: none;
+}
+
+.dars-final-cta__glow {
+    position: absolute;
+    z-index: -2;
+
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+    filter: blur(42px);
+    pointer-events: none;
+}
+
+.dars-final-cta__glow--left {
+    left: -120px;
+    top: -130px;
+
+    background: rgba(217, 185, 110, 0.20);
+}
+
+.dars-final-cta__glow--right {
+    right: -130px;
+    bottom: -150px;
+
+    background: rgba(14, 53, 43, 0.08);
+}
+
+.dars-final-cta__content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 900px;
+
+    text-align: center;
+}
+
+.dars-final-cta__eyebrow {
+    margin-bottom: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    color: var(--dars-cta-gold-dark);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dars-final-cta__intro {
+    max-width: 670px;
+    margin: 0 auto;
+
+    color: #555C58;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+.dars-final-cta h2 {
+    max-width: 670px;
+    margin: 23px auto 0;
+
+    color: var(--dars-cta-text);
+    font-size: clamp(43px, 5.5vw, 70px);
+    font-weight: 800;
+    line-height: 1.03;
+    letter-spacing: -2.5px;
+}
+
+.dars-final-cta h2 span {
+    display: block;
+    color: var(--dars-cta-green);
+}
+
+/* Requirements */
+.dars-final-cta__requirements {
+    margin-top: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dars-final-cta__requirement {
+    min-height: 40px;
+    padding: 8px 14px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid rgba(14, 53, 43, 0.12);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.78);
+    color: #555C58;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 22px rgba(8, 39, 31, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.97);
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-final-cta__requirement:hover {
+    border-color: rgba(196, 154, 74, 0.55);
+    transform: translateY(-2px);
+
+    box-shadow: 0 13px 27px rgba(8, 39, 31, 0.07);
+}
+
+.dars-final-cta__requirement-icon {
+    width: 21px;
+    height: 21px;
+
+    display: grid;
+    place-items: center;
+
+    color: var(--dars-cta-gold-dark);
+}
+
+.dars-final-cta__requirement-icon svg {
+    width: 17px;
+    height: 17px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Actions */
+.dars-final-cta__actions {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.dars-final-cta__whatsapp,
+.dars-final-cta__call {
+    min-height: 55px;
+    padding: 0 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.dars-final-cta__whatsapp {
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid var(--dars-cta-whatsapp);
+
+    background:
+        linear-gradient(
+            135deg,
+            #20C968,
+            var(--dars-cta-whatsapp)
+        );
+
+    color: #06170C !important;
+
+    box-shadow:
+        0 16px 34px rgba(24, 185, 87, 0.23),
+        inset 0 1px 0 rgba(255, 255, 255, 0.34);
+}
+
+.dars-final-cta__whatsapp::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -55%;
+
+    width: 38%;
+    height: 170%;
+
+    background: rgba(255, 255, 255, 0.31);
+    transform: rotate(20deg);
+
+    transition: left 0.65s ease;
+}
+
+.dars-final-cta__whatsapp:hover {
+    background:
+        linear-gradient(
+            135deg,
+            var(--dars-cta-whatsapp),
+            var(--dars-cta-whatsapp-dark)
+        );
+
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 21px 42px rgba(16, 154, 70, 0.30);
+}
+
+.dars-final-cta__whatsapp:hover::before {
+    left: 130%;
+}
+
+.dars-final-cta__call {
+    border: 1px solid rgba(14, 53, 43, 0.14);
+    background: rgba(255, 255, 255, 0.82);
+    color: var(--dars-cta-green-dark) !important;
+
+    box-shadow: 0 10px 24px rgba(8, 39, 31, 0.055);
+}
+
+.dars-final-cta__call:hover {
+    border-color: var(--dars-cta-green);
+    background: var(--dars-cta-green);
+    color: #FFFFFF !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 17px 34px rgba(8, 39, 31, 0.19);
+}
+
+.dars-final-cta__whatsapp svg,
+.dars-final-cta__call svg {
+    position: relative;
+    z-index: 1;
+
+    width: 19px;
+    height: 19px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dars-final-cta__whatsapp span {
+    position: relative;
+    z-index: 1;
+}
+
+.dars-final-cta__arrow {
+    transition: transform 0.3s ease;
+}
+
+.dars-final-cta__whatsapp:hover
+.dars-final-cta__arrow {
+    transform: translateX(4px);
+}
+
+.dars-final-cta__note {
+    margin: 14px 0 0;
+
+    color: #858C88;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    .dars-final-cta__box {
+        min-height: auto;
+        padding: 55px 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .dars-final-cta {
+        padding: 62px 0 68px;
+    }
+
+    .dars-final-cta__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-final-cta__box {
+        padding: 44px 18px;
+        border-radius: 23px;
+    }
+
+    .dars-final-cta__box::after {
+        inset: 9px;
+        border-radius: 17px;
+    }
+
+    .dars-final-cta__eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.4px;
+    }
+
+    .dars-final-cta__intro {
+        font-size: 12px;
+    }
+
+    .dars-final-cta h2 {
+        margin-top: 20px;
+
+        font-size: clamp(38px, 11vw, 50px);
+        letter-spacing: -1.8px;
+    }
+
+    .dars-final-cta__requirements {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-final-cta__requirement {
+        width: 100%;
+        justify-content: flex-start;
+        border-radius: 14px;
+    }
+
+    .dars-final-cta__actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-final-cta__whatsapp,
+    .dars-final-cta__call {
+        width: 100%;
+        min-height: 53px;
+        padding: 0 15px;
+    }
+}
+
+/* Accessibility */
+.dars-final-cta a:focus-visible {
+    outline: 3px solid rgba(196, 154, 74, 0.48);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-final-cta *,
+    .dars-final-cta *::before,
+    .dars-final-cta *::after {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+              
+
+
+              /* =====================================================
+   FOOTER VARIABLES
+===================================================== */
+
+.dars-footer-area {
+    --footer-green: #0e352b;
+    --footer-green-dark: #08271f;
+    --footer-green-light: #174b3d;
+
+    --footer-gold: #c49a4a;
+    --footer-gold-light: #e2c678;
+    --footer-gold-dark: #946a18;
+
+    --footer-cream: #f8f5ee;
+    --footer-white: #ffffff;
+    --footer-text: #191d1b;
+    --footer-muted: #69716c;
+
+    --footer-whatsapp: #18b957;
+    --footer-whatsapp-dark: #109a46;
+
+    overflow: hidden;
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.dars-footer-area,
+.dars-footer-area * {
+    box-sizing: border-box;
+}
+
+.dars-footer-area a,
+.dars-footer-area a:hover,
+.dars-footer-area a:focus,
+.dars-footer-area a:visited {
+    text-decoration: none !important;
+}
+
+.dars-footer-area svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* =====================================================
+   SUPPLY BAR
+===================================================== */
+
+.dars-supply-bar {
+    padding: 38px 0 18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f6f2e9 0%,
+            #eee9de 100%
+        );
+}
+
+.dars-supply-bar__container {
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 13px;
+
+    display: grid;
+    grid-template-columns: 310px minmax(0, 1fr);
+    align-items: center;
+    gap: 17px;
+
+    border: 1px solid rgba(14, 53, 43, 0.1);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    box-shadow:
+        0 15px 42px rgba(8, 39, 31, 0.065);
+}
+
+.dars-supply-bar__intro {
+    min-height: 76px;
+    padding: 10px 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border-right: 1px solid rgba(14, 53, 43, 0.09);
+}
+
+.dars-supply-bar__icon {
+    width: 43px;
+    height: 43px;
+    flex: 0 0 43px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 13px;
+
+    background: rgba(196, 154, 74, 0.14);
+    color: var(--footer-gold-dark);
+}
+
+.dars-supply-bar__icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.dars-supply-bar__intro > span:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dars-supply-bar__intro strong {
+    color: var(--footer-green-dark);
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.dars-supply-bar__intro small {
+    color: var(--footer-muted);
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* CAROUSEL */
+
+.dars-supply-bar__carousel {
+    min-width: 0;
+    overflow: hidden;
+
+    -webkit-mask-image:
+        linear-gradient(
+            90deg,
+            transparent,
+            #000 6%,
+            #000 94%,
+            transparent
+        );
+
+    mask-image:
+        linear-gradient(
+            90deg,
+            transparent,
+            #000 6%,
+            #000 94%,
+            transparent
+        );
+}
+
+.dars-supply-bar__track {
+    width: max-content;
+
+    display: flex;
+
+    animation:
+        darsFooterSupplyAnimation 32s linear infinite;
+}
+
+.dars-supply-bar__carousel:hover
+.dars-supply-bar__track {
+    animation-play-state: paused;
+}
+
+.dars-supply-bar__group {
+    padding-right: 10px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.dars-supply-bar__group article {
+    width: 205px;
+    min-height: 72px;
+    padding: 11px 14px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid rgba(14, 53, 43, 0.1);
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.67);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.dars-supply-bar__group article:hover {
+    border-color: rgba(196, 154, 74, 0.5);
+
+    background: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+.dars-supply-bar__group article > span {
+    color: var(--footer-gold-dark);
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.dars-supply-bar__group strong {
+    margin-top: 4px;
+
+    color: var(--footer-text);
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.dars-supply-bar__group small {
+    margin-top: 3px;
+
+    color: #858b87;
+
+    font-size: 9px;
+}
+
+@keyframes darsFooterSupplyAnimation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =====================================================
+   MAIN FOOTER
+===================================================== */
+
+.dars-main-footer {
+    position: relative;
+    overflow: hidden;
+
+    padding-top: 22px;
+
+    background:
+        radial-gradient(
+            circle at 86% 8%,
+            rgba(196, 154, 74, 0.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            var(--footer-green) 0%,
+            var(--footer-green-dark) 100%
+        );
+
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.dars-main-footer::before {
+    content: "";
+
+    position: absolute;
+    top: -210px;
+    right: -175px;
+
+    width: 480px;
+    height: 480px;
+
+    border: 1px solid rgba(226, 198, 120, 0.1);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 75px rgba(226, 198, 120, 0.018);
+}
+
+.dars-main-footer__container {
+    position: relative;
+    z-index: 1;
+
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   FOOTER GRID
+===================================================== */
+
+.dars-main-footer__grid {
+    padding: 51px 0 40px;
+
+    display: grid;
+    grid-template-columns:
+        minmax(230px, 1.35fr)
+        minmax(120px, 0.65fr)
+        minmax(150px, 0.85fr)
+        minmax(145px, 0.8fr)
+        minmax(250px, 1.35fr);
+
+    align-items: start;
+    gap: 37px;
+}
+
+
+/* =====================================================
+   COMPANY
+===================================================== */
+
+.dars-footer-company__logo {
+    display: inline-flex;
+}
+
+.dars-footer-company__logo img {
+    display: block;
+
+    width: auto;
+    height: 72px;
+    max-width: 245px;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        invert(1)
+        drop-shadow(0 8px 18px rgba(0, 0, 0, 0.15));
+}
+
+.dars-footer-company > p {
+    max-width: 360px;
+    margin: 20px 0 0;
+
+    color: rgba(255, 255, 255, 0.63);
+
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.dars-footer-company__badges {
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.dars-footer-company__badges span {
+    min-height: 28px;
+    padding: 6px 10px;
+
+    display: inline-flex;
+    align-items: center;
+
+    border: 1px solid rgba(226, 198, 120, 0.18);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.055);
+    color: rgba(255, 255, 255, 0.73);
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.dars-footer-column h3,
+.dars-footer-contact > h3 {
+    position: relative;
+
+    margin: 0 0 23px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.dars-footer-column h3::after,
+.dars-footer-contact > h3::after {
+    content: "";
+
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+
+    width: 27px;
+    height: 2px;
+
+    background: var(--footer-gold);
+}
+
+.dars-footer-column nav {
+    display: grid;
+    gap: 13px;
+}
+
+.dars-footer-column nav a {
+    width: fit-content;
+
+    color: rgba(255, 255, 255, 0.64) !important;
+
+    font-size: 11px;
+    line-height: 1.45;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.dars-footer-column nav a:hover {
+    color: var(--footer-gold-light) !important;
+
+    transform: translateX(4px);
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.dars-footer-contact {
+    min-width: 0;
+}
+
+.dars-footer-contact__item {
+    padding: 10px 0;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    color: rgba(255, 255, 255, 0.77) !important;
+}
+
+.dars-footer-contact__item:hover {
+    color: var(--footer-gold-light) !important;
+}
+
+.dars-footer-contact__icon {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(226, 198, 120, 0.17);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.055);
+    color: var(--footer-gold-light);
+}
+
+.dars-footer-contact__icon--whatsapp {
+    color: #58df8a;
+}
+
+.dars-footer-contact__icon svg {
+    width: 15px;
+    height: 15px;
+}
+
+.dars-footer-contact__item > span:last-child {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.dars-footer-contact__item small {
+    color: rgba(255, 255, 255, 0.42);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.dars-footer-contact__item strong {
+    overflow-wrap: anywhere;
+
+    color: inherit;
+
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.dars-footer-contact__email {
+    font-size: 9px !important;
+}
+
+.dars-footer-contact__location em {
+    margin-top: 2px;
+
+    color: rgba(255, 255, 255, 0.44);
+
+    font-size: 8px;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   MAP BOX
+===================================================== */
+
+.dars-footer-map {
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    border: 1px solid rgba(226, 198, 120, 0.18);
+    border-radius: 19px;
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(255, 255, 255, 0.07),
+            rgba(196, 154, 74, 0.1)
+        );
+}
+
+.dars-footer-map__content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.dars-footer-map__icon {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: rgba(196, 154, 74, 0.14);
+    color: var(--footer-gold-light);
+}
+
+.dars-footer-map__icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.dars-footer-map__content > span:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.dars-footer-map__content small {
+    color: var(--footer-gold-light);
+
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.dars-footer-map__content strong {
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dars-footer-map__content p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.51);
+
+    font-size: 9px;
+}
+
+.dars-footer-map__button {
+    min-height: 48px;
+    padding: 0 19px;
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border-radius: 999px;
+
+    background: var(--footer-gold);
+    color: var(--footer-green-dark) !important;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.dars-footer-map__button:hover {
+    background: #ffffff;
+
+    color: var(--footer-green-dark) !important;
+
+    transform: translateY(-2px);
+}
+
+.dars-footer-map__button svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =====================================================
+   FOOTER CTA
+===================================================== */
+
+.dars-footer-cta {
+    margin-top: 17px;
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border: 1px solid rgba(226, 198, 120, 0.18);
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.055);
+}
+
+.dars-footer-cta__content {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.dars-footer-cta__icon {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: rgba(24, 185, 87, 0.13);
+    color: #5bdd8c;
+}
+
+.dars-footer-cta__icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.dars-footer-cta__content > span:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dars-footer-cta strong {
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dars-footer-cta p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.54);
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.dars-footer-cta > a {
+    min-height: 49px;
+    padding: 0 20px;
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border-radius: 999px;
+
+    background: var(--footer-whatsapp);
+    color: #ffffff !important;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dars-footer-cta > a:hover {
+    background: var(--footer-whatsapp-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 28px rgba(24, 185, 87, 0.2);
+}
+
+.dars-footer-cta > a svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.dars-footer-bottom {
+    min-height: 72px;
+    margin-top: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dars-footer-bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.43);
+
+    font-size: 9px;
+}
+
+.dars-footer-bottom nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+.dars-footer-bottom nav a {
+    color: rgba(255, 255, 255, 0.45) !important;
+
+    font-size: 9px;
+
+    transition: color 0.3s ease;
+}
+
+.dars-footer-bottom nav a:hover {
+    color: var(--footer-gold-light) !important;
+}
+
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (max-width: 1120px) {
+    .dars-main-footer__grid {
+        grid-template-columns:
+            1.3fr
+            0.7fr
+            0.9fr
+            1.25fr;
+
+        gap: 34px;
+    }
+
+    .dars-main-footer__grid
+    > .dars-footer-column:nth-child(4) {
+        display: none;
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+    .dars-supply-bar__container {
+        grid-template-columns: 265px minmax(0, 1fr);
+    }
+
+    .dars-main-footer__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 42px 35px;
+    }
+
+    .dars-main-footer__grid
+    > .dars-footer-column:nth-child(4) {
+        display: block;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+    .dars-supply-bar {
+        padding-top: 28px;
+    }
+
+    .dars-supply-bar__container {
+        width: calc(100% - 28px);
+
+        grid-template-columns: 1fr;
+    }
+
+    .dars-supply-bar__intro {
+        border-right: 0;
+        border-bottom:
+            1px solid rgba(14, 53, 43, 0.09);
+    }
+
+    .dars-supply-bar__group article {
+        width: 180px;
+    }
+
+    .dars-main-footer__container {
+        width: calc(100% - 28px);
+    }
+
+    .dars-main-footer__grid {
+        padding-top: 42px;
+
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .dars-footer-company__logo img {
+        height: 62px;
+        max-width: 220px;
+    }
+
+    .dars-footer-company > p {
+        max-width: 100%;
+    }
+
+    .dars-footer-map,
+    .dars-footer-cta {
+        padding: 19px 17px;
+
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dars-footer-map__content,
+    .dars-footer-cta__content {
+        align-items: flex-start;
+    }
+
+    .dars-footer-map__button,
+    .dars-footer-cta > a {
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .dars-footer-bottom {
+        min-height: auto;
+        padding: 24px 0;
+
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 390px) {
+    .dars-footer-company__logo img {
+        height: 57px;
+        max-width: 200px;
+    }
+
+    .dars-footer-map__content strong {
+        font-size: 11px;
+    }
+
+    .dars-footer-contact__email {
+        font-size: 8px !important;
+    }
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+.dars-footer-area a:focus-visible {
+    outline:
+        3px solid rgba(226, 198, 120, 0.48);
+
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dars-supply-bar__track {
+        animation-play-state: paused !important;
+    }
+
+    .dars-footer-area *,
+    .dars-footer-area *::before,
+    .dars-footer-area *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
+            
+
+/* Next.js shared header is in document flow; tune the reference hero spacing accordingly. */
+.dars-home-reference .dars-hero-v2{padding-top:72px;min-height:720px}
+.dars-home-reference .dars-hero-v2__title{max-width:810px}
+.dars-home-reference .dars-supply-bar{position:relative}
+@media(max-width:900px){.dars-home-reference .dars-hero-v2{padding-top:48px;min-height:0}}
+@media(max-width:640px){.dars-home-reference .dars-hero-v2{padding-top:32px;padding-bottom:48px}}
