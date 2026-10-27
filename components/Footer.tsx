@@ -1,3 +1,4 @@
+import { sitePath } from '../lib/paths';
 import Link from 'next/link';
 import { Icon } from './Icon';
 import { PHONE, PHONE_DISPLAY, EMAIL, ADDRESS, MAP_URL, COORDINATES, waLink, services } from '../lib/site';
@@ -10,7 +11,7 @@ export function Footer() {
   return <footer className="rf-footer">
     <div className="container rf-main">
       <div className="rf-brand">
-        <Link href="/" className="rf-logo"><img src="/brand/logo.png" alt="" /><span><b>EMIRATES ALUMINIUM</b><small>SHUTTER LLC</small></span></Link>
+        <Link href="/" className="rf-logo"><img src={sitePath("/brand/logo.png")} alt="" /><span><b>EMIRATES ALUMINIUM</b><small>SHUTTER LLC</small></span></Link>
         <p>Professional rolling shutters, polycarbonate shutters, garage doors, gate motors, awnings, canopies and custom aluminium &amp; steel solutions across Dubai and the UAE.</p>
         <div className="rf-pills"><span>Dubai · UAE</span><span>Site Measurement</span><span>Custom Fabrication</span></div>
       </div>

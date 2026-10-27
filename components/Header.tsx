@@ -1,10 +1,12 @@
 "use client";
+import { sitePath } from '../lib/paths';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { Icon } from './Icon';
 import { PHONE, PHONE_DISPLAY, EMAIL, waLink, services } from '../lib/site';
 import { ScrollProgress } from './ScrollProgress';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 const shortLabels: Record<string, string> = {
   shutter: 'Shutter',
@@ -33,19 +35,21 @@ export function Header() {
     <header className="site-header reference-site-header">
       <div className="reference-header-container reference-header-inner">
         <Link href="/" className="brand reference-brand" onClick={() => setOpen(false)} aria-label="Emirates Aluminium Shutter home">
-          <span className="brand-mark reference-brand-mark"><img src="/brand/logo.png" alt="" /></span>
+          <span className="brand-mark reference-brand-mark"><img src={sitePath("/brand/logo.png")} alt="" /></span>
           <span className="brand-copy reference-brand-copy"><b>EMIRATES ALUMINIUM</b><small>SHUTTER LLC</small></span>
         </Link>
         <nav className="reference-nav premium-nav" aria-label="Main navigation">
           {primaryLinks.map((item) => <Link key={item.href} href={item.href} className={isActive(item.href) ? 'is-active' : undefined} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</Link>)}
         </nav>
         <div className="reference-header-actions">
+          <LanguageSwitcher />
           <a className="reference-header-phone" href={`tel:${PHONE}`} aria-label={`Call ${PHONE_DISPLAY}`}><Icon name="phone" /></a>
-          <a className="reference-get-quote" href="/#quick-quote">Get Quote <Icon name="arrow" /></a>
+          <a className="reference-get-quote" href={sitePath("/#quick-quote")}>Get Quote <Icon name="arrow" /></a>
           <button className="menu-toggle reference-menu-toggle" onClick={() => setOpen(v => !v)} aria-label="Toggle navigation" aria-expanded={open}><Icon name={open ? 'close' : 'menu'} /></button>
         </div>
       </div>
       {open && <div className="reference-mobile-panel"><div className="reference-header-container reference-mobile-panel-inner">
+        <div className="mobile-language-row"><span>Language / اللغة</span><LanguageSwitcher mobile onSelect={() => setOpen(false)} /></div>
         <Link href="/" onClick={() => setOpen(false)}>Home<Icon name="arrow" /></Link>
         <Link href="/services/" onClick={() => setOpen(false)}>All Services<Icon name="arrow" /></Link>
         <div className="reference-mobile-divider">Our services</div>

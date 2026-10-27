@@ -1,5 +1,5 @@
 import type {SVGProps} from 'react';
-type Name='arrow'|'phone'|'whatsapp'|'menu'|'close'|'check'|'shield'|'spark'|'ruler'|'wrench'|'clock'|'chevron'|'play'|'plus'|'map'|'mail';
+type Name='arrow'|'phone'|'whatsapp'|'menu'|'close'|'check'|'shield'|'spark'|'ruler'|'wrench'|'clock'|'chevron'|'play'|'plus'|'map'|'mail'|'globe';
 export function Icon({name,...props}:{name:Name}&SVGProps<SVGSVGElement>){
  const common={viewBox:'0 0 24 24',fill:'none',stroke:'currentColor',strokeWidth:1.8,strokeLinecap:'round' as const,strokeLinejoin:'round' as const,...props};
  if(name==='arrow')return <svg {...common}><path d="M5 12h13"/><path d="m13 6 6 6-6 6"/></svg>;
@@ -16,6 +16,7 @@ export function Icon({name,...props}:{name:Name}&SVGProps<SVGSVGElement>){
  if(name==='play')return <svg {...common}><path d="m9 7 8 5-8 5Z"/></svg>;
  if(name==='plus')return <svg {...common}><path d="M12 5v14M5 12h14"/></svg>;
  if(name==='map')return <svg {...common}><path d="m4 6 5-2 6 2 5-2v14l-5 2-6-2-5 2V6Z"/><path d="M9 4v14M15 6v14"/></svg>;
+ if(name==='globe')return <svg {...common}><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>;
  if(name==='mail')return <svg {...common}><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>;
  return <svg {...common}><path d="m8 10 4 4 4-4"/></svg>;
 }

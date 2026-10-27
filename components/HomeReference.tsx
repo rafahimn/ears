@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { SocialShowcase } from './SocialShowcase';
 import { homeReferenceMarkup } from './home-reference-markup';
+import { sitePath, markupWithBasePath } from '../lib/paths';
 
 const WHATSAPP = 'https://wa.me/971552052347';
 const COMPANY = 'Emirates Aluminium Shutter LLC';
@@ -16,6 +17,27 @@ export function HomeReference() {
   useEffect(() => {
     const root = document.querySelector<HTMLElement>('.dars-home-reference');
     if (!root) return;
+
+    // Make each service image itself a direct link to its matching service page.
+    const serviceRoutes: Record<string, string> = {
+      'rolling shutters': '/shutter/', 'awning': '/awning/', 'awnings': '/awning/',
+      'canopy': '/canopy/', 'canopies': '/canopy/', 'garage doors': '/garage/',
+      'gate motors': '/motor/', 'motor': '/motor/', 'repair & maintenance': '/repair/',
+      'repair and maintenance': '/repair/', 'aluminium works': '/aluminium-works/',
+      'aluminium': '/aluminium-works/', 'steel works': '/steel-work/',
+      'steel work': '/steel-work/', 'polycarbonate': '/polycarbonate/',
+    };
+    root.querySelectorAll<HTMLElement>('.dars-service-card').forEach((card) => {
+      const image = card.querySelector<HTMLElement>('.dars-service-card__image');
+      const title = card.querySelector('h3')?.textContent?.trim().toLowerCase() || image?.querySelector('.dars-service-card__image-label')?.textContent?.trim().toLowerCase() || '';
+      const href = serviceRoutes[title] || (title.includes('rolling') || title.includes('shutter') ? '/shutter/' : title.includes('awning') ? '/awning/' : title.includes('canopy') || title.includes('pergola') ? '/canopy/' : title.includes('garage') ? '/garage/' : title.includes('motor') || title.includes('gate') ? '/motor/' : title.includes('repair') || title.includes('maintenance') ? '/repair/' : title.includes('aluminium') || title.includes('aluminum') ? '/aluminium-works/' : title.includes('steel') ? '/steel-work/' : title.includes('polycarbonate') ? '/polycarbonate/' : undefined);
+      if (!image || !href || image.querySelector('.dars-service-card__image-link')) return;
+      const link = document.createElement('a');
+      link.className = 'dars-service-card__image-link';
+      link.href = sitePath(href);
+      link.setAttribute('aria-label', `Explore ${title}`);
+      image.appendChild(link);
+    });
 
     const getSelectedService = () => {
       const active = root.querySelector<HTMLButtonElement>('.dars-quote-v2__option.is-active');
@@ -131,5 +153,5 @@ export function HomeReference() {
     return () => socialRoot.unmount();
   }, []);
 
-  return <div className="dars-home-reference" dangerouslySetInnerHTML={{ __html: homeReferenceMarkup }} />;
+  return <div className="dars-home-reference" dangerouslySetInnerHTML={{ __html: markupWithBasePath(homeReferenceMarkup) }} />;
 }

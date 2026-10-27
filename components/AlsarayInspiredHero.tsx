@@ -1,3 +1,4 @@
+import { sitePath } from '../lib/paths';
 import { Icon } from './Icon';
 import { PHONE, PHONE_DISPLAY, waLink } from '../lib/site';
 import { QuickQuotePanel } from './QuickQuotePanel';
@@ -62,7 +63,7 @@ export function AlsarayInspiredHero() {
           <span><i>02</i> Practical quotation</span>
           <span><i>03</i> Installation &amp; repair</span>
           <span><i>04</i> After-sales support</span>
-          <a href="/#services">Explore all services <Icon name="arrow" /></a>
+          <a href={sitePath("/#services")}>Explore all services <Icon name="arrow" /></a>
         </div>
       </div>
     </section>

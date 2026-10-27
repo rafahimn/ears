@@ -1,17 +1,17 @@
 /* Dedicated responsive styling adapted from the provided Garage Doors reference. */
 
 :root {
-    --dars-garage-green: #0E352B;
-    --dars-garage-green-dark: #08271F;
-    --dars-garage-green-soft: #174B3D;
+    --dars-garage-green: #10362B;
+    --dars-garage-green-dark: #0B281F;
+    --dars-garage-green-soft: #1A4A3C;
 
-    --dars-garage-gold: #C49A4A;
-    --dars-garage-gold-light: #E3C871;
-    --dars-garage-gold-dark: #946A18;
+    --dars-garage-gold: #C5A15A;
+    --dars-garage-gold-light: #E6D39B;
+    --dars-garage-gold-dark: #8E6B2C;
 
     --dars-garage-white: #FFFFFF;
-    --dars-garage-cream: #F8F5EE;
-    --dars-garage-text: #191D1B;
+    --dars-garage-cream: #FBF9F3;
+    --dars-garage-text: #17211C;
     --dars-garage-muted: #606864;
 
     --dars-garage-whatsapp: #18B957;
@@ -1108,7 +1108,7 @@
     background:
         linear-gradient(
             90deg,
-            #F8F5EE,
+            #FBF9F3,
             transparent
         );
 }
@@ -1119,7 +1119,7 @@
     background:
         linear-gradient(
             270deg,
-            #F8F5EE,
+            #FBF9F3,
             transparent
         );
 }
@@ -1169,7 +1169,7 @@
 }
 
 .dars-garage-marquee__item:hover {
-    color: #0E352B;
+    color: #10362B;
     transform: translateY(-2px);
 }
 
@@ -1262,12 +1262,12 @@
 /* ===== Next Garage Page: section boundary ===== */
 
 :root {
-    --dars-system-green: #0E352B;
-    --dars-system-green-dark: #08271F;
-    --dars-system-gold: #C49A4A;
-    --dars-system-gold-light: #E2C678;
-    --dars-system-gold-dark: #946A18;
-    --dars-system-text: #191D1B;
+    --dars-system-green: #10362B;
+    --dars-system-green-dark: #0B281F;
+    --dars-system-gold: #C5A15A;
+    --dars-system-gold-light: #E2CB8B;
+    --dars-system-gold-dark: #8E6B2C;
+    --dars-system-text: #17211C;
     --dars-system-muted: #69716C;
     --dars-system-white: #FFFFFF;
 }
@@ -1290,8 +1290,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F7F4ED 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -1632,7 +1632,7 @@
         linear-gradient(
             135deg,
             var(--dars-system-gold-light),
-            #D8AE49
+            #D3B46A
         );
 
     color: #171A17 !important;
@@ -1655,7 +1655,7 @@
     background:
         linear-gradient(
             135deg,
-            #174B3D,
+            #1A4A3C,
             var(--dars-system-green-dark)
         );
 
@@ -1817,13 +1817,13 @@
 /* ===== Next Garage Page: section boundary ===== */
 
 :root {
-    --dars-builder-green: #0E352B;
-    --dars-builder-green-dark: #08271F;
-    --dars-builder-green-soft: #174B3D;
-    --dars-builder-gold: #C49A4A;
+    --dars-builder-green: #10362B;
+    --dars-builder-green-dark: #0B281F;
+    --dars-builder-green-soft: #1A4A3C;
+    --dars-builder-gold: #C5A15A;
     --dars-builder-gold-light: #E4CA72;
-    --dars-builder-gold-dark: #946A18;
-    --dars-builder-text: #191D1B;
+    --dars-builder-gold-dark: #8E6B2C;
+    --dars-builder-text: #17211C;
     --dars-builder-muted: #6B716E;
     --dars-builder-white: #FFFFFF;
     --dars-builder-whatsapp: #18B957;
@@ -1851,8 +1851,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F6F3EC 100%
+            #FBF9F4 0%,
+            #F7F4EC 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -2149,7 +2149,7 @@
         linear-gradient(
             135deg,
             var(--dars-builder-gold-light),
-            #D8AE49
+            #D3B46A
         ) !important;
 
     color: #171A17 !important;
@@ -2540,7 +2540,7 @@
         linear-gradient(
             135deg,
             var(--dars-builder-gold-light),
-            #D8AE49
+            #D3B46A
         ) !important;
 
     color: #171A17 !important;
@@ -2613,7 +2613,7 @@
         linear-gradient(
             135deg,
             var(--dars-builder-gold-light),
-            #D8AE49
+            #D3B46A
         ) !important;
 
     color: #171A17 !important;
@@ -3266,12 +3266,12 @@
 /* ===== Next Garage Page: section boundary ===== */
 
 :root {
-    --dars-certificate-green: #0E352B;
-    --dars-certificate-green-dark: #08271F;
-    --dars-certificate-gold: #C49A4A;
-    --dars-certificate-gold-light: #E2C678;
-    --dars-certificate-gold-dark: #946A18;
-    --dars-certificate-text: #191D1B;
+    --dars-certificate-green: #10362B;
+    --dars-certificate-green-dark: #0B281F;
+    --dars-certificate-gold: #C5A15A;
+    --dars-certificate-gold-light: #E2CB8B;
+    --dars-certificate-gold-dark: #8E6B2C;
+    --dars-certificate-text: #17211C;
     --dars-certificate-muted: #6B716E;
     --dars-certificate-white: #FFFFFF;
     --dars-certificate-whatsapp: #18B957;
@@ -3299,8 +3299,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F6F3EC 100%
+            #FBF9F4 0%,
+            #F7F4EC 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -3961,11 +3961,11 @@
 /* ===== Next Garage Page: section boundary ===== */
 
 :root {
-    --dars-measure-green: #0E352B;
-    --dars-measure-green-dark: #08271F;
-    --dars-measure-gold: #C49A4A;
+    --dars-measure-green: #10362B;
+    --dars-measure-green-dark: #0B281F;
+    --dars-measure-gold: #C5A15A;
     --dars-measure-gold-light: #E4C970;
-    --dars-measure-gold-dark: #946A18;
+    --dars-measure-gold-dark: #8E6B2C;
     --dars-measure-text: #171A18;
     --dars-measure-muted: #5F6662;
     --dars-measure-white: #FFFFFF;
@@ -3994,8 +3994,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -4737,7 +4737,7 @@
         linear-gradient(
             135deg,
             var(--dars-measure-gold-light),
-            #D8AE49
+            #D3B46A
         ) !important;
 
     color: #171A17 !important;
@@ -4767,7 +4767,7 @@
     background:
         linear-gradient(
             135deg,
-            #174B3D,
+            #1A4A3C,
             var(--dars-measure-green-dark)
         ) !important;
 
@@ -5056,12 +5056,12 @@
 /* ===== Next Garage Page: section boundary ===== */
 
 :root {
-    --dars-process-green: #0E352B;
-    --dars-process-green-dark: #08271F;
-    --dars-process-gold: #C49A4A;
-    --dars-process-gold-light: #E3C871;
-    --dars-process-gold-dark: #946A18;
-    --dars-process-text: #191D1B;
+    --dars-process-green: #10362B;
+    --dars-process-green-dark: #0B281F;
+    --dars-process-gold: #C5A15A;
+    --dars-process-gold-light: #E6D39B;
+    --dars-process-gold-dark: #8E6B2C;
+    --dars-process-text: #17211C;
     --dars-process-muted: #666D69;
     --dars-process-white: #FFFFFF;
     --dars-process-whatsapp: #18B957;
@@ -5089,8 +5089,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F6F3EC 100%
+            #FBF9F4 0%,
+            #F7F4EC 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -5798,12 +5798,12 @@
 /* ===== Next Garage Page: section boundary ===== */
 
 :root {
-    --dars-gfaq-green: #0E352B;
-    --dars-gfaq-green-dark: #08271F;
-    --dars-gfaq-gold: #C49A4A;
-    --dars-gfaq-gold-light: #E3C871;
-    --dars-gfaq-gold-dark: #946A18;
-    --dars-gfaq-text: #191D1B;
+    --dars-gfaq-green: #10362B;
+    --dars-gfaq-green-dark: #0B281F;
+    --dars-gfaq-gold: #C5A15A;
+    --dars-gfaq-gold-light: #E6D39B;
+    --dars-gfaq-gold-dark: #8E6B2C;
+    --dars-gfaq-text: #17211C;
     --dars-gfaq-muted: #666D69;
     --dars-gfaq-white: #FFFFFF;
     --dars-gfaq-whatsapp: #18B957;
@@ -5828,8 +5828,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F6F3EC 100%
+            #FBF9F4 0%,
+            #F7F4EC 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -6419,13 +6419,13 @@
 /* ===== Next Garage Page: section boundary ===== */
 
 :root {
-    --dars-cta-green: #0E352B;
-    --dars-cta-green-dark: #08271F;
-    --dars-cta-gold: #C49A4A;
-    --dars-cta-gold-light: #E2C678;
-    --dars-cta-gold-dark: #946A18;
+    --dars-cta-green: #10362B;
+    --dars-cta-green-dark: #0B281F;
+    --dars-cta-gold: #C5A15A;
+    --dars-cta-gold-light: #E2CB8B;
+    --dars-cta-gold-dark: #8E6B2C;
     --dars-cta-white: #FFFFFF;
-    --dars-cta-text: #191D1B;
+    --dars-cta-text: #17211C;
     --dars-cta-muted: #676E6A;
     --dars-cta-whatsapp: #18B957;
     --dars-cta-whatsapp-dark: #109A46;
@@ -6449,8 +6449,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;

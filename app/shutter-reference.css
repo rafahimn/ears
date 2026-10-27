@@ -1,14 +1,14 @@
 /* Dedicated styles for the supplied rolling-shutter reference layout. */
 :root {
-    --dars-shutter-green: #0E352B;
-    --dars-shutter-green-dark: #08271F;
-    --dars-shutter-green-soft: #174B3D;
+    --dars-shutter-green: #10362B;
+    --dars-shutter-green-dark: #0B281F;
+    --dars-shutter-green-soft: #1A4A3C;
 
-    --dars-shutter-gold: #C49A4A;
-    --dars-shutter-gold-light: #E3C871;
-    --dars-shutter-gold-dark: #946A18;
+    --dars-shutter-gold: #C5A15A;
+    --dars-shutter-gold-light: #E6D39B;
+    --dars-shutter-gold-dark: #8E6B2C;
 
-    --dars-shutter-text: #191D1B;
+    --dars-shutter-text: #17211C;
     --dars-shutter-muted: #606864;
     --dars-shutter-white: #FFFFFF;
 
@@ -1162,7 +1162,7 @@
     background:
         linear-gradient(
             90deg,
-            #F8F5EE,
+            #FBF9F3,
             transparent
         );
 }
@@ -1173,7 +1173,7 @@
     background:
         linear-gradient(
             270deg,
-            #F8F5EE,
+            #FBF9F3,
             transparent
         );
 }
@@ -1243,7 +1243,7 @@
 }
 
 .dars-shutter-trust__item:hover {
-    color: #0E352B;
+    color: #10362B;
     transform: translateY(-2px);
 }
 
@@ -1340,15 +1340,15 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-stype-green: #0E352B;
-    --dars-stype-green-dark: #08271F;
-    --dars-stype-green-soft: #174B3D;
+    --dars-stype-green: #10362B;
+    --dars-stype-green-dark: #0B281F;
+    --dars-stype-green-soft: #1A4A3C;
 
-    --dars-stype-gold: #C49A4A;
-    --dars-stype-gold-light: #E3C871;
-    --dars-stype-gold-dark: #946A18;
+    --dars-stype-gold: #C5A15A;
+    --dars-stype-gold-light: #E6D39B;
+    --dars-stype-gold-dark: #8E6B2C;
 
-    --dars-stype-text: #191D1B;
+    --dars-stype-text: #17211C;
     --dars-stype-muted: #666D69;
     --dars-stype-white: #FFFFFF;
 }
@@ -1374,8 +1374,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F6F3EC 100%
+            #FBF9F4 0%,
+            #F7F4EC 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -2194,7 +2194,7 @@
         linear-gradient(
             135deg,
             var(--dars-stype-gold-light),
-            #D8AE49
+            #D3B46A
         );
 
     color: #171A17 !important;
@@ -2401,15 +2401,15 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-sbuilder-green: #0E352B;
-    --dars-sbuilder-green-dark: #08271F;
-    --dars-sbuilder-green-soft: #174B3D;
+    --dars-sbuilder-green: #10362B;
+    --dars-sbuilder-green-dark: #0B281F;
+    --dars-sbuilder-green-soft: #1A4A3C;
 
-    --dars-sbuilder-gold: #C49A4A;
-    --dars-sbuilder-gold-light: #E3C871;
-    --dars-sbuilder-gold-dark: #946A18;
+    --dars-sbuilder-gold: #C5A15A;
+    --dars-sbuilder-gold-light: #E6D39B;
+    --dars-sbuilder-gold-dark: #8E6B2C;
 
-    --dars-sbuilder-text: #191D1B;
+    --dars-sbuilder-text: #17211C;
     --dars-sbuilder-muted: #666D69;
     --dars-sbuilder-white: #FFFFFF;
 
@@ -2435,8 +2435,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F6F3EC 100%
+            #FBF9F4 0%,
+            #F7F4EC 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -2720,7 +2720,7 @@
         linear-gradient(
             135deg,
             var(--dars-sbuilder-gold-light),
-            #D8AE49
+            #D3B46A
         ) !important;
 
     color: #171A17 !important;
@@ -3176,7 +3176,7 @@
         linear-gradient(
             135deg,
             var(--dars-sbuilder-gold-light),
-            #D8AE49
+            #D3B46A
         ) !important;
 
     color: #171A17 !important;
@@ -3750,15 +3750,15 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-slogic-green: #0E352B;
-    --dars-slogic-green-dark: #08271F;
-    --dars-slogic-green-soft: #174B3D;
+    --dars-slogic-green: #10362B;
+    --dars-slogic-green-dark: #0B281F;
+    --dars-slogic-green-soft: #1A4A3C;
 
-    --dars-slogic-gold: #C49A4A;
-    --dars-slogic-gold-light: #E3C871;
-    --dars-slogic-gold-dark: #946A18;
+    --dars-slogic-gold: #C5A15A;
+    --dars-slogic-gold-light: #E6D39B;
+    --dars-slogic-gold-dark: #8E6B2C;
 
-    --dars-slogic-text: #191D1B;
+    --dars-slogic-text: #17211C;
     --dars-slogic-muted: #626A65;
     --dars-slogic-white: #FFFFFF;
 
@@ -3785,8 +3785,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F6F3EC 100%
+            #FBF9F4 0%,
+            #F7F4EC 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -4346,15 +4346,15 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-sps-green: #0E352B;
-    --dars-sps-green-dark: #08271F;
-    --dars-sps-green-soft: #174B3D;
+    --dars-sps-green: #10362B;
+    --dars-sps-green-dark: #0B281F;
+    --dars-sps-green-soft: #1A4A3C;
 
-    --dars-sps-gold: #C49A4A;
-    --dars-sps-gold-light: #E3C871;
-    --dars-sps-gold-dark: #946A18;
+    --dars-sps-gold: #C5A15A;
+    --dars-sps-gold-light: #E6D39B;
+    --dars-sps-gold-dark: #8E6B2C;
 
-    --dars-sps-text: #191D1B;
+    --dars-sps-text: #17211C;
     --dars-sps-muted: #626A65;
     --dars-sps-white: #FFFFFF;
 
@@ -4389,8 +4389,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -5184,15 +5184,15 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-scompare-green: #0E352B;
-    --dars-scompare-green-dark: #08271F;
-    --dars-scompare-green-soft: #174B3D;
+    --dars-scompare-green: #10362B;
+    --dars-scompare-green-dark: #0B281F;
+    --dars-scompare-green-soft: #1A4A3C;
 
-    --dars-scompare-gold: #C49A4A;
-    --dars-scompare-gold-light: #E3C871;
-    --dars-scompare-gold-dark: #946A18;
+    --dars-scompare-gold: #C5A15A;
+    --dars-scompare-gold-light: #E6D39B;
+    --dars-scompare-gold-dark: #8E6B2C;
 
-    --dars-scompare-text: #191D1B;
+    --dars-scompare-text: #17211C;
     --dars-scompare-muted: #626A65;
     --dars-scompare-white: #FFFFFF;
 
@@ -5219,8 +5219,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -5694,15 +5694,15 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-real-project-green: #0E352B;
-    --dars-real-project-green-dark: #08271F;
-    --dars-real-project-green-soft: #174B3D;
+    --dars-real-project-green: #10362B;
+    --dars-real-project-green-dark: #0B281F;
+    --dars-real-project-green-soft: #1A4A3C;
 
-    --dars-real-project-gold: #C49A4A;
-    --dars-real-project-gold-light: #E3C871;
-    --dars-real-project-gold-dark: #946A18;
+    --dars-real-project-gold: #C5A15A;
+    --dars-real-project-gold-light: #E6D39B;
+    --dars-real-project-gold-dark: #8E6B2C;
 
-    --dars-real-project-text: #191D1B;
+    --dars-real-project-text: #17211C;
     --dars-real-project-muted: #626A65;
     --dars-real-project-white: #FFFFFF;
 
@@ -5737,8 +5737,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -6713,12 +6713,12 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-sfaq-green: #0E352B;
-    --dars-sfaq-green-dark: #08271F;
-    --dars-sfaq-gold: #C49A4A;
-    --dars-sfaq-gold-light: #E3C871;
-    --dars-sfaq-gold-dark: #946A18;
-    --dars-sfaq-text: #191D1B;
+    --dars-sfaq-green: #10362B;
+    --dars-sfaq-green-dark: #0B281F;
+    --dars-sfaq-gold: #C5A15A;
+    --dars-sfaq-gold-light: #E6D39B;
+    --dars-sfaq-gold-dark: #8E6B2C;
+    --dars-sfaq-text: #17211C;
     --dars-sfaq-muted: #626A65;
     --dars-sfaq-whatsapp: #18B957;
     --dars-sfaq-whatsapp-dark: #109A46;
@@ -6742,8 +6742,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -7323,13 +7323,13 @@
 /* ---- Next.js shutter page: styles adapted from supplied reference code ---- */
 
 :root {
-    --dars-cta-green: #0E352B;
-    --dars-cta-green-dark: #08271F;
-    --dars-cta-gold: #C49A4A;
-    --dars-cta-gold-light: #E2C678;
-    --dars-cta-gold-dark: #946A18;
+    --dars-cta-green: #10362B;
+    --dars-cta-green-dark: #0B281F;
+    --dars-cta-gold: #C5A15A;
+    --dars-cta-gold-light: #E2CB8B;
+    --dars-cta-gold-dark: #8E6B2C;
     --dars-cta-white: #FFFFFF;
-    --dars-cta-text: #191D1B;
+    --dars-cta-text: #17211C;
     --dars-cta-muted: #676E6A;
     --dars-cta-whatsapp: #18B957;
     --dars-cta-whatsapp-dark: #109A46;
@@ -7353,8 +7353,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;

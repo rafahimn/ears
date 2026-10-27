@@ -1,14 +1,14 @@
 
                 .dars-home-reference {
-    --dars-v2-green: #0E352B;
-    --dars-v2-green-deep: #08271F;
-    --dars-v2-green-light: #174B3D;
+    --dars-v2-green: #10362B;
+    --dars-v2-green-deep: #0B281F;
+    --dars-v2-green-light: #1A4A3C;
 
-    --dars-v2-gold: #C49A4A;
-    --dars-v2-gold-light: #D9B96E;
+    --dars-v2-gold: #C5A15A;
+    --dars-v2-gold-light: #E1CC8D;
     --dars-v2-gold-dark: #A97B2E;
 
-    --dars-v2-cream: #F8F5EE;
+    --dars-v2-cream: #FBF9F3;
     --dars-v2-white: #FFFFFF;
     --dars-v2-text: #171B19;
     --dars-v2-muted: #626B66;
@@ -930,7 +930,7 @@
 }
 
 .dars-quote-v2__option.is-active {
-    color: #08271F !important;
+    color: #0B281F !important;
 }
 
 .dars-quote-v2__option:hover span,
@@ -1169,11 +1169,11 @@
 
 
                 .dars-home-reference {
-    --dars-strip-green: #0E352B;
-    --dars-strip-green-dark: #08271F;
-    --dars-strip-gold: #C49A4A;
+    --dars-strip-green: #10362B;
+    --dars-strip-green-dark: #0B281F;
+    --dars-strip-gold: #C5A15A;
     --dars-strip-gold-dark: #A97B2E;
-    --dars-strip-cream: #F8F5EE;
+    --dars-strip-cream: #FBF9F3;
     --dars-strip-white: #FFFFFF;
     --dars-strip-text: #202522;
     --dars-strip-muted: #686E6B;
@@ -1650,17 +1650,17 @@
 ===================================================== */
 
 .dars-services {
-    --dars-service-green: #0e352b;
-    --dars-service-green-dark: #08271f;
-    --dars-service-green-soft: #174b3d;
+    --dars-service-green: #10362B;
+    --dars-service-green-dark: #0B281F;
+    --dars-service-green-soft: #1A4A3C;
 
-    --dars-service-gold: #c49a4a;
-    --dars-service-gold-light: #d9b96e;
+    --dars-service-gold: #C5A15A;
+    --dars-service-gold-light: #E1CC8D;
     --dars-service-gold-dark: #956b20;
 
-    --dars-service-cream: #f8f5ee;
+    --dars-service-cream: #FBF9F3;
     --dars-service-white: #ffffff;
-    --dars-service-text: #191d1b;
+    --dars-service-text: #17211C;
     --dars-service-muted: #6e7471;
     --dars-service-border: rgba(14, 53, 43, 0.13);
     --dars-service-whatsapp: #18b957;
@@ -1695,8 +1695,8 @@
         ),
         linear-gradient(
             180deg,
-            #faf8f4 0%,
-            #f7f4ed 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -2540,14 +2540,14 @@
 
 
                 .dars-home-reference {
-    --dars-pkg-green: #0E352B;
-    --dars-pkg-green-dark: #08271F;
-    --dars-pkg-gold: #C49A4A;
+    --dars-pkg-green: #10362B;
+    --dars-pkg-green-dark: #0B281F;
+    --dars-pkg-gold: #C5A15A;
     --dars-pkg-gold-light: #E4CA75;
-    --dars-pkg-gold-dark: #946A18;
-    --dars-pkg-cream: #F8F5EE;
+    --dars-pkg-gold-dark: #8E6B2C;
+    --dars-pkg-cream: #FBF9F3;
     --dars-pkg-white: #FFFFFF;
-    --dars-pkg-text: #191D1B;
+    --dars-pkg-text: #17211C;
     --dars-pkg-muted: #6B716E;
     --dars-pkg-whatsapp: #18B957;
     --dars-pkg-whatsapp-dark: #109A46;
@@ -2574,8 +2574,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F7F4ED 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -3318,17 +3318,17 @@
 
 
                 .dars-home-reference {
-    --dars-process-green: #0E352B;
-    --dars-process-green-dark: #08271F;
-    --dars-process-green-soft: #174B3D;
+    --dars-process-green: #10362B;
+    --dars-process-green-dark: #0B281F;
+    --dars-process-green-soft: #1A4A3C;
 
-    --dars-process-gold: #C49A4A;
-    --dars-process-gold-light: #E2C678;
-    --dars-process-gold-dark: #946A18;
+    --dars-process-gold: #C5A15A;
+    --dars-process-gold-light: #E2CB8B;
+    --dars-process-gold-dark: #8E6B2C;
 
-    --dars-process-cream: #F8F5EE;
+    --dars-process-cream: #FBF9F3;
     --dars-process-white: #FFFFFF;
-    --dars-process-text: #191D1B;
+    --dars-process-text: #17211C;
     --dars-process-muted: #6B716E;
     --dars-process-whatsapp: #18B957;
     --dars-process-whatsapp-dark: #109A46;
@@ -3355,8 +3355,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F7F4ED 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -4115,17 +4115,17 @@
 
 
                 .dars-home-reference {
-    --dars-why-green: #0E352B;
-    --dars-why-green-dark: #08271F;
-    --dars-why-green-soft: #174B3D;
+    --dars-why-green: #10362B;
+    --dars-why-green-dark: #0B281F;
+    --dars-why-green-soft: #1A4A3C;
 
-    --dars-why-gold: #C49A4A;
-    --dars-why-gold-light: #E2C678;
-    --dars-why-gold-dark: #946A18;
+    --dars-why-gold: #C5A15A;
+    --dars-why-gold-light: #E2CB8B;
+    --dars-why-gold-dark: #8E6B2C;
 
-    --dars-why-cream: #F8F5EE;
+    --dars-why-cream: #FBF9F3;
     --dars-why-white: #FFFFFF;
-    --dars-why-text: #191D1B;
+    --dars-why-text: #17211C;
     --dars-why-muted: #6B716E;
 
     --dars-why-whatsapp: #18B957;
@@ -4153,8 +4153,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F7F4ED 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -4783,13 +4783,13 @@
 
 
                 .dars-home-reference {
-    --dars-review-green: #0E352B;
-    --dars-review-green-dark: #08271F;
-    --dars-review-gold: #C49A4A;
-    --dars-review-gold-light: #E2C678;
-    --dars-review-gold-dark: #946A18;
+    --dars-review-green: #10362B;
+    --dars-review-green-dark: #0B281F;
+    --dars-review-gold: #C5A15A;
+    --dars-review-gold-light: #E2CB8B;
+    --dars-review-gold-dark: #8E6B2C;
     --dars-review-white: #FFFFFF;
-    --dars-review-text: #191D1B;
+    --dars-review-text: #17211C;
     --dars-review-muted: #6B716E;
     --dars-review-whatsapp: #18B957;
     --dars-review-whatsapp-dark: #109A46;
@@ -4813,8 +4813,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F7F4ED 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -5470,13 +5470,13 @@
 
 
                 .dars-home-reference {
-    --dars-faq-green: #0E352B;
-    --dars-faq-green-dark: #08271F;
-    --dars-faq-gold: #C49A4A;
-    --dars-faq-gold-light: #E2C678;
-    --dars-faq-gold-dark: #946A18;
+    --dars-faq-green: #10362B;
+    --dars-faq-green-dark: #0B281F;
+    --dars-faq-gold: #C5A15A;
+    --dars-faq-gold-light: #E2CB8B;
+    --dars-faq-gold-dark: #8E6B2C;
     --dars-faq-white: #FFFFFF;
-    --dars-faq-text: #191D1B;
+    --dars-faq-text: #17211C;
     --dars-faq-muted: #6B716E;
     --dars-faq-whatsapp: #18B957;
     --dars-faq-whatsapp-dark: #109A46;
@@ -5500,8 +5500,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F7F4ED 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -6023,13 +6023,13 @@
 
 
                 .dars-home-reference {
-    --dars-cover-green: #0E352B;
-    --dars-cover-green-dark: #08271F;
-    --dars-cover-gold: #C49A4A;
-    --dars-cover-gold-light: #E2C678;
-    --dars-cover-gold-dark: #946A18;
+    --dars-cover-green: #10362B;
+    --dars-cover-green-dark: #0B281F;
+    --dars-cover-gold: #C5A15A;
+    --dars-cover-gold-light: #E2CB8B;
+    --dars-cover-gold-dark: #8E6B2C;
     --dars-cover-white: #FFFFFF;
-    --dars-cover-text: #191D1B;
+    --dars-cover-text: #17211C;
     --dars-cover-muted: #6B716E;
     --dars-cover-whatsapp: #18B957;
     --dars-cover-whatsapp-dark: #109A46;
@@ -6053,8 +6053,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F7F4ED 100%
+            #FBF9F4 0%,
+            #F8F5EE 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -6576,13 +6576,13 @@
 
 
                 .dars-home-reference {
-    --dars-cta-green: #0E352B;
-    --dars-cta-green-dark: #08271F;
-    --dars-cta-gold: #C49A4A;
-    --dars-cta-gold-light: #E2C678;
-    --dars-cta-gold-dark: #946A18;
+    --dars-cta-green: #10362B;
+    --dars-cta-green-dark: #0B281F;
+    --dars-cta-gold: #C5A15A;
+    --dars-cta-gold-light: #E2CB8B;
+    --dars-cta-gold-dark: #8E6B2C;
     --dars-cta-white: #FFFFFF;
-    --dars-cta-text: #191D1B;
+    --dars-cta-text: #17211C;
     --dars-cta-muted: #676E6A;
     --dars-cta-whatsapp: #18B957;
     --dars-cta-whatsapp-dark: #109A46;
@@ -6606,8 +6606,8 @@
         ),
         linear-gradient(
             180deg,
-            #FAF8F4 0%,
-            #F5F2EA 100%
+            #FBF9F4 0%,
+            #F7F3EB 100%
         );
 
     font-family: Arial, Helvetica, sans-serif;
@@ -7069,17 +7069,17 @@
 ===================================================== */
 
 .dars-footer-area {
-    --footer-green: #0e352b;
-    --footer-green-dark: #08271f;
-    --footer-green-light: #174b3d;
+    --footer-green: #10362B;
+    --footer-green-dark: #0B281F;
+    --footer-green-light: #1A4A3C;
 
-    --footer-gold: #c49a4a;
-    --footer-gold-light: #e2c678;
-    --footer-gold-dark: #946a18;
+    --footer-gold: #C5A15A;
+    --footer-gold-light: #E2CB8B;
+    --footer-gold-dark: #8E6B2C;
 
-    --footer-cream: #f8f5ee;
+    --footer-cream: #FBF9F3;
     --footer-white: #ffffff;
-    --footer-text: #191d1b;
+    --footer-text: #17211C;
     --footer-muted: #69716c;
 
     --footer-whatsapp: #18b957;
@@ -8021,3 +8021,33 @@
 .dars-home-reference .dars-supply-bar{position:relative}
 @media(max-width:900px){.dars-home-reference .dars-hero-v2{padding-top:48px;min-height:0}}
 @media(max-width:640px){.dars-home-reference .dars-hero-v2{padding-top:32px;padding-bottom:48px}}
+
+
+/* ============================================================
+   v21 — Emirates Signature Finish
+   Keep the homepage content and composition; add bespoke detailing
+   so the page feels crafted for this brand rather than template-led.
+============================================================ */
+.dars-home-reference .dars-hero-v2{background-size:cover;background-position:center 48%;}
+.dars-home-reference .dars-hero-v2__inner{position:relative;isolation:isolate;}
+.dars-home-reference .dars-hero-v2__inner:after{content:"";position:absolute;z-index:-1;right:39%;top:-13%;width:280px;height:280px;border:1px solid rgba(196,154,74,.18);border-radius:50%;box-shadow:0 0 0 24px rgba(196,154,74,.035),0 0 0 52px rgba(196,154,74,.025);pointer-events:none;animation:emsSignatureOrbit 24s ease-in-out infinite alternate;}
+.dars-home-reference .dars-hero-v2__content{position:relative;}
+.dars-home-reference .dars-hero-v2__content:before{content:"";position:absolute;left:0;top:-19px;width:57px;height:3px;border-radius:99px;background:linear-gradient(90deg,#8c6923,#e4c879,#b98a32);box-shadow:0 0 18px rgba(196,154,74,.22);}
+.dars-home-reference .dars-hero-v2__ambient{background-size:125% 125%,130% 130%,100% 100%;animation:emsAmbientShift 22s ease-in-out infinite alternate;}
+.dars-home-reference .dars-quote-v2{border-color:rgba(196,154,74,.58);border-radius:29px 29px 29px 16px;box-shadow:0 34px 86px rgba(8,39,31,.18),inset 0 1px 0 rgba(255,255,255,.99);}
+.dars-home-reference .dars-quote-v2:after{content:"";position:absolute;left:15px;bottom:15px;width:25px;height:25px;border-left:1px solid rgba(196,154,74,.40);border-bottom:1px solid rgba(196,154,74,.40);border-radius:0 0 0 7px;pointer-events:none;}
+.dars-home-reference .dars-quote-v2__topline{width:48%;background-size:200% 100%;animation:emsGoldLine 6.8s ease-in-out infinite;}
+.dars-home-reference .dars-quote-v2__option{border-radius:13px;}
+.dars-home-reference .dars-quote-v2__option.is-active{box-shadow:inset 0 0 0 1px rgba(196,154,74,.20),0 8px 20px rgba(22,59,43,.055);}
+.dars-home-reference .dars-service-card{border-radius:25px 25px 25px 17px;box-shadow:0 14px 37px rgba(8,39,31,.055),inset 0 1px 0 rgba(255,255,255,.96);}
+.dars-home-reference .dars-service-card:after{content:"";position:absolute;z-index:5;top:0;left:14%;right:14%;height:2px;background:linear-gradient(90deg,transparent,#C5A15A,#e4cb83,#C5A15A,transparent);opacity:.42;transform:scaleX(.7);transform-origin:center;transition:opacity .35s ease,transform .45s ease;pointer-events:none;}
+.dars-home-reference .dars-service-card:hover:after,.dars-home-reference .dars-service-card--featured:after{opacity:1;transform:scaleX(1);}
+.dars-home-reference .dars-service-card__image img{filter:saturate(.93);}
+.dars-home-reference .dars-service-card:hover .dars-service-card__image img{filter:saturate(1.07) contrast(1.025);}
+.dars-home-reference .dars-packages-v3__panel{border-radius:28px;box-shadow:0 24px 60px rgba(8,39,31,.075),inset 0 1px 0 rgba(255,255,255,.95);}
+.dars-home-reference .dars-process-card{border-radius:20px 20px 20px 12px;}
+@keyframes emsAmbientShift{0%{background-position:0% 10%,100% 40%,center}100%{background-position:35% 60%,60% 10%,center}}
+@keyframes emsSignatureOrbit{0%{transform:translate3d(0,0,0) scale(.96);opacity:.55}100%{transform:translate3d(10px,7px,0) scale(1.04);opacity:1}}
+@keyframes emsGoldLine{0%,100%{background-position:100% 0}50%{background-position:0% 0}}
+@media(max-width:760px){.dars-home-reference .dars-hero-v2__inner:after{width:180px;height:180px;right:-4%;top:25%;opacity:.55}.dars-home-reference .dars-hero-v2__content:before{top:-13px;width:43px}.dars-home-reference .dars-quote-v2{border-radius:22px 22px 22px 13px}.dars-home-reference .dars-service-card{border-radius:21px 21px 21px 14px}}
+@media(prefers-reduced-motion:reduce){.dars-home-reference .dars-hero-v2__inner:after,.dars-home-reference .dars-hero-v2__ambient,.dars-home-reference .dars-quote-v2__topline{animation:none!important}}

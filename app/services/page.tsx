@@ -1,3 +1,4 @@
+import { sitePath } from '../../lib/paths';
 import type { Metadata } from 'next';
 import { services, waLink } from '../../lib/site';
 import { Reveal } from '../../components/Reveal';
@@ -38,7 +39,7 @@ export default function Services() {
             </div>
           </div>
           <div className="page-hero-art services-page-art">
-            <img src="/wp-content/uploads/2026/10/Untitled-design-2.png" alt="Emirates Aluminium Shutter service and installation solutions" />
+            <img src={sitePath("/wp-content/uploads/2026/10/emirates-services-hero-v21.webp")} alt="Contemporary UAE villa with a premium automatic garage door, architectural metalwork and shaded terrace" />
             <span className="services-image-caption">One point of contact · Multiple specialist services</span>
             <div className="services-hero-float"><b>{services.length.toString().padStart(2, '0')}</b><span><strong>Service categories</strong><small>Doors, shade, access &amp; fabrication</small></span></div>
           </div>

@@ -11,15 +11,15 @@ export const COORDINATES = '25.271996, 55.304935';
 const img = (name:string) => `/wp-content/uploads/2026/10/${name}`;
 
 export const services = [
-  {slug:'shutter', title:'Rolling Shutters', eyebrow:'SECURITY & ACCESS', short:'Manual and motorized rolling shutters for shops, warehouses, showrooms, villas and commercial entrances.', image:img('13503-1-1.jpg'), accent:'01', tags:['Fabrication','Automation','Security']},
-  {slug:'canopy', title:'Canopy Solutions', eyebrow:'SHADE & WEATHER', short:'Custom canopies for entrances, parking, walkways, terraces and commercial outdoor spaces.', image:img('2277-1.jpg'), accent:'02', tags:['Parking','Entrance','Custom Design']},
-  {slug:'garage', title:'Garage Doors', eyebrow:'AUTOMATIC GARAGE', short:'Supply, installation, automation and repair for villa, residential and commercial garage doors.', image:img('2149207752-1-1.jpg'), accent:'03', tags:['Supply','Installation','Automation']},
-  {slug:'awning', title:'Awning Solutions', eyebrow:'OUTDOOR COMFORT', short:'Fixed, retractable and motorized awnings for villas, balconies, terraces, cafés and shops.', image:img('Patio-Folding-Wind-Vertical-Retractable-Awning-1.avif'), accent:'04', tags:['Retractable','Motorized','Sunshade Parda']},
-  {slug:'motor', title:'Gate Motors', eyebrow:'ACCESS AUTOMATION', short:'Sliding and swing gate motors, remotes, photocells, control boards and safety accessories.', image:img('1921-1-1-1.jpg'), accent:'05', tags:['Motors','Remotes','Sensors']},
-  {slug:'repair', title:'Repair & Maintenance', eyebrow:'FAST SUPPORT', short:'Fault diagnosis, emergency repair and preventive maintenance for doors, shutters, gates and motors.', image:img('13602-1.jpg'), accent:'06', tags:['Emergency','Diagnosis','Maintenance']},
-  {slug:'aluminium-works', title:'Aluminium Works', eyebrow:'CUSTOM FABRICATION', short:'Custom aluminium doors, windows, partitions, cladding and project-specific fabrication.', image:img('WhatsApp-Image-2026-07-28-at-1.07.11-AM-2.jpeg'), accent:'07', tags:['Doors','Windows','Partitions']},
-  {slug:'steel-work', title:'Steel Works', eyebrow:'STRUCTURAL FABRICATION', short:'Steel gates, pergolas, canopy frames, parking structures and customised metal fabrication.', image:img('photo-1504917595217-d4dc5ebe6122.avif'), accent:'08', tags:['Steel Gates','Pergolas','Welding']},
-  {slug:'polycarbonate', title:'Polycarbonate Shutters', eyebrow:'TRANSPARENT SHUTTER SYSTEMS', short:'Clear polycarbonate roller shutters for shopfronts, showrooms and retail spaces that need visibility with an enclosed frontage.', image:img('polycarbonate-roller-shutters-premium.webp'), accent:'09', tags:['Clear Slats','Shopfronts','Visibility']},
+  {slug:'shutter', title:'Rolling Shutters', eyebrow:'SECURITY & ACCESS', short:'Manual and motorized rolling shutters for shops, warehouses, showrooms, villas and commercial entrances.', image:img('home-service-rolling-shutter.webp'), accent:'01', tags:['Fabrication','Automation','Security']},
+  {slug:'canopy', title:'Canopy Solutions', eyebrow:'SHADE & WEATHER', short:'Custom canopies for entrances, parking, walkways, terraces and commercial outdoor spaces.', image:img('home-service-canopy.webp'), accent:'02', tags:['Parking','Entrance','Custom Design']},
+  {slug:'garage', title:'Garage Doors', eyebrow:'AUTOMATIC GARAGE', short:'Supply, installation, automation and repair for villa, residential and commercial garage doors.', image:img('home-service-garage-door.webp'), accent:'03', tags:['Supply','Installation','Automation']},
+  {slug:'awning', title:'Awning Solutions', eyebrow:'OUTDOOR COMFORT', short:'Fixed, retractable and motorized awnings for villas, balconies, terraces, cafés and shops.', image:img('home-service-awning.webp'), accent:'04', tags:['Retractable','Motorized','Sunshade Parda']},
+  {slug:'motor', title:'Gate Motors', eyebrow:'ACCESS AUTOMATION', short:'Sliding and swing gate motors, remotes, photocells, control boards and safety accessories.', image:img('home-service-gate-motor.webp'), accent:'05', tags:['Motors','Remotes','Sensors']},
+  {slug:'repair', title:'Repair & Maintenance', eyebrow:'FAST SUPPORT', short:'Fault diagnosis, emergency repair and preventive maintenance for doors, shutters, gates and motors.', image:img('home-service-repair.webp'), accent:'06', tags:['Emergency','Diagnosis','Maintenance']},
+  {slug:'aluminium-works', title:'Aluminium Works', eyebrow:'CUSTOM FABRICATION', short:'Custom aluminium doors, windows, partitions, cladding and project-specific fabrication.', image:img('home-service-aluminium.webp'), accent:'07', tags:['Doors','Windows','Partitions']},
+  {slug:'steel-work', title:'Steel Works', eyebrow:'STRUCTURAL FABRICATION', short:'Steel gates, pergolas, canopy frames, parking structures and customised metal fabrication.', image:img('home-service-steel.webp'), accent:'08', tags:['Steel Gates','Pergolas','Welding']},
+  {slug:'polycarbonate', title:'Polycarbonate Shutters', eyebrow:'TRANSPARENT SHUTTER SYSTEMS', short:'Clear polycarbonate roller shutters for shopfronts, showrooms and retail spaces that need visibility with an enclosed frontage.', image:img('home-service-polycarbonate.webp'), accent:'09', tags:['Clear Slats','Shopfronts','Visibility']},
 ] as const;
 
 export const serviceDetails: Record<string, {
@@ -31,7 +31,7 @@ export const serviceDetails: Record<string, {
     eyebrow:'AUTOMATIC ROLLING SHUTTER SYSTEMS',
     title:'Rolling Shutters for Shops, Warehouses & Villas',
     intro:'Supply, installation, automation and repair of secure rolling shutters across Dubai and the UAE. Choose your preferred shutter type, send the opening details and receive a clear quotation after site review.',
-    image:img('13503-1-1.jpg'),
+    image:img('home-service-rolling-shutter.webp'),
     bullets:['Security-focused systems','Manual & motorised options','Service across the UAE','Fabrication & installation','Remote and push-button controls','Repair and motor replacement'],
     sections:[
       {kicker:'COMPARE BEFORE YOU CHOOSE',title:'Four Shutter Types. One Clear Choice for Your Property.',text:'Compare practical, insulated, transparent and window-shutter systems. Select an option to review suitable applications, features and recommended use.',items:['Single-Skin Shutter — practical everyday security','Double-Insulated Shutter — heat and noise control','Vision Polycarbonate — security with visibility','Window Roller Shutter — privacy, shade and protection']},
@@ -55,7 +55,7 @@ export const serviceDetails: Record<string, {
     eyebrow:'TRANSPARENT POLYCARBONATE SHUTTERS',
     title:'Polycarbonate Roller Shutters for Retail & Commercial Frontages',
     intro:'Clear polycarbonate roller shutters help keep shopfronts and display windows visible while enclosing the opening after hours. We review the opening size, supporting profiles, operating method and site conditions before recommending a suitable configuration.',
-    image:img('polycarbonate-roller-shutters-premium.webp'),
+    image:img('home-service-polycarbonate.webp'),
     bullets:['Transparent slats for display visibility','Suitable for selected shops and showrooms','Profile and guide options reviewed by opening size','Manual or motorised operation subject to specification','Custom measurement and installation planning','Cleaning and maintenance guidance'],
     sections:[
       {kicker:'VISIBILITY FIRST',title:'Keep Displays Visible When the Shop Is Closed',text:'Polycarbonate sections allow light and sightlines through the shutter curtain, making this system useful for selected retail fronts, showrooms and commercial displays.',items:['Retail shopfronts','Showrooms and display areas','Shopping-centre units','Other openings where visibility matters']},
@@ -76,7 +76,7 @@ export const serviceDetails: Record<string, {
     eyebrow:'AUTOMATIC GARAGE DOORS',
     title:'Automatic Garage Doors Supplied & Installed Across the UAE',
     intro:'Configure your garage door by size, panel finish and motor system. Compare practical and premium options before requesting a confirmed site quotation.',
-    image:img('2149207752-1-1.jpg'),
+    image:img('home-service-garage-door.webp'),
     bullets:['Insulated overhead panels','European premium and standard options','Reliable motor systems','Remote controls and wall button','Engineer measurement','Installation, testing & handover'],
     sections:[
       {kicker:'COMPARE PACKAGES',title:'Choose the Right System for Your Property',text:'Both options include insulated overhead panels, motorised operation and professional installation. Compare the internal components, warranty and starting price before configuring your garage door.',items:['European Premium — AED 8,500 + 5% VAT','Smart Standard — AED 7,350 + 5% VAT','Motor and installation included according to the selected package','Final pricing depends on size, site condition, motor and accessories']},
@@ -99,7 +99,7 @@ export const serviceDetails: Record<string, {
     eyebrow:'PROFESSIONAL AWNING SOLUTIONS',
     title:'Premium Awning Solutions for Comfortable Outdoor Spaces',
     intro:'Custom fixed, retractable and motorized awnings planned around your property, projection, operating preference and UAE outdoor conditions.',
-    image:img('Patio-Folding-Wind-Vertical-Retractable-Awning-1.avif'),
+    image:img('home-service-awning.webp'),
     bullets:['Weather-resistant materials','Manual and motorized options','Custom sizes and projection','Residential & commercial installation','UV and heat protection','Repair & fabric replacement','Automatic Sunshade Parda','Pergola & outdoor shade systems'],
     sections:[
       {kicker:'DESIGNED AROUND YOUR SPACE',title:'Premium Shade Solutions',text:'Every awning starts with the available area, required shade, preferred operation and appearance of the property. We supply and install fixed, retractable and motorized systems.',items:['Custom sizes & designs','Manual operating options','Motorized remote-control systems']},
@@ -121,7 +121,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   canopy:{
-    eyebrow:'CUSTOM CANOPY SOLUTIONS',title:'Built for Shade, Protection & Style',intro:'Custom-designed canopies for entrances, parking areas, villas, walkways, terraces and commercial outdoor spaces across Dubai and the UAE.',image:img('2277-1.jpg'),
+    eyebrow:'CUSTOM CANOPY SOLUTIONS',title:'Built for Shade, Protection & Style',intro:'Custom-designed canopies for entrances, parking areas, villas, walkways, terraces and commercial outdoor spaces across Dubai and the UAE.',image:img('home-service-canopy.webp'),
     bullets:['Car parking canopies','Entrance and walkway canopies','Fabric canopy systems','Steel and aluminium structures','Site measurement & planning','Custom design and fabrication'],
     sections:[
       {kicker:'PRACTICAL COVERAGE',title:'Premium Canopy Solutions Designed Around Your Space',text:'We plan canopy size, structure, access and practical coverage around the actual space instead of forcing a standard size.',items:['Parking shade','Entrance canopy','Walkway and terrace coverage','Commercial outdoor spaces']},
@@ -137,7 +137,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   motor:{
-    eyebrow:'ACCESS AUTOMATION',title:'Automation for Gates & Doors',intro:'Sliding and swing gate motors, garage motors, remotes, photocells, control boards and wiring for residential and commercial access.',image:img('1921-1-1-1.jpg'),
+    eyebrow:'ACCESS AUTOMATION',title:'Automation for Gates & Doors',intro:'Sliding and swing gate motors, garage motors, remotes, photocells, control boards and wiring for residential and commercial access.',image:img('home-service-gate-motor.webp'),
     bullets:['Sliding gate motors','Swing gate motors','Garage door motors','Remote controls','Photocells and sensors','Control board and wiring support'],
     sections:[
       {kicker:'SELECT BY DUTY',title:'Pick the Right Motor for Your Gate or Door',text:'Motor selection should match gate weight, width, opening frequency, power and the required safety accessories.',items:['01 Select gate duty level','02 Choose installation or repair','03 Select controls and safety options','04 Confirm preferred schedule','05 Share project details']},
@@ -155,7 +155,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   repair:{
-    eyebrow:'REPAIR & MAINTENANCE',title:'Fast Repair for Doors, Shutters, Gates and Motors',intro:'Send a short fault video and your location. The team reviews the issue and confirms the repair scope before work starts.',image:img('13602-1.jpg'),
+    eyebrow:'REPAIR & MAINTENANCE',title:'Fast Repair for Doors, Shutters, Gates and Motors',intro:'Send a short fault video and your location. The team reviews the issue and confirms the repair scope before work starts.',image:img('home-service-repair.webp'),
     bullets:['Urgent repair support','Fault video review','Motor and receiver faults','Remote and sensor problems','Preventive maintenance','Test and service report'],
     sections:[
       {kicker:'FAULT REVIEW',title:'What Is Your System Doing?',text:'Choose the system and the closest symptom. The starting point helps you prepare useful photos or a short video before contacting the repair team.',items:['Garage door','Rolling shutter','Gate motor','Parking barrier','Stuck / noisy / uneven movement','Motor / remote / sensor issue']},
@@ -174,7 +174,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   'aluminium-works':{
-    eyebrow:'ALUMINIUM WORKS',title:'Clean Aluminium Solutions for Modern Properties',intro:'Custom aluminium doors, windows, partitions, cladding and fabrication for villas, offices, shops and commercial properties.',image:img('WhatsApp-Image-2026-07-28-at-1.07.11-AM-2.jpeg'),
+    eyebrow:'ALUMINIUM WORKS',title:'Clean Aluminium Solutions for Modern Properties',intro:'Custom aluminium doors, windows, partitions, cladding and fabrication for villas, offices, shops and commercial properties.',image:img('home-service-aluminium.webp'),
     bullets:['Aluminium doors','Windows','Partitions','Cladding','Custom fabrication','Project-specific finishes'],
     sections:[
       {kicker:'MODERN FINISHES',title:'Practical Aluminium Fabrication',text:'Aluminium solutions can combine a clean appearance with practical everyday operation and low-maintenance use.',items:['Doors and windows','Partitions','Cladding','Custom fabrication']},
@@ -189,7 +189,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   'steel-work':{
-    eyebrow:'CUSTOM STEEL WORK',title:'Strong Steel Structures and Fabrication for Your Project',intro:'Custom steel gates, pergola frames, canopy structures, parking systems and project-specific metal fabrication.',image:img('photo-1504917595217-d4dc5ebe6122.avif'),
+    eyebrow:'CUSTOM STEEL WORK',title:'Strong Steel Structures and Fabrication for Your Project',intro:'Custom steel gates, pergola frames, canopy structures, parking systems and project-specific metal fabrication.',image:img('home-service-steel.webp'),
     bullets:['Steel gates','Pergola structures','Canopy frames','Parking structures','Welding & fabrication','Custom dimensions'],
     sections:[
       {kicker:'BUILT TO THE REQUIREMENT',title:'Steelwork Planned Around the Property',text:'Steelwork is planned around dimensions, use, access, structure and the desired finish.',items:['Gates','Pergolas','Canopy frames','Parking structures']},
@@ -204,7 +204,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   'canopy-old':{
-    eyebrow:'CUSTOM CANOPY SOLUTIONS',title:'Custom Canopy Solutions',intro:'Custom shade and weather protection for entrances, parking, walkways and commercial spaces.',image:img('2277-1.jpg'),bullets:[],sections:[],gallery:[],faqs:[]
+    eyebrow:'CUSTOM CANOPY SOLUTIONS',title:'Custom Canopy Solutions',intro:'Custom shade and weather protection for entrances, parking, walkways and commercial spaces.',image:img('home-service-canopy.webp'),bullets:[],sections:[],gallery:[],faqs:[]
   }
 };
 

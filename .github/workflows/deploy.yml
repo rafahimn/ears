@@ -5,23 +5,35 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 3 * * *' # Refresh public social posts daily (UTC)
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: pages
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      # Detects the correct prefix automatically:
+      # empty for the configured custom domain, /repository-name for project Pages URLs.
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Refresh public social post snapshots
         run: node scripts/refresh-social-feed.mjs
         env:
@@ -29,16 +41,20 @@ jobs:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
           META_GRAPH_API_VERSION: ${{ vars.META_GRAPH_API_VERSION }}
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
       - name: Build static site
         run: npm run build
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+
   deploy:
     environment:
       name: github-pages

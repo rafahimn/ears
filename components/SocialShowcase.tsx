@@ -1,5 +1,6 @@
 "use client";
 
+import { sitePath } from '../lib/paths';
 import {useCallback, useEffect, useRef, useState} from 'react';
 import {Icon} from './Icon';
 
@@ -55,7 +56,7 @@ export function SocialShowcase(){
       })
       .then(data=>{
         if(!active) return;
-        const clean = Array.isArray(data.posts) ? data.posts.filter(post => post && post.permalink && (post.platform==='instagram' || post.platform==='facebook')) : [];
+        const clean = Array.isArray(data.posts) ? data.posts.filter(post => post && post.permalink && post.platform === 'instagram') : [];
         clean.sort((a,b)=>new Date(b.timestamp).getTime()-new Date(a.timestamp).getTime());
         setPosts(clean.slice(0,12));
         setFeedUpdatedAt(data.updatedAt || null);
@@ -116,11 +117,11 @@ export function SocialShowcase(){
         </a>
       </div>
 
-      <div className="social-posts-area" aria-label="Recent social media posts">
+      <div className="social-posts-area" aria-label="Recent Instagram posts">
         <div className="social-posts-topline">
           <div>
-            <span className="social-carousel-kicker"><i/> LATEST POSTS</span>
-            <h3>From our <em>social channels.</em></h3>
+            <span className="social-carousel-kicker"><i/> INSTAGRAM · RECENT POSTS</span>
+            <h3>Recent work on <em>Instagram.</em></h3>
           </div>
           {loaded && canScroll && <div className="social-carousel-controls" aria-label="Social post carousel controls">
             <button type="button" onClick={()=>move(-1)} aria-label="Show previous posts"><span>‹</span></button>
@@ -130,16 +131,16 @@ export function SocialShowcase(){
 
         {!loaded && <div className="social-posts-track social-posts-loading" aria-hidden="true">{[0,1,2,3].map(i=><span className="social-post-skeleton" key={i}/>)}</div>}
         {loaded && posts.length>0 && <div className="social-posts-viewport">
-          <div className="social-posts-track" ref={trackRef} aria-label="Recent Instagram and Facebook posts">
+          <div className="social-posts-track" ref={trackRef} aria-label="Recent Instagram posts">
             {posts.map((post,index)=>{
               const posted = formatDate(post.timestamp);
               const caption = (post.caption || '').trim();
-              const platform = post.platform==='facebook'?'Facebook':'Instagram';
+              const platform = 'Instagram';
               return <article className="social-post-card" key={`${post.platform}-${post.id}`} style={{animationDelay:`${Math.min(index,7)*55}ms`}}>
                 <a className={`social-post-link social-post-${post.platform}`} href={post.permalink} target="_blank" rel="noopener noreferrer" aria-label={`Open ${platform} post${posted?` from ${posted}`:''}`}>
-                  {post.image ? <img src={post.image} alt={caption?caption.slice(0,120):`${platform} post from Emirates Aluminium Shutter`} loading={index>3?'lazy':'eager'}/> : <span className="social-post-text-visual"><span className="social-post-platform-mark">{post.platform==='facebook'?<FacebookMark/>:<InstagramMark/>}</span><strong>{caption || 'Project update'}</strong></span>}
+                  {post.image ? <img src={sitePath(post.image)} alt={caption?caption.slice(0,120):`${platform} post from Emirates Aluminium Shutter`} loading={index>3?'lazy':'eager'}/> : <span className="social-post-text-visual"><span className="social-post-platform-mark"><InstagramMark/></span><strong>{caption || 'Project update'}</strong></span>}
                   <span className="social-post-shade" aria-hidden="true"/>
-                  <span className="social-post-source"><span className="social-post-platform-mark">{post.platform==='facebook'?<FacebookMark/>:<InstagramMark/>}</span><span>{platform}</span>{posted&&<time dateTime={post.timestamp}>{posted}</time>}</span>
+                  <span className="social-post-source"><span className="social-post-platform-mark"><InstagramMark/></span><span>{platform}</span>{posted&&<time dateTime={post.timestamp}>{posted}</time>}</span>
                   <span className="social-post-open">View post <Icon name="arrow"/></span>
                 </a>
               </article>;
@@ -148,8 +149,8 @@ export function SocialShowcase(){
         </div>}
 
         {loaded && posts.length===0 && <div className="social-posts-empty">
-          <span className="social-empty-mark"><InstagramMark/><FacebookMark/></span>
-          <span><strong>Fresh project posts are coming soon.</strong><small>Follow us on Instagram or Facebook for our latest installation updates.</small></span>
+          <span className="social-empty-mark"><InstagramMark/></span>
+          <span><strong>Instagram posts will appear here.</strong><small>Follow @emiratesrollingshutter for recent installations and project updates.</small><a className="social-empty-profile-link" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Open Instagram profile <Icon name="arrow"/></a></span>
         </div>}
         {loaded && feedUpdatedAt && posts.length>0 && <span className="social-feed-updated">Feed refreshed {formatDate(feedUpdatedAt)}</span>}
       </div>
