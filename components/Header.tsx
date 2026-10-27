@@ -2,7 +2,7 @@
 import { sitePath } from '../lib/paths';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Icon } from './Icon';
 import { PHONE, PHONE_DISPLAY, EMAIL, waLink, services } from '../lib/site';
 import { ScrollProgress } from './ScrollProgress';
@@ -20,15 +20,10 @@ const shortLabels: Record<string, string> = {
   polycarbonate: 'Polycarbonate',
 };
 
-const primaryLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services/' },
-  ...services.map((s) => ({ label: shortLabels[s.slug] || s.title, href: `/${s.slug}/` })),
-];
-
 export function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname() || '/';
+  useEffect(() => { setOpen(false); }, [pathname]);
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.replace(/\/$/, '') === href.replace(/\/$/, ''));
   return <>
     <ScrollProgress />
@@ -38,8 +33,10 @@ export function Header() {
           <span className="brand-mark reference-brand-mark"><img src={sitePath("/brand/logo.png")} alt="" /></span>
           <span className="brand-copy reference-brand-copy"><b>EMIRATES ALUMINIUM</b><small>SHUTTER LLC</small></span>
         </Link>
-        <nav className="reference-nav premium-nav" aria-label="Main navigation">
-          {primaryLinks.map((item) => <Link key={item.href} href={item.href} className={isActive(item.href) ? 'is-active' : undefined} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</Link>)}
+        <nav className="reference-nav premium-nav reference-all-services-nav" aria-label="Main navigation">
+          <Link href="/" className={isActive('/') ? 'is-active' : undefined} aria-current={isActive('/') ? 'page' : undefined}>Home</Link>
+          <Link href="/services/" className={isActive('/services/') ? 'is-active' : undefined} aria-current={isActive('/services/') ? 'page' : undefined}>Services</Link>
+          {services.map(service => <Link key={service.slug} href={`/${service.slug}/`} className={isActive(`/${service.slug}/`) ? 'is-active' : undefined} aria-current={isActive(`/${service.slug}/`) ? 'page' : undefined}>{shortLabels[service.slug] || service.title}</Link>)}
         </nav>
         <div className="reference-header-actions">
           <LanguageSwitcher />
@@ -49,12 +46,11 @@ export function Header() {
         </div>
       </div>
       {open && <div className="reference-mobile-panel"><div className="reference-header-container reference-mobile-panel-inner">
-        <div className="mobile-language-row"><span>Language / اللغة</span><LanguageSwitcher mobile onSelect={() => setOpen(false)} /></div>
+        <div className="mobile-language-row"><span>Language</span><LanguageSwitcher mobile onSelect={() => setOpen(false)} /></div>
         <Link href="/" onClick={() => setOpen(false)}>Home<Icon name="arrow" /></Link>
         <Link href="/services/" onClick={() => setOpen(false)}>All Services<Icon name="arrow" /></Link>
         <div className="reference-mobile-divider">Our services</div>
         {services.map(service => <Link key={service.slug} href={`/${service.slug}/`} onClick={() => setOpen(false)}>{service.title}<Icon name="arrow" /></Link>)}
-        <Link href="/about-us/" onClick={() => setOpen(false)}>About<Icon name="arrow" /></Link>
         <a href={`tel:${PHONE}`} onClick={() => setOpen(false)}><Icon name="phone" />{PHONE_DISPLAY}</a>
         <a href={`mailto:${EMAIL}`} onClick={() => setOpen(false)}><Icon name="mail" />{EMAIL}</a>
         <a className="reference-mobile-cta" href={waLink()} target="_blank" rel="noreferrer"><Icon name="whatsapp" /> WhatsApp Quote</a>

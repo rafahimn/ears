@@ -7,7 +7,14 @@ declare global { interface Window { google?: any; googleTranslateElementInit?: (
 
 function readLanguage(): Language {
   if (typeof document === 'undefined') return 'en';
-  return document.cookie.split(';').map(v => v.trim()).some(v => v.startsWith('googtrans=/en/ar')) ? 'ar' : 'en';
+  const cookies = document.cookie.split(';').map(v => v.trim());
+  const translateCookie = cookies.find(v => v.startsWith('googtrans='))?.slice('googtrans='.length);
+  if (translateCookie === '/en/ar' || translateCookie?.endsWith('/en/ar')) return 'ar';
+  try {
+    const stored = window.localStorage.getItem('site-language');
+    if (stored === 'ar' || stored === 'en') return stored;
+  } catch { /* Storage may be unavailable in privacy modes. */ }
+  return 'en';
 }
 
 export function LanguageSwitcher({ mobile = false, onSelect }: { mobile?: boolean; onSelect?: () => void }) {
@@ -38,9 +45,12 @@ export function LanguageSwitcher({ mobile = false, onSelect }: { mobile?: boolea
 
   const changeLanguage = (next: Language) => {
     const value = next === 'ar' ? '/en/ar' : '/en/en';
-    // Google Translate reads this cookie on every route, so language stays consistent site-wide.
+    // Persist the target language independently from Google Translate's own cookie.
+    try { window.localStorage.setItem('site-language', next); } catch { /* Continue with cookies if storage is blocked. */ }
     document.cookie = `googtrans=${value};path=/;max-age=31536000;SameSite=Lax`;
-    document.cookie = `googtrans=${value};path=/;domain=${window.location.hostname};max-age=31536000;SameSite=Lax`;
+    if (window.location.hostname.includes('.') && !window.location.hostname.endsWith('.localhost')) {
+      document.cookie = `googtrans=${value};path=/;domain=${window.location.hostname};max-age=31536000;SameSite=Lax`;
+    }
     document.documentElement.lang = next;
     document.documentElement.dir = next === 'ar' ? 'rtl' : 'ltr';
     setLanguage(next);
@@ -48,7 +58,7 @@ export function LanguageSwitcher({ mobile = false, onSelect }: { mobile?: boolea
     if (select) {
       select.value = next;
       select.dispatchEvent(new Event('change', { bubbles: true }));
-      window.setTimeout(() => window.location.reload(), 250);
+      window.setTimeout(() => window.location.reload(), 350);
     } else {
       window.location.reload();
     }
@@ -63,7 +73,7 @@ export function LanguageSwitcher({ mobile = false, onSelect }: { mobile?: boolea
       <button type="button" onClick={() => changeLanguage(target)} aria-label={target === 'ar' ? 'Switch website to Arabic' : 'Switch website to English'}>
         {target === 'ar' ? 'العربية' : 'English'}
       </button>
-      <Icon name="chevron-down" />
+      <Icon name="chevron" />
     </div>
   </>;
 }

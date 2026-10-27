@@ -80,3 +80,10 @@ A separate RA Fahim developer profile page is available directly at `/rafahim/`.
 - Local public image/script URLs use the same build-time path helper; the static-export finalizer prefixes CSS `url()` references, updates the PWA manifest and adds `.nojekyll`.
 - Use `npm ci` locally for a lockfile-consistent install, then `npm run build`. The build finalizes and checks expected static routes.
 - The first-load logo/loading overlay is server-rendered, auto-dismisses on animation end with a fallback timeout, and respects reduced-motion preferences.
+
+
+### Responsive navigation and language toggle (V28)
+- Desktop navigation groups specialist service routes under a single Solutions dropdown to reduce crowding.
+- The desktop navigation collapses to an accessible mobile menu at tablet widths; the mobile panel has a sticky language row and scrolls independently on small screens.
+- Language switcher displays only the destination language: Arabic while the page is English, or English while the page is Arabic. The target choice is persisted in local storage and the Google Translate cookie.
+- The Solutions dropdown supports click, hover/focus, outside-click dismissal, Escape key, and active service highlighting.
