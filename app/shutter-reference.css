@@ -115,7 +115,7 @@
 
 
 .dars-shutter-hero__container {
-    width: min(1250px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 
     display: grid;
@@ -1393,7 +1393,7 @@
 }
 
 .dars-shutter-types__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -2455,7 +2455,7 @@
 }
 
 .dars-shutter-builder__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -3800,7 +3800,7 @@
 }
 
 .dars-shutter-quote-logic__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -4404,7 +4404,7 @@
 }
 
 .dars-shutter-process-support__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -5234,7 +5234,7 @@
 }
 
 .dars-shutter-compare__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -5756,7 +5756,7 @@
 }
 
 .dars-real-shutter-projects__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 

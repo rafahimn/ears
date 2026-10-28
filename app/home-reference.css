@@ -115,7 +115,7 @@
 
  
 .dars-hero-v2__inner {
-    width: min(1250px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 
     display: grid;
@@ -189,10 +189,11 @@
     margin: 0;
 
     color: var(--dars-v2-text);
-    font-size: clamp(48px, 5.25vw, 73px);
+    font-size: clamp(40px, 4.2vw, 56px);
     font-weight: 800;
-    line-height: 1.01;
-    letter-spacing: -2.8px;
+    line-height: 1.06;
+    letter-spacing: -1.8px;
+    text-wrap: balance;
 }
 
 .dars-hero-v2__title span {
@@ -978,7 +979,7 @@
     }
 
     .dars-hero-v2__title {
-        font-size: clamp(44px,5vw,61px);
+        font-size: clamp(38px,4.4vw,50px);
     }
 }
 
@@ -1043,7 +1044,7 @@
     }
 
     .dars-hero-v2__title {
-        font-size: clamp(37px,10.6vw,48px);
+        font-size: clamp(30px,8.4vw,42px);
 
         line-height: 1.03;
         letter-spacing: -1.7px;
@@ -1130,7 +1131,7 @@
  
 @media (max-width: 390px) {
     .dars-hero-v2__title {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .dars-hero-v2__whatsapp,
@@ -1322,7 +1323,7 @@
 
 
 .dars-emergency-wrap {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
     padding: 44px 0 70px;
 }
@@ -1752,7 +1753,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -2587,7 +2588,7 @@
 }
 
 .dars-packages-v3__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -3400,7 +3401,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -4198,7 +4199,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -4826,7 +4827,7 @@
 }
 
 .dars-reviews__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -7125,7 +7126,7 @@
 }
 
 .dars-supply-bar__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
     padding: 13px;
 
@@ -7352,7 +7353,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -8015,7 +8016,7 @@
 
  
 .dars-home-reference .dars-hero-v2{padding-top:72px;min-height:660px}
-.dars-home-reference .dars-hero-v2__title{max-width:810px}
+.dars-home-reference .dars-hero-v2__title{max-width:720px}
 .dars-home-reference .dars-supply-bar{position:relative}
 @media(max-width:900px){.dars-home-reference .dars-hero-v2{padding-top:48px;min-height:0}}
 @media(max-width:640px){.dars-home-reference .dars-hero-v2{padding-top:32px;padding-bottom:48px}}

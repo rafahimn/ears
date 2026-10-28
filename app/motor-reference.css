@@ -110,7 +110,7 @@
 }
 
 .dars-motor-hero__container {
-    width: min(1250px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 
     display: grid;
@@ -1203,7 +1203,7 @@
 }
 
 .dars-motor-selector__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
@@ -2806,7 +2806,7 @@
 }
 
 .dars-motor-brands-process__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(var(--site-max), calc(100% - (var(--site-gutter) * 2)));
     margin: 0 auto;
 }
 
