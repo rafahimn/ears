@@ -51,7 +51,35 @@ if (fs.existsSync(manifestPath) && basePath) {
 // GitHub Pages must not process Next.js output through Jekyll.
 fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
 
-const routeChecks = ['index.html', 'services/index.html', 'shutter/index.html', 'awning/index.html', 'garage/index.html', 'motor/index.html', 'repair/index.html', 'aluminium-works/index.html', 'steel-work/index.html', 'polycarbonate/index.html', 'sitemap.xml', 'robots.txt', 'rafahim/index.html'];
+const routeChecks = [
+  'index.html',
+  'services/index.html',
+  'shutter/index.html',
+  'canopy/index.html',
+  'awning/index.html',
+  'garage/index.html',
+  'motor/index.html',
+  'repair/index.html',
+  'aluminium-works/index.html',
+  'steel-work/index.html',
+  'polycarbonate/index.html',
+  'about-us/index.html',
+  'blog/index.html',
+  'blog/rolling-shutters-dubai-guide/index.html',
+  'blog/canopy-solutions-dubai-guide/index.html',
+  'blog/garage-door-planning-dubai/index.html',
+  'blog/awning-solutions-dubai-guide/index.html',
+  'blog/gate-motor-selection-dubai/index.html',
+  'blog/shutter-door-repair-maintenance-guide/index.html',
+  'blog/aluminium-fabrication-dubai-guide/index.html',
+  'blog/steel-fabrication-dubai-guide/index.html',
+  'blog/polycarbonate-shutters-retail-guide/index.html',
+  'privacy-policy/index.html',
+  'terms-conditions/index.html',
+  'sitemap.xml',
+  'robots.txt',
+  'rafahim/index.html',
+];
 const missing = routeChecks.filter((route) => !fs.existsSync(path.join(outDir, route)));
 if (missing.length) {
   throw new Error(`Static export is missing expected route output: ${missing.join(', ')}`);

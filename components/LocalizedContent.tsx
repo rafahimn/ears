@@ -85,7 +85,7 @@ export function LocalizedContent() {
       }
     };
 
-    const walk = (root: ParentNode) => {
+    const walk = (root: Node) => {
       if (root instanceof Element) processElement(root);
       if (root instanceof Text) { processText(root); return; }
       const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
