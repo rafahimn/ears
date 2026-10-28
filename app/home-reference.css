@@ -189,10 +189,10 @@
     margin: 0;
 
     color: var(--dars-v2-text);
-    font-size: clamp(40px, 4.2vw, 56px);
+    font-size: clamp(40px, 3.5vw, 66px);
     font-weight: 800;
     line-height: 1.06;
-    letter-spacing: -1.8px;
+    letter-spacing: -2px;
     text-wrap: balance;
 }
 
@@ -8016,7 +8016,7 @@
 
  
 .dars-home-reference .dars-hero-v2{padding-top:72px;min-height:660px}
-.dars-home-reference .dars-hero-v2__title{max-width:720px}
+.dars-home-reference .dars-hero-v2__title{max-width:810px}
 .dars-home-reference .dars-supply-bar{position:relative}
 @media(max-width:900px){.dars-home-reference .dars-hero-v2{padding-top:48px;min-height:0}}
 @media(max-width:640px){.dars-home-reference .dars-hero-v2{padding-top:32px;padding-bottom:48px}}
