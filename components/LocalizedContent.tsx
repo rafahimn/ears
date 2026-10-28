@@ -6,10 +6,10 @@ import { arabicTranslations, normalizeTranslationKey } from '../lib/arabic-trans
 type Language = 'en' | 'ar';
 type AttrStore = Map<string, string>;
 
-/** Applies the site's authored Arabic copy to existing and newly rendered text nodes.
- * There is no third-party translation script: unmatched long-form copy stays in English
- * until a reviewed Arabic translation is added to the dictionary.
- */
+
+
+
+
 export function LocalizedContent() {
   useEffect(() => {
     const textOriginals = new WeakMap<Text, string>();
@@ -20,8 +20,8 @@ export function LocalizedContent() {
 
     const isSkipped = (element: Element | null, textNode = false) => {
       if (!element) return false;
-      // Keep editable/user-entered content intact, but still translate placeholders,
-      // accessible labels and select-option text through the attribute/text handlers.
+       
+       
       const selector = textNode
         ? 'script,style,noscript,svg,code,pre,textarea,input,[contenteditable="true"],[translate="no"],[data-translation-skip]'
         : 'script,style,noscript,svg,code,pre,[contenteditable="true"],[translate="no"],[data-translation-skip]';
@@ -43,7 +43,7 @@ export function LocalizedContent() {
         source = node.data;
         textOriginals.set(node, source);
       } else if (last !== undefined && node.data !== last && node.data !== source) {
-        // React or a widget supplied genuinely new English copy to a previously translated node.
+         
         source = node.data;
         textOriginals.set(node, source);
       }
@@ -105,7 +105,7 @@ export function LocalizedContent() {
     walk(document.body);
     window.addEventListener('site-language-change', onLanguageChange);
     const observer = new MutationObserver((records) => {
-      // Process only the changed regions; text/attribute updates we made are idempotent.
+       
       for (const record of records) {
         if (record.type === 'characterData' && record.target instanceof Text) processText(record.target);
         if (record.type === 'attributes' && record.target instanceof Element) processElement(record.target);

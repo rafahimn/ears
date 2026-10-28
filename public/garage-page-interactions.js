@@ -1,4 +1,4 @@
-/* Garage package selector, live configurator, measurement form and FAQ accordion. */
+ 
 
 (function initGarageFeature0() {
 const garageHero = document.querySelector('.dars-garage-hero');
@@ -11,21 +11,21 @@ const garageHero = document.querySelector('.dars-garage-hero');
         '[data-config-target], [data-hero-config]'
     );
 
-    /*
-     * Scroll to configurator and activate the requested system.
-     *
-     * Future configurator tabs must use:
-     * data-config-system="standard"
-     * data-config-system="premium"
-     */
+    
+
+
+
+
+
+
     function openConfigurator(systemName) {
         const configurator =
             document.getElementById('door-configurator');
 
-        /*
-         * Save selection so the future configurator can also
-         * read it after page load.
-         */
+        
+
+
+
         try {
             sessionStorage.setItem(
                 'darsSelectedGarageSystem',
@@ -35,9 +35,9 @@ const garageHero = document.querySelector('.dars-garage-hero');
             /* Storage can safely be ignored. */
         }
 
-        /*
-         * Activate matching tab if it already exists.
-         */
+        
+
+
         const matchingTab = document.querySelector(
             '[data-config-system="' + systemName + '"]'
         );
@@ -46,9 +46,9 @@ const garageHero = document.querySelector('.dars-garage-hero');
             matchingTab.click();
         }
 
-        /*
-         * Send a custom event for the configurator JavaScript.
-         */
+        
+
+
         document.dispatchEvent(
             new CustomEvent(
                 'darsGarageSystemSelected',
@@ -122,9 +122,9 @@ const systemSection = document.querySelector(
         const configurator =
             document.getElementById('door-configurator');
 
-        /*
-         * Save the selected system so the configurator can read it.
-         */
+        
+
+
         try {
             sessionStorage.setItem(
                 'darsSelectedGarageSystem',
@@ -134,12 +134,12 @@ const systemSection = document.querySelector(
             /* Storage failure does not affect navigation. */
         }
 
-        /*
-         * Activate the future configurator tab.
-         * Required attributes:
-         * data-config-system="premium"
-         * data-config-system="standard"
-         */
+        
+
+
+
+
+
         const selectedTab = document.querySelector(
             '[data-config-system="' + systemName + '"]'
         );
@@ -148,9 +148,9 @@ const systemSection = document.querySelector(
             selectedTab.click();
         }
 
-        /*
-         * Custom event can also be used by configurator JavaScript.
-         */
+        
+
+
         document.dispatchEvent(
             new CustomEvent(
                 'darsGarageSystemSelected',
@@ -394,9 +394,9 @@ const builder = document.querySelector('.dars-door-builder');
         updateSummary();
     }
 
-    /*
-     * System selector
-     */
+    
+
+
     builder.querySelectorAll(
         '.dars-system-option'
     ).forEach(function (button) {
@@ -409,9 +409,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Popular sizes
-     */
+    
+
+
     builder.querySelectorAll(
         '.dars-size-option'
     ).forEach(function (button) {
@@ -431,9 +431,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Colours and live preview
-     */
+    
+
+
     builder.querySelectorAll(
         '.dars-colour-option'
     ).forEach(function (button) {
@@ -474,9 +474,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Range controls
-     */
+    
+
+
     widthRange.addEventListener('input', function () {
         updateDimensions(
             widthRange.value,
@@ -518,9 +518,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Add-ons
-     */
+    
+
+
     builder.querySelectorAll(
         '.dars-addon-option'
     ).forEach(function (button) {
@@ -547,9 +547,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Door count
-     */
+    
+
+
     builder.querySelector(
         '#darsDoorCountMinus'
     ).addEventListener('click', function () {
@@ -578,9 +578,9 @@ const builder = document.querySelector('.dars-door-builder');
         updateSummary();
     });
 
-    /*
-     * Schedule
-     */
+    
+
+
     builder.querySelectorAll(
         '.dars-schedule-option'
     ).forEach(function (button) {
@@ -602,9 +602,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Payment
-     */
+    
+
+
     builder.querySelectorAll(
         '.dars-payment-option'
     ).forEach(function (button) {
@@ -626,9 +626,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Outside / inside preview
-     */
+    
+
+
     builder.querySelectorAll(
         '.dars-view-option'
     ).forEach(function (button) {
@@ -651,9 +651,9 @@ const builder = document.querySelector('.dars-door-builder');
         });
     });
 
-    /*
-     * Receive selection from Hero or comparison cards.
-     */
+    
+
+
     document.addEventListener(
         'darsGarageSystemSelected',
         function (event) {
@@ -668,9 +668,9 @@ const builder = document.querySelector('.dars-door-builder');
         }
     );
 
-    /*
-     * Read previously selected system.
-     */
+    
+
+
     try {
         const storedSystem =
             sessionStorage.getItem(

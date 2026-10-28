@@ -1,4 +1,4 @@
-/* Dedicated responsive styling for the gate motor reference page. */
+ 
 
                 :root {
     --dars-motor-green: #10362B;
@@ -16,9 +16,9 @@
     --dars-motor-whatsapp-dark: #109A46;
 }
 
-/* =====================================================
-   HERO BASE
-===================================================== */
+
+
+
 .dars-motor-hero,
 .dars-motor-hero * {
     box-sizing: border-box;
@@ -122,9 +122,9 @@
     gap: clamp(55px, 7vw, 96px);
 }
 
-/* =====================================================
-   LEFT CONTENT
-===================================================== */
+
+
+
 .dars-motor-hero__content {
     max-width: 700px;
 }
@@ -236,7 +236,7 @@
     stroke-linejoin: round;
 }
 
-/* Actions */
+ 
 .dars-motor-hero__actions {
     margin-top: 30px;
 
@@ -416,9 +416,9 @@
     font-weight: 800;
 }
 
-/* =====================================================
-   RIGHT PREVIEW
-===================================================== */
+
+
+
 .dars-motor-preview {
     position: relative;
     overflow: hidden;
@@ -828,7 +828,7 @@
     line-height: 1.55;
 }
 
-/* Scroll */
+ 
 .dars-motor-hero__scroll {
     position: absolute;
     left: 50%;
@@ -875,9 +875,9 @@
     }
 }
 
-/* =====================================================
-   TRUST CAROUSEL
-===================================================== */
+
+
+
 .dars-motor-trust,
 .dars-motor-trust * {
     box-sizing: border-box;
@@ -984,9 +984,9 @@
     }
 }
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+
+
+
 @media (max-width: 1050px) {
     .dars-motor-hero__container {
         grid-template-columns:
@@ -1142,7 +1142,7 @@
 }
               
 
-/* -------- Imported gate motor section styles -------- */
+ 
 
                 :root {
     --dars-ms-green: #10362B;
@@ -1160,9 +1160,9 @@
     --dars-ms-whatsapp-dark: #109A46;
 }
 
-/* =====================================================
-   BASE
-===================================================== */
+
+
+
 
 .dars-motor-selector,
 .dars-motor-selector * {
@@ -1207,9 +1207,9 @@
     margin: 0 auto;
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
+
+
+
 
 .dars-motor-selector__header {
     max-width: 940px;
@@ -1277,9 +1277,9 @@
     line-height: 1.74;
 }
 
-/* =====================================================
-   APPLICATION TABS
-===================================================== */
+
+
+
 
 .dars-motor-selector__tabs {
     display: grid;
@@ -1398,9 +1398,9 @@
     line-height: 1.4;
 }
 
-/* =====================================================
-   MAIN LAYOUT
-===================================================== */
+
+
+
 
 .dars-motor-selector__layout {
     margin-top: 17px;
@@ -1414,9 +1414,9 @@
     gap: 20px;
 }
 
-/* =====================================================
-   LEFT CONFIG
-===================================================== */
+
+
+
 
 .dars-motor-config {
     padding: 28px;
@@ -1533,7 +1533,7 @@
     font-size: 10px;
 }
 
-/* Packages */
+ 
 
 .dars-motor-package-list {
     display: grid;
@@ -1662,7 +1662,7 @@
     color: #FFFFFF;
 }
 
-/* Segments */
+ 
 
 .dars-motor-config__segments {
     padding: 5px;
@@ -1722,7 +1722,7 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.53) !important;
 }
 
-/* Addons */
+ 
 
 .dars-motor-addon-grid {
     display: grid;
@@ -1799,7 +1799,7 @@
     line-height: 1.6;
 }
 
-/* Fields */
+ 
 
 .dars-motor-fields {
     display: grid;
@@ -1841,9 +1841,9 @@
         0 0 0 4px rgba(196, 154, 74, 0.10);
 }
 
-/* =====================================================
-   SUMMARY
-===================================================== */
+
+
+
 
 .dars-motor-summary {
     position: sticky;
@@ -1883,7 +1883,7 @@
         );
 }
 
-/* Shared scene */
+ 
 
 .dars-motor-preview-scene {
     position: absolute;
@@ -1913,7 +1913,7 @@
     display: block;
 }
 
-/* Sliding scene */
+ 
 
 .dars-motor-preview-scene__pillar {
     position: absolute;
@@ -2034,7 +2034,7 @@
     transform: translateX(-50%);
 }
 
-/* Swing */
+ 
 
 .dars-motor-preview-scene__swing-post {
     position: absolute;
@@ -2128,7 +2128,7 @@
     }
 }
 
-/* Garage */
+ 
 
 .dars-motor-preview-scene__garage-opening {
     position: absolute;
@@ -2210,7 +2210,7 @@
     transform: translateX(-50%);
 }
 
-/* Barrier */
+ 
 
 .dars-motor-preview-scene__barrier-body {
     position: absolute;
@@ -2331,7 +2331,7 @@
     right: 13px;
 }
 
-/* Live pill */
+ 
 
 .dars-motor-summary__live {
     position: absolute;
@@ -2380,7 +2380,7 @@
     text-align: center;
 }
 
-/* Summary content */
+ 
 
 .dars-motor-summary__content {
     margin-top: 18px;
@@ -2596,9 +2596,9 @@
     text-align: center;
 }
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+
+
+
 
 @media (max-width: 1050px) {
     .dars-motor-selector__layout {
@@ -2730,7 +2730,7 @@
     }
 }
 
-/* Accessibility */
+ 
 
 .dars-motor-selector button:focus-visible,
 .dars-motor-selector a:focus-visible,
@@ -2749,7 +2749,7 @@
 }
               
 
-/* -------- Imported gate motor section styles -------- */
+ 
 
                 :root {
     --dars-mbp-green: #10362B;
@@ -2810,7 +2810,7 @@
     margin: 0 auto;
 }
 
-/* Header */
+ 
 
 .dars-motor-brands-process__header {
     max-width: 970px;
@@ -2878,7 +2878,7 @@
     line-height: 1.74;
 }
 
-/* Brand grid */
+ 
 
 .dars-motor-brand-grid {
     display: grid;
@@ -3136,7 +3136,7 @@
     transform: translateX(5px);
 }
 
-/* Brand note */
+ 
 
 .dars-motor-brands-note {
     margin-top: 21px;
@@ -3268,7 +3268,7 @@
     stroke-linejoin: round;
 }
 
-/* Process block */
+ 
 
 .dars-motor-process-block {
     margin-top: 122px;
@@ -3460,7 +3460,7 @@
     transform: translateX(5px);
 }
 
-/* Process CTA */
+ 
 
 .dars-motor-process-cta {
     margin-top: 21px;
@@ -3585,7 +3585,7 @@
     stroke-linejoin: round;
 }
 
-/* Responsive */
+ 
 
 @media (max-width: 1100px) {
     .dars-motor-brand-grid {
@@ -3712,7 +3712,7 @@
 }
               
 
-/* -------- Imported gate motor section styles -------- */
+ 
 
                 :root {
     --dars-gmf-green: #10362B;
@@ -3771,7 +3771,7 @@
     margin: 0 auto;
 }
 
-/* Header */
+ 
 .dars-gate-motor-faq__header {
     max-width: 900px;
     margin-bottom: 47px;
@@ -3838,7 +3838,7 @@
     line-height: 1.74;
 }
 
-/* List */
+ 
 .dars-gate-motor-faq__list {
     display: grid;
     gap: 12px;
@@ -3883,7 +3883,7 @@
         inset 0 1px 0 #FFFFFF;
 }
 
-/* Question */
+ 
 .dars-gate-motor-faq-item__question,
 .dars-gate-motor-faq-item__question:hover,
 .dars-gate-motor-faq-item__question:focus {
@@ -3956,7 +3956,7 @@
     stroke-linejoin: round;
 }
 
-/* Answer animation */
+ 
 .dars-gate-motor-faq-item__answer {
     display: grid;
     grid-template-rows: 0fr;
@@ -3990,7 +3990,7 @@
     line-height: 1.78;
 }
 
-/* CTA */
+ 
 .dars-gate-motor-faq__cta {
     margin-top: 25px;
     padding: 20px 21px;
@@ -4137,7 +4137,7 @@
     transform: translateX(5px);
 }
 
-/* Tablet */
+ 
 @media (max-width: 800px) {
     .dars-gate-motor-faq__cta {
         align-items: stretch;
@@ -4149,7 +4149,7 @@
     }
 }
 
-/* Mobile */
+ 
 @media (max-width: 640px) {
     .dars-gate-motor-faq {
         padding: 74px 0 79px;
@@ -4224,7 +4224,7 @@
     }
 }
 
-/* Accessibility */
+ 
 .dars-gate-motor-faq button:focus-visible,
 .dars-gate-motor-faq a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.50) !important;
@@ -4240,7 +4240,7 @@
 }
               
 
-/* -------- Imported gate motor section styles -------- */
+ 
 
                 :root {
     --dars-cta-green: #10362B;
@@ -4320,7 +4320,7 @@
         inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-/* Decorative top line */
+ 
 .dars-final-cta__box::before {
     content: "";
     position: absolute;
@@ -4343,7 +4343,7 @@
     transform: translateX(-50%);
 }
 
-/* Inner border */
+ 
 .dars-final-cta__box::after {
     content: "";
     position: absolute;
@@ -4435,7 +4435,7 @@
     color: var(--dars-cta-green);
 }
 
-/* Requirements */
+ 
 .dars-final-cta__requirements {
     margin-top: 28px;
 
@@ -4501,7 +4501,7 @@
     stroke-linejoin: round;
 }
 
-/* Actions */
+ 
 .dars-final-cta__actions {
     margin-top: 25px;
 
@@ -4646,7 +4646,7 @@
     line-height: 1.5;
 }
 
-/* Tablet */
+ 
 @media (max-width: 850px) {
     .dars-final-cta__box {
         min-height: auto;
@@ -4654,7 +4654,7 @@
     }
 }
 
-/* Mobile */
+ 
 @media (max-width: 640px) {
     .dars-final-cta {
         padding: 62px 0 68px;
@@ -4714,7 +4714,7 @@
     }
 }
 
-/* Accessibility */
+ 
 .dars-final-cta a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48);
     outline-offset: 4px;

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { sitePath } from '../lib/paths';
 
 export function LoadingScreen() {
-  // Render on the server so the first-load animation is present before hydration.
+   
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ export function LoadingScreen() {
       setVisible(false);
       return;
     }
-    // CSS animates the screen out. This timeout is only a safety net if animation events are suppressed.
+     
     const fallback = window.setTimeout(() => setVisible(false), 1800);
     return () => window.clearTimeout(fallback);
   }, []);

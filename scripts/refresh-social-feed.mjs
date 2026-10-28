@@ -215,5 +215,5 @@ async function main(){
 
 main().catch(error=>{
   console.error(`Social feed refresh failed safely: ${error.message}`);
-  process.exitCode = 0; // Feed problems must not block the website deployment.
+  process.exitCode = 0;  
 });

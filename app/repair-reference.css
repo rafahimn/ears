@@ -1,4 +1,4 @@
-/* Repair & maintenance page: warm industrial palette and fault-diagnosis layout. */
+ 
 .repair-reference{--rx-ink:#191713;--rx-ink-2:#26231e;--rx-paper:#fbf8f1;--rx-paper-2:#f2ede2;--rx-muted:#746f65;--rx-line:rgba(35,30,22,.13);--rx-accent:#c98b35;--rx-accent-light:#f0d78d;--rx-rust:#b04e26;--rx-green:#247b51;color:var(--rx-ink);font-family:Arial,Helvetica,sans-serif}
 .repair-reference .gx-page{width:100%;overflow:hidden;background:var(--rx-paper);color:var(--rx-ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
 .repair-reference .gx-page *{box-sizing:border-box}
@@ -16,7 +16,7 @@
 .repair-reference .gx-btn-wa{background:#247d51;color:#fff;border-color:#247d51}
 .repair-reference .gx-btn-ghost{background:rgba(255,255,255,.04);color:#fff;border-color:rgba(255,255,255,.28)}
 .repair-reference .gx-btn-lg{min-height:54px;padding:15px 22px;font-size:14px}
-/* Hero */
+ 
 .repair-reference .rx-hero{position:relative;isolation:isolate;padding:76px clamp(20px,4.8vw,70px) 64px;background:radial-gradient(circle at 80% 27%,rgba(222,178,78,.18),transparent 30%),linear-gradient(135deg,#f7f2e7 0%,#fcfaf5 50%,#eee5d2 100%)}
 .repair-reference .rx-hero:before{position:absolute;z-index:-1;inset:0;content:"";pointer-events:none;background-image:linear-gradient(rgba(67,52,30,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(67,52,30,.025) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(90deg,#000,transparent 90%)}
 .repair-reference .rx-hero-inner{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);align-items:center;gap:clamp(34px,5vw,78px);max-width:1220px;margin:0 auto}
@@ -36,14 +36,14 @@
 .repair-reference .rx-hero-row strong{font-size:12px}
 .repair-reference .rx-hero-row span,.repair-reference .rx-hero-row small{color:var(--rx-muted);font-size:11px;line-height:1.55}
 .repair-reference .rx-hero-row:hover{border-color:rgba(176,78,38,.5);background:#fffaf1}
-/* ticker */
+ 
 .repair-reference .gx-ticker{overflow:hidden;padding:15px 0;background:#1c1a16;color:#f9f2df;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(0,0,0,.18)}
 .repair-reference .gx-ticker-track{display:flex;width:max-content;align-items:center;gap:28px;animation:repair-ticker 42s linear infinite}
 .repair-reference .gx-ticker-group{display:flex;align-items:center;gap:28px;white-space:nowrap}
 .repair-reference .gx-ticker span{display:inline-flex;align-items:center;gap:9px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,250,237,.87)}
 .repair-reference .gx-ticker i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#e0b64f;box-shadow:0 0 0 4px rgba(224,182,79,.12)}
 @keyframes repair-ticker{to{transform:translateX(-50%)}}
-/* fault finder */
+ 
 .repair-reference .rx-finder{max-width:1280px}
 .repair-reference .rx-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:26px 0 17px}
 .repair-reference .rx-tab{display:flex;align-items:center;justify-content:center;gap:9px;min-height:62px;padding:12px 10px;border:1px solid var(--rx-line);border-radius:13px;background:rgba(255,255,255,.65);color:#5a544a;text-align:left;cursor:pointer;transition:all .2s ease}
@@ -66,7 +66,7 @@
 .repair-reference .rx-result h3{margin:4px 0 8px;font-size:21px;line-height:1.22;letter-spacing:-.03em}
 .repair-reference .rx-cause{margin:0 0 16px;color:#625b51;font-size:13px;line-height:1.7}
 .repair-reference .rx-result .gx-btn{min-height:43px;font-size:12px}
-/* maintenance contracts */
+ 
 .repair-reference .rx-amc{max-width:none;background:#f0e9da}
 .repair-reference .rx-amc>.gx-section-head,.repair-reference .rx-amc>.rx-amc-grid{max-width:1180px;margin-left:auto;margin-right:auto}
 .repair-reference .rx-amc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px}
@@ -81,7 +81,7 @@
 .repair-reference .rx-amc-custom h3,.repair-reference .rx-amc-custom strong{color:#fff9eb}
 .repair-reference .rx-amc-custom p,.repair-reference .rx-amc-custom li{color:rgba(255,249,235,.72)}
 .repair-reference .rx-amc-grid .gx-btn{margin-top:22px}
-/* process */
+ 
 .repair-reference .gx-process-grid{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:30px}
 .repair-reference .gx-process-step{position:relative;min-height:218px;padding:23px 20px;border:1px solid var(--rx-line);border-radius:16px;background:#fff;box-shadow:0 10px 26px rgba(38,29,17,.035)}
 .repair-reference .gx-process-step>span:first-child{display:inline-grid;place-items:center;width:39px;height:39px;margin-bottom:19px;border-radius:12px;background:#28231c;color:#f0d78d;font-size:12px;font-weight:800}
@@ -89,7 +89,7 @@
 .repair-reference .gx-process-step h3{margin:0 0 8px;font-size:17px;line-height:1.27;letter-spacing:-.025em}
 .repair-reference .gx-process-step p{margin:0;color:var(--rx-muted);font-size:12.5px;line-height:1.7}
 .repair-reference .gx-process-line{position:absolute;z-index:0;top:42px;left:9%;right:9%;height:1px;background:linear-gradient(90deg,transparent,#d2b777,transparent)}
-/* promises */
+ 
 .repair-reference .rx-promises{max-width:none;background:#201e19;color:#fff8eb}
 .repair-reference .rx-promises .gx-section-head h2{color:#fff8eb}
 .repair-reference .rx-promises .gx-section-head>p:not(.gx-kicker){color:rgba(255,248,235,.65)}
@@ -98,7 +98,7 @@
 .repair-reference .rx-promise-icon{display:grid;place-items:center;width:44px;height:44px;margin-bottom:15px;border:1px solid rgba(230,194,106,.26);border-radius:12px;color:#e2be69;background:rgba(226,190,105,.08)}
 .repair-reference .rx-promises-grid h3{margin:0 0 8px;color:#fff8eb;font-size:16px;line-height:1.32}
 .repair-reference .rx-promises-grid p{margin:0;color:rgba(255,248,235,.66);font-size:12.5px;line-height:1.7}
-/* answers */
+ 
 .repair-reference .rx-symptoms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 44px}
 .repair-reference .rx-symptoms>.gx-section-head{grid-column:1/-1;max-width:760px;width:100%;margin-bottom:0}
 .repair-reference .rx-symptoms .rx-group{margin:0;padding:23px;border:1px solid var(--rx-line);border-radius:17px;background:#fffdf8}
@@ -108,7 +108,7 @@
 .repair-reference .rx-symptoms article h3{margin:0 0 6px;font-size:16px;line-height:1.35;letter-spacing:-.02em}
 .repair-reference .rx-symptoms article p{margin:0;font-size:12.5px;line-height:1.75;color:rgba(23,21,18,.75)}
 .repair-reference .rx-symptoms .rx-app{margin:12px 0 0;font-size:12px;line-height:1.6;color:rgba(23,21,18,.7)}
-/* FAQ */
+ 
 .repair-reference .gx-faq{max-width:none;background:#f0e9da}
 .repair-reference .gx-faq>.gx-section-head,.repair-reference .gx-faq>.gx-faq-list{max-width:920px;margin-left:auto;margin-right:auto}
 .repair-reference .gx-faq-list{display:grid;gap:10px}
@@ -118,7 +118,7 @@
 .repair-reference .gx-faq-item summary svg{color:#a96e26;transition:transform .2s ease}
 .repair-reference .gx-faq-item[open] summary svg{transform:rotate(180deg)}
 .repair-reference .gx-faq-item p{margin:0;padding:0 20px 20px;color:#6d665c;font-size:13px;line-height:1.75}
-/* Final CTA and link cards */
+ 
 .repair-reference .gx-final{padding:70px clamp(20px,4.8vw,70px);background:#f8f4e9}
 .repair-reference .gx-final-card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:30px;max-width:1180px;margin:0 auto;padding:clamp(28px,4vw,48px);overflow:hidden;border-radius:22px;background:#201e19;color:#fff8ea;box-shadow:0 22px 56px rgba(32,25,15,.13)}
 .repair-reference .gx-final-card:before,.repair-reference .gx-final-card:after{position:absolute;content:"";width:270px;height:270px;border-radius:50%;pointer-events:none}
@@ -136,7 +136,7 @@
 .repair-reference .gx-link-card strong{display:block;margin-bottom:8px;padding-right:20px;color:#27231d;font-size:15px;line-height:1.3}
 .repair-reference .gx-link-card span{color:var(--rx-muted);font-size:12px;line-height:1.7}
 .repair-reference .gx-link-card:hover{transform:translateY(-3px);border-color:rgba(176,78,38,.35);box-shadow:0 12px 26px rgba(36,29,17,.075)}
-/* Closing CTA */
+ 
 .repair-reference .repair-abcta{margin:20px clamp(20px,4.8vw,70px) 50px;padding:27px clamp(22px,3vw,38px);border-radius:18px;background:#171512;color:#faf7f0;display:flex;flex-wrap:wrap;align-items:center;gap:20px;justify-content:space-between}
 .repair-reference .abcta-text{flex:1 1 340px;min-width:260px}
 .repair-reference .abcta-kicker{display:flex;align-items:center;gap:8px;margin:0;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#f2de8c}
@@ -148,9 +148,9 @@
 .repair-reference .abcta-links a{display:inline-flex;align-items:center;padding:11px 16px;border-radius:999px;border:1px solid rgba(250,247,240,.3);color:#faf7f0;font-size:12px;font-weight:800;transition:border-color .15s ease,background .15s ease}
 .repair-reference .abcta-links a:hover{border-color:#f2de8c;background:rgba(242,222,140,.08)}
 .repair-reference .abcta-links a.abcta-get{background:linear-gradient(135deg,#f2de8c,#d4af37);border-color:transparent;color:#171512;font-weight:900}
-/* Illustration accents and motion */
+ 
 .repair-reference .va-s-accent{stop-color:#d9ad45}.repair-reference .va-s-accent-hi{stop-color:#f5d879}.repair-reference .va-s-white{stop-color:#fffaf0}.repair-reference .va-s-paper{stop-color:#f9f1dd}.repair-reference .va-s-paper2{stop-color:#e3d7ba}.repair-reference .va-s-ink{stop-color:#211d16}.repair-reference .va-s-deep{stop-color:#181612}.repair-reference .va-s-glow{stop-color:#f0ca61}.repair-reference .va-s-clear{stop-color:transparent}.repair-reference .va-ln-accent{fill:none;stroke:#d7ae4d}.repair-reference .va-ln-paper{fill:none;stroke:#fff8e6}.repair-reference .va-ln-soft{fill:none;stroke:rgba(255,248,230,.55)}.repair-reference .va-fl-paper{fill:#f8f0df}.repair-reference .va-fl-paper2{fill:#e7d8b8}.repair-reference .va-fl-accent{fill:#d9ad45}.repair-reference .va-fl-ink{fill:#211d16}.repair-reference .rx-motion[data-motion="stuck"] .rx-mover{transform:translateY(4px)}.repair-reference .rx-motion[data-motion="moving"] .rx-mover{animation:repair-door-move 2.2s ease-in-out infinite alternate;transform-origin:50% 100%}.repair-reference .rx-motion[data-motion="noise"] .rx-noise{animation:repair-pulse .65s ease-in-out infinite alternate}.repair-reference .rx-motion[data-motion="motor"] .rx-rotor{animation:repair-rotate 1s linear infinite;transform-origin:center}.repair-reference .rx-motion[data-motion="unsafe"] .rx-spring-snap{opacity:1!important}@keyframes repair-door-move{to{transform:translateY(-25px)}}@keyframes repair-pulse{to{opacity:.25;transform:translateX(3px)}}@keyframes repair-rotate{to{transform:rotate(360deg)}}
-/* Staggered reveal only activates after the script loads. */
+ 
 .repair-reference.repair-reveals-on [data-gxr]{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease;transition-delay:var(--d,0ms)}
 .repair-reference.repair-reveals-on [data-gxr].is-visible{opacity:1;transform:translateY(0)}
 @media(max-width:980px){.repair-reference .rx-hero-inner{grid-template-columns:1fr;gap:30px}.repair-reference .rx-hero-copy{max-width:780px}.repair-reference .rx-hero-card{max-width:800px;width:100%;margin:0 auto}.repair-reference .rx-shell{grid-template-columns:1fr}.repair-reference .rx-amc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.repair-reference .gx-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.repair-reference .rx-promises-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.repair-reference .gx-process-line{display:none}.repair-reference .gx-final-card{grid-template-columns:1fr}.repair-reference .gx-final-card .gx-final-ctas{margin-top:22px}}

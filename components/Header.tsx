@@ -12,7 +12,7 @@ const shortLabels: Record<string, string> = {
   shutter: 'Shutter', canopy: 'Canopy', garage: 'Garage', awning: 'Awning', motor: 'Motor',
   repair: 'Repair', 'aluminium-works': 'Aluminium', 'steel-work': 'Steel Work', polycarbonate: 'Polycarbonate',
 };
-// Same order as the footer: core services first, then fabrication and shade.
+ 
 const order = ['shutter', 'polycarbonate', 'garage', 'motor', 'repair', 'canopy', 'awning', 'aluminium-works', 'steel-work'];
 const ordered = order.map(slug => services.find(s => s.slug === slug)!);
 const trim = (path: string) => (path.length > 1 ? path.replace(/\/$/, '') : path);

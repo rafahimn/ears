@@ -17,7 +17,7 @@
     --dars-v2-whatsapp-dark: #109A46;
 }
 
-/* Global link underline reset inside section */
+ 
 .dars-hero-v2 a,
 .dars-hero-v2 a:hover,
 .dars-hero-v2 a:focus,
@@ -25,13 +25,13 @@
     text-decoration: none !important;
 }
 
-/* Box sizing */
+ 
 .dars-hero-v2,
 .dars-hero-v2 * {
     box-sizing: border-box;
 }
 
-/* Main hero */
+ 
 .dars-hero-v2 {
     position: relative;
     isolation: isolate;
@@ -53,7 +53,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Light readable overlay */
+ 
 .dars-hero-v2__shade {
     position: absolute;
     inset: 0;
@@ -69,7 +69,7 @@
         );
 }
 
-/* Ambient premium layers */
+ 
 .dars-hero-v2__ambient {
     position: absolute;
     inset: 0;
@@ -95,7 +95,7 @@
         );
 }
 
-/* Soft bottom fade */
+ 
 .dars-hero-v2::before {
     content: "";
     position: absolute;
@@ -113,7 +113,7 @@
         );
 }
 
-/* Main inner */
+ 
 .dars-hero-v2__inner {
     width: min(1250px, calc(100% - 48px));
     margin: 0 auto;
@@ -127,7 +127,7 @@
     gap: clamp(55px, 7vw, 100px);
 }
 
-/* Left content */
+ 
 .dars-hero-v2__content {
     max-width: 700px;
 
@@ -147,7 +147,7 @@
     }
 }
 
-/* Eyebrow */
+ 
 .dars-hero-v2__eyebrow {
     margin-bottom: 20px;
 
@@ -184,7 +184,7 @@
     }
 }
 
-/* Heading */
+ 
 .dars-hero-v2__title {
     margin: 0;
 
@@ -202,7 +202,7 @@
     color: var(--dars-v2-green);
 }
 
-/* Description */
+ 
 .dars-hero-v2__description {
     max-width: 670px;
     margin: 23px 0 0;
@@ -213,7 +213,7 @@
     line-height: 1.72;
 }
 
-/* Trust badges */
+ 
 .dars-hero-v2__badges {
     margin-top: 25px;
 
@@ -296,7 +296,7 @@
     letter-spacing: .5px;
 }
 
-/* Main actions */
+ 
 .dars-hero-v2__actions {
     margin-top: 29px;
 
@@ -447,7 +447,7 @@
     font-weight: 600;
 }
 
-/* Quote card */
+ 
 .dars-quote-v2 {
     position: relative;
     overflow: hidden;
@@ -591,7 +591,7 @@
     font-weight: 800;
 }
 
-/* Options */
+ 
 .dars-quote-v2__options {
     position: relative;
 
@@ -641,7 +641,7 @@
         background .3s ease;
 }
 
-/* No strong hover color */
+ 
 .dars-quote-v2__option:hover {
     border-color: rgba(196,154,74,.62);
     background: rgba(255,255,255,.96);
@@ -652,7 +652,7 @@
         0 10px 23px rgba(8,39,31,.075);
 }
 
-/* Selected is premium cream, no pink */
+ 
 .dars-quote-v2__option.is-active {
     border-color: var(--dars-v2-gold);
     background:
@@ -730,7 +730,7 @@
         scale(1);
 }
 
-/* Submit button */
+ 
 .dars-quote-v2__submit {
     position: relative;
     overflow: hidden;
@@ -877,7 +877,7 @@
     stroke-linejoin: round;
 }
 
-/* Scroll button */
+ 
 .dars-hero-v2__scroll {
     position: absolute;
     left: 50%;
@@ -962,7 +962,7 @@
     }
 }
 
-/* Tablet */
+ 
 @media (max-width: 1100px) {
     .dars-hero-v2 {
         min-height: auto;
@@ -983,7 +983,7 @@
     }
 }
 
-/* Stacked tablet */
+ 
 @media (max-width: 900px) {
     .dars-hero-v2 {
         padding:
@@ -1018,7 +1018,7 @@
     }
 }
 
-/* Mobile */
+ 
 @media (max-width: 640px) {
     .dars-hero-v2 {
         padding:
@@ -1129,7 +1129,7 @@
     }
 }
 
-/* Very small phones */
+ 
 @media (max-width: 390px) {
     .dars-hero-v2__title {
         font-size: 34px;
@@ -1146,7 +1146,7 @@
     }
 }
 
-/* Focus */
+ 
 .dars-hero-v2 a:focus-visible,
 .dars-quote-v2__option:focus-visible {
     outline:
@@ -1156,7 +1156,7 @@
     outline-offset: 4px;
 }
 
-/* Reduced motion */
+ 
 @media (prefers-reduced-motion: reduce) {
     .dars-hero-v2 *,
     .dars-hero-v2__scroll svg {
@@ -1181,9 +1181,9 @@
     --dars-strip-whatsapp-dark: #109A46;
 }
 
-/* ==============================================
-   BASE
-============================================== */
+
+
+
 .dars-trust-strip,
 .dars-trust-strip * {
     box-sizing: border-box;
@@ -1203,9 +1203,9 @@
     text-decoration: none !important;
 }
 
-/* ==============================================
-   MARQUEE
-============================================== */
+
+
+
 .dars-trust-marquee {
     width: 100%;
     overflow: hidden;
@@ -1223,7 +1223,7 @@
     will-change: transform;
 }
 
-/* Mouse hover করলে animation pause হবে */
+ 
 .dars-trust-marquee:hover .dars-trust-marquee__track {
     animation-play-state: paused;
 }
@@ -1286,7 +1286,7 @@
     }
 }
 
-/* Soft edge fade */
+ 
 .dars-trust-marquee::before,
 .dars-trust-marquee::after {
     content: "";
@@ -1320,9 +1320,9 @@
         );
 }
 
-/* ==============================================
-   EMERGENCY CTA AREA
-============================================== */
+
+
+
 .dars-emergency-wrap {
     width: min(1240px, calc(100% - 48px));
     margin: 0 auto;
@@ -1422,9 +1422,9 @@
     font-weight: 800;
 }
 
-/* ==============================================
-   CTA BUTTONS
-============================================== */
+
+
+
 .dars-emergency-card__actions {
     position: relative;
     z-index: 1;
@@ -1519,9 +1519,9 @@
     stroke-linejoin: round;
 }
 
-/* ==============================================
-   TABLET
-============================================== */
+
+
+
 @media (max-width: 900px) {
     .dars-trust-marquee__item {
         min-height: 65px;
@@ -1547,9 +1547,9 @@
     }
 }
 
-/* ==============================================
-   MOBILE
-============================================== */
+
+
+
 @media (max-width: 640px) {
     .dars-trust-marquee__track {
         animation-duration: 27s;
@@ -1625,9 +1625,9 @@
     }
 }
 
-/* ==============================================
-   ACCESSIBILITY
-============================================== */
+
+
+
 .dars-emergency-card a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.45);
     outline-offset: 4px;
@@ -1645,9 +1645,9 @@
               
 
 
-                /* =====================================================
-   VARIABLES
-===================================================== */
+                
+
+
 
 .dars-services {
     --dars-service-green: #10362B;
@@ -1667,9 +1667,9 @@
 }
 
 
-/* =====================================================
-   BASE
-===================================================== */
+
+
+
 
 .dars-services,
 .dars-services * {
@@ -1746,9 +1746,9 @@
 }
 
 
-/* =====================================================
-   CONTAINER
-===================================================== */
+
+
+
 
 .dars-services__container {
     position: relative;
@@ -1759,9 +1759,9 @@
 }
 
 
-/* =====================================================
-   SECTION HEADER
-===================================================== */
+
+
+
 
 .dars-services__header {
     margin-bottom: 48px;
@@ -1826,7 +1826,7 @@
 }
 
 
-/* HEADER BUTTON */
+ 
 
 .dars-services__header-link {
     min-height: 49px;
@@ -1873,9 +1873,9 @@
 }
 
 
-/* =====================================================
-   SERVICES GRID
-===================================================== */
+
+
+
 
 .dars-services__grid {
     display: grid;
@@ -1887,9 +1887,9 @@
 }
 
 
-/* =====================================================
-   SERVICE CARD
-===================================================== */
+
+
+
 
 .dars-service-card {
     position: relative;
@@ -1969,9 +1969,9 @@
 }
 
 
-/* =====================================================
-   CARD IMAGE
-===================================================== */
+
+
+
 
 .dars-service-card__image {
     position: relative;
@@ -2037,7 +2037,7 @@
 }
 
 
-/* IMAGE NUMBER */
+ 
 
 .dars-service-card__number {
     position: absolute;
@@ -2068,7 +2068,7 @@
 }
 
 
-/* IMAGE LABEL */
+ 
 
 .dars-service-card__image-label {
     position: absolute;
@@ -2111,9 +2111,9 @@
 }
 
 
-/* =====================================================
-   CARD CONTENT
-===================================================== */
+
+
+
 
 .dars-service-card__content {
     position: relative;
@@ -2149,9 +2149,9 @@
 }
 
 
-/* =====================================================
-   TAGS
-===================================================== */
+
+
+
 
 .dars-service-card__tags {
     margin-top: 21px;
@@ -2193,9 +2193,9 @@
 }
 
 
-/* =====================================================
-   CARD LINK
-===================================================== */
+
+
+
 
 .dars-service-card__link {
     position: relative;
@@ -2252,9 +2252,9 @@
 }
 
 
-/* =====================================================
-   BOTTOM BAR
-===================================================== */
+
+
+
 
 .dars-services__bottom {
     margin-top: 29px;
@@ -2309,7 +2309,7 @@
 }
 
 
-/* WHATSAPP BUTTON */
+ 
 
 .dars-services__whatsapp {
     min-height: 46px;
@@ -2353,9 +2353,9 @@
 }
 
 
-/* =====================================================
-   TABLET
-===================================================== */
+
+
+
 
 @media (max-width: 1050px) {
     .dars-services__grid {
@@ -2390,9 +2390,9 @@
 }
 
 
-/* =====================================================
-   MOBILE
-===================================================== */
+
+
+
 
 @media (max-width: 640px) {
     .dars-services {
@@ -2495,9 +2495,9 @@
 }
 
 
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
+
+
+
 
 @media (max-width: 390px) {
     .dars-service-card__image {
@@ -2517,9 +2517,9 @@
 }
 
 
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
+
+
+
 
 .dars-services a:focus-visible {
     outline:
@@ -2553,9 +2553,9 @@
     --dars-pkg-whatsapp-dark: #109A46;
 }
 
-/* =====================================================
-   BASE
-===================================================== */
+
+
+
 .dars-packages-v3,
 .dars-packages-v3 * {
     box-sizing: border-box;
@@ -2593,9 +2593,9 @@
     margin: 0 auto;
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
+
+
+
 .dars-packages-v3__header {
     max-width: 800px;
     margin-bottom: 42px;
@@ -2635,9 +2635,9 @@
     line-height: 1.7;
 }
 
-/* =====================================================
-   MAIN PANEL
-===================================================== */
+
+
+
 .dars-packages-v3__panel {
     position: relative;
     overflow: hidden;
@@ -2674,9 +2674,9 @@
     pointer-events: none;
 }
 
-/* =====================================================
-   TABS
-===================================================== */
+
+
+
 .dars-packages-v3__tabs {
     position: relative;
     z-index: 2;
@@ -2693,7 +2693,7 @@
     background: rgba(14, 53, 43, 0.045);
 }
 
-/* Strong Elementor/theme reset */
+ 
 .dars-packages-v3__tabs .dars-packages-v3__tab,
 .dars-packages-v3__tabs .dars-packages-v3__tab:hover,
 .dars-packages-v3__tabs .dars-packages-v3__tab:focus,
@@ -2740,7 +2740,7 @@
     color: var(--dars-pkg-green) !important;
 }
 
-/* Active tab */
+ 
 .dars-packages-v3__tabs .dars-packages-v3__tab.is-active,
 .dars-packages-v3__tabs .dars-packages-v3__tab.is-active:hover,
 .dars-packages-v3__tabs .dars-packages-v3__tab.is-active:focus,
@@ -2770,7 +2770,7 @@
     color: inherit !important;
 }
 
-/* Badge */
+ 
 .dars-packages-v3__tab small,
 .dars-packages-v3__tab:hover small {
     padding: 5px 8px;
@@ -2793,9 +2793,9 @@
     color: #FFFFFF !important;
 }
 
-/* =====================================================
-   CONTENT
-===================================================== */
+
+
+
 .dars-packages-v3__content {
     position: relative;
     z-index: 1;
@@ -2825,9 +2825,9 @@
     gap: clamp(45px, 6vw, 86px);
 }
 
-/* =====================================================
-   PRICE
-===================================================== */
+
+
+
 .dars-packages-v3__price {
     padding: 14px 0 8px;
 }
@@ -2896,9 +2896,9 @@
     line-height: 1.65;
 }
 
-/* =====================================================
-   SPECS
-===================================================== */
+
+
+
 .dars-packages-v3__specs {
     display: grid;
     gap: 8px;
@@ -2950,9 +2950,9 @@
     text-align: right;
 }
 
-/* =====================================================
-   ACTIONS
-===================================================== */
+
+
+
 .dars-packages-v3__actions {
     margin-top: 24px;
 
@@ -3090,9 +3090,9 @@
     transform: translateX(4px);
 }
 
-/* =====================================================
-   FEATURE CARDS
-===================================================== */
+
+
+
 .dars-packages-v3__features {
     margin-top: 17px;
 
@@ -3189,9 +3189,9 @@
     text-align: center;
 }
 
-/* =====================================================
-   TABLET
-===================================================== */
+
+
+
 @media (max-width: 950px) {
     .dars-packages-v3__content-grid {
         grid-template-columns: 1fr;
@@ -3203,9 +3203,9 @@
     }
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+
+
+
 @media (max-width: 640px) {
     .dars-packages-v3 {
         padding: 68px 0 70px;
@@ -3297,9 +3297,9 @@
     }
 }
 
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
+
+
+
 .dars-packages-v3__tab:focus-visible,
 .dars-packages-v3 a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48) !important;
@@ -3334,9 +3334,9 @@
     --dars-process-whatsapp-dark: #109A46;
 }
 
-/* =====================================================
-   BASE
-===================================================== */
+
+
+
 .dars-process,
 .dars-process * {
     box-sizing: border-box;
@@ -3395,9 +3395,9 @@
     border-radius: 50%;
 }
 
-/* =====================================================
-   CONTAINER
-===================================================== */
+
+
+
 .dars-process__container {
     position: relative;
     z-index: 1;
@@ -3406,9 +3406,9 @@
     margin: 0 auto;
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
+
+
+
 .dars-process__header {
     margin-bottom: 46px;
 }
@@ -3504,9 +3504,9 @@
     }
 }
 
-/* =====================================================
-   PROCESS GRID
-===================================================== */
+
+
+
 .dars-process__grid {
     position: relative;
 
@@ -3515,7 +3515,7 @@
     gap: 18px;
 }
 
-/* Connecting line */
+ 
 .dars-process__line {
     position: absolute;
     top: 56px;
@@ -3566,9 +3566,9 @@
     }
 }
 
-/* =====================================================
-   PROCESS CARD
-===================================================== */
+
+
+
 .dars-process-card {
     position: relative;
     z-index: 1;
@@ -3634,7 +3634,7 @@
     transform: scale(1.15);
 }
 
-/* Featured middle card */
+ 
 .dars-process-card--featured {
     border-color: rgba(196, 154, 74, 0.62);
 
@@ -3650,7 +3650,7 @@
         inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-/* Card number */
+ 
 .dars-process-card__number {
     position: absolute;
     top: 16px;
@@ -3672,7 +3672,7 @@
     transform: translateY(-3px);
 }
 
-/* Icon */
+ 
 .dars-process-card__icon {
     position: relative;
     z-index: 1;
@@ -3727,7 +3727,7 @@
     stroke-linejoin: round;
 }
 
-/* Card content */
+ 
 .dars-process-card__label {
     position: relative;
     z-index: 1;
@@ -3767,7 +3767,7 @@
     line-height: 1.65;
 }
 
-/* Card foot */
+ 
 .dars-process-card__foot {
     position: relative;
     z-index: 1;
@@ -3802,9 +3802,9 @@
     transform: translateX(4px);
 }
 
-/* =====================================================
-   BOTTOM CTA
-===================================================== */
+
+
+
 .dars-process__bottom {
     margin-top: 25px;
     padding: 17px 18px;
@@ -3861,7 +3861,7 @@
     line-height: 1.55;
 }
 
-/* WhatsApp CTA */
+ 
 .dars-process__cta {
     position: relative;
     overflow: hidden;
@@ -3961,9 +3961,9 @@
     transform: translateX(4px);
 }
 
-/* =====================================================
-   TABLET
-===================================================== */
+
+
+
 @media (max-width: 900px) {
     .dars-process__heading-row {
         align-items: flex-start;
@@ -4028,9 +4028,9 @@
     }
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+
+
+
 @media (max-width: 640px) {
     .dars-process {
         padding: 68px 0 70px;
@@ -4095,9 +4095,9 @@
     }
 }
 
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
+
+
+
 .dars-process a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48);
     outline-offset: 4px;
@@ -4132,9 +4132,9 @@
     --dars-why-whatsapp-dark: #109A46;
 }
 
-/* =====================================================
-   BASE
-===================================================== */
+
+
+
 .dars-why,
 .dars-why * {
     box-sizing: border-box;
@@ -4193,9 +4193,9 @@
     border-radius: 50%;
 }
 
-/* =====================================================
-   CONTAINER
-===================================================== */
+
+
+
 .dars-why__container {
     position: relative;
     z-index: 1;
@@ -4204,9 +4204,9 @@
     margin: 0 auto;
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
+
+
+
 .dars-why__header {
     margin-bottom: 45px;
 }
@@ -4305,18 +4305,18 @@
     box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
 }
 
-/* =====================================================
-   GRID
-===================================================== */
+
+
+
 .dars-why__grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
 }
 
-/* =====================================================
-   FEATURE CARD
-===================================================== */
+
+
+
 .dars-why-card {
     position: relative;
     overflow: hidden;
@@ -4378,7 +4378,7 @@
     transform: scale(1.17);
 }
 
-/* Featured card */
+ 
 .dars-why-card--featured {
     border-color: rgba(196, 154, 74, 0.62);
 
@@ -4394,7 +4394,7 @@
         inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-/* Number */
+ 
 .dars-why-card__number {
     position: absolute;
     top: 18px;
@@ -4416,7 +4416,7 @@
     transform: translateY(-3px);
 }
 
-/* Icon */
+ 
 .dars-why-card__icon {
     position: relative;
     z-index: 1;
@@ -4470,7 +4470,7 @@
     stroke-linejoin: round;
 }
 
-/* Content */
+ 
 .dars-why-card h3 {
     position: relative;
     z-index: 1;
@@ -4495,7 +4495,7 @@
     line-height: 1.65;
 }
 
-/* Keep text readable on hover */
+ 
 .dars-why-card:hover h3 {
     color: var(--dars-why-green-dark);
 }
@@ -4504,7 +4504,7 @@
     color: var(--dars-why-muted);
 }
 
-/* Last row alignment */
+ 
 .dars-why-card:nth-child(5) {
     grid-column: 1 / 2;
 }
@@ -4513,9 +4513,9 @@
     grid-column: 2 / 3;
 }
 
-/* =====================================================
-   BOTTOM CTA
-===================================================== */
+
+
+
 .dars-why__bottom {
     margin-top: 25px;
     padding: 18px 19px;
@@ -4580,7 +4580,7 @@
     line-height: 1.5;
 }
 
-/* WhatsApp CTA */
+ 
 .dars-why__whatsapp {
     position: relative;
     overflow: hidden;
@@ -4680,9 +4680,9 @@
     transform: translateX(4px);
 }
 
-/* =====================================================
-   TABLET
-===================================================== */
+
+
+
 @media (max-width: 1050px) {
     .dars-why__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -4702,9 +4702,9 @@
     }
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+
+
+
 @media (max-width: 640px) {
     .dars-why {
         padding: 68px 0 70px;
@@ -4763,9 +4763,9 @@
     }
 }
 
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
+
+
+
 .dars-why a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48);
     outline-offset: 4px;
@@ -4832,7 +4832,7 @@
     margin: 0 auto;
 }
 
-/* Header */
+ 
 .dars-reviews__header {
     margin-bottom: 38px;
 }
@@ -4929,7 +4929,7 @@
     box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
 }
 
-/* Summary */
+ 
 .dars-reviews__summary {
     min-height: 72px;
     padding: 15px 20px;
@@ -5038,7 +5038,7 @@
     transform: translateX(4px);
 }
 
-/* Review grid */
+ 
 .dars-reviews__grid {
     margin-top: 17px;
 
@@ -5215,7 +5215,7 @@
     font-weight: 700;
 }
 
-/* Bottom CTA */
+ 
 .dars-reviews__bottom {
     margin-top: 24px;
     padding: 18px 19px;
@@ -5380,7 +5380,7 @@
     transform: translateX(4px);
 }
 
-/* Tablet */
+ 
 @media (max-width: 900px) {
     .dars-reviews__heading-row {
         align-items: flex-start;
@@ -5393,7 +5393,7 @@
     }
 }
 
-/* Mobile */
+ 
 @media (max-width: 640px) {
     .dars-reviews {
         padding: 68px 0 70px;
@@ -5452,7 +5452,7 @@
     }
 }
 
-/* Accessibility */
+ 
 .dars-reviews a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48);
     outline-offset: 4px;
@@ -5519,7 +5519,7 @@
     margin: 0 auto;
 }
 
-/* Header */
+ 
 .dars-faq__header {
     margin-bottom: 39px;
 }
@@ -5617,7 +5617,7 @@
     box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
 }
 
-/* Accordion */
+ 
 .dars-faq__accordion {
     display: grid;
     gap: 9px;
@@ -5662,7 +5662,7 @@
         inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-/* Button theme reset */
+ 
 .dars-faq-item__question,
 .dars-faq-item__question:hover,
 .dars-faq-item__question:focus,
@@ -5735,7 +5735,7 @@
     stroke-linejoin: round;
 }
 
-/* Answer */
+ 
 .dars-faq-item__answer {
     display: grid;
     grid-template-rows: 0fr;
@@ -5766,7 +5766,7 @@
     line-height: 1.75;
 }
 
-/* Bottom CTA */
+ 
 .dars-faq__bottom {
     margin-top: 25px;
     padding: 18px 19px;
@@ -5929,7 +5929,7 @@
     transform: translateX(4px);
 }
 
-/* Tablet */
+ 
 @media (max-width: 800px) {
     .dars-faq__heading-row {
         align-items: flex-start;
@@ -5938,7 +5938,7 @@
     }
 }
 
-/* Mobile */
+ 
 @media (max-width: 640px) {
     .dars-faq {
         padding: 68px 0 70px;
@@ -6004,7 +6004,7 @@
     }
 }
 
-/* Accessibility */
+ 
 .dars-faq-item__question:focus-visible,
 .dars-faq a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48) !important;
@@ -6072,7 +6072,7 @@
     margin: 0 auto;
 }
 
-/* Header */
+ 
 .dars-coverage__header {
     margin-bottom: 39px;
 }
@@ -6170,14 +6170,14 @@
     box-shadow: 0 13px 28px rgba(8, 39, 31, 0.17);
 }
 
-/* Grid */
+ 
 .dars-coverage__grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 11px;
 }
 
-/* Cards */
+ 
 .dars-coverage-card {
     position: relative;
     overflow: hidden;
@@ -6328,7 +6328,7 @@
     transform: translateX(3px);
 }
 
-/* Bottom CTA */
+ 
 .dars-coverage__bottom {
     margin-top: 24px;
     padding: 18px 19px;
@@ -6492,7 +6492,7 @@
     transform: translateX(4px);
 }
 
-/* Tablet */
+ 
 @media (max-width: 950px) {
     .dars-coverage__grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -6505,7 +6505,7 @@
     }
 }
 
-/* Mobile */
+ 
 @media (max-width: 640px) {
     .dars-coverage {
         padding: 68px 0 70px;
@@ -6558,7 +6558,7 @@
     }
 }
 
-/* Accessibility */
+ 
 .dars-coverage a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48);
     outline-offset: 4px;
@@ -6653,7 +6653,7 @@
         inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-/* Decorative top line */
+ 
 .dars-final-cta__box::before {
     content: "";
     position: absolute;
@@ -6676,7 +6676,7 @@
     transform: translateX(-50%);
 }
 
-/* Inner border */
+ 
 .dars-final-cta__box::after {
     content: "";
     position: absolute;
@@ -6768,7 +6768,7 @@
     color: var(--dars-cta-green);
 }
 
-/* Requirements */
+ 
 .dars-final-cta__requirements {
     margin-top: 28px;
 
@@ -6834,7 +6834,7 @@
     stroke-linejoin: round;
 }
 
-/* Actions */
+ 
 .dars-final-cta__actions {
     margin-top: 25px;
 
@@ -6979,7 +6979,7 @@
     line-height: 1.5;
 }
 
-/* Tablet */
+ 
 @media (max-width: 850px) {
     .dars-final-cta__box {
         min-height: auto;
@@ -6987,7 +6987,7 @@
     }
 }
 
-/* Mobile */
+ 
 @media (max-width: 640px) {
     .dars-final-cta {
         padding: 62px 0 68px;
@@ -7047,7 +7047,7 @@
     }
 }
 
-/* Accessibility */
+ 
 .dars-final-cta a:focus-visible {
     outline: 3px solid rgba(196, 154, 74, 0.48);
     outline-offset: 4px;
@@ -7064,9 +7064,9 @@
               
 
 
-              /* =====================================================
-   FOOTER VARIABLES
-===================================================== */
+              
+
+
 
 .dars-footer-area {
     --footer-green: #10362B;
@@ -7111,9 +7111,9 @@
 }
 
 
-/* =====================================================
-   SUPPLY BAR
-===================================================== */
+
+
+
 
 .dars-supply-bar {
     padding: 38px 0 18px;
@@ -7198,7 +7198,7 @@
 }
 
 
-/* CAROUSEL */
+ 
 
 .dars-supply-bar__carousel {
     min-width: 0;
@@ -7308,9 +7308,9 @@
 }
 
 
-/* =====================================================
-   MAIN FOOTER
-===================================================== */
+
+
+
 
 .dars-main-footer {
     position: relative;
@@ -7359,9 +7359,9 @@
 }
 
 
-/* =====================================================
-   FOOTER GRID
-===================================================== */
+
+
+
 
 .dars-main-footer__grid {
     padding: 51px 0 40px;
@@ -7379,9 +7379,9 @@
 }
 
 
-/* =====================================================
-   COMPANY
-===================================================== */
+
+
+
 
 .dars-footer-company__logo {
     display: inline-flex;
@@ -7438,9 +7438,9 @@
 }
 
 
-/* =====================================================
-   FOOTER COLUMNS
-===================================================== */
+
+
+
 
 .dars-footer-column h3,
 .dars-footer-contact > h3 {
@@ -7495,9 +7495,9 @@
 }
 
 
-/* =====================================================
-   CONTACT
-===================================================== */
+
+
+
 
 .dars-footer-contact {
     min-width: 0;
@@ -7586,9 +7586,9 @@
 }
 
 
-/* =====================================================
-   MAP BOX
-===================================================== */
+
+
+
 
 .dars-footer-map {
     padding: 18px 20px;
@@ -7702,9 +7702,9 @@
 }
 
 
-/* =====================================================
-   FOOTER CTA
-===================================================== */
+
+
+
 
 .dars-footer-cta {
     margin-top: 17px;
@@ -7807,9 +7807,9 @@
 }
 
 
-/* =====================================================
-   FOOTER BOTTOM
-===================================================== */
+
+
+
 
 .dars-footer-bottom {
     min-height: 72px;
@@ -7851,9 +7851,9 @@
 }
 
 
-/* =====================================================
-   LAPTOP
-===================================================== */
+
+
+
 
 @media (max-width: 1120px) {
     .dars-main-footer__grid {
@@ -7873,9 +7873,9 @@
 }
 
 
-/* =====================================================
-   TABLET
-===================================================== */
+
+
+
 
 @media (max-width: 900px) {
     .dars-supply-bar__container {
@@ -7896,9 +7896,9 @@
 }
 
 
-/* =====================================================
-   MOBILE
-===================================================== */
+
+
+
 
 @media (max-width: 700px) {
     .dars-supply-bar {
@@ -7971,9 +7971,9 @@
 }
 
 
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
+
+
+
 
 @media (max-width: 390px) {
     .dars-footer-company__logo img {
@@ -7991,9 +7991,9 @@
 }
 
 
-/* =====================================================
-   ACCESSIBILITY
-===================================================== */
+
+
+
 
 .dars-footer-area a:focus-visible {
     outline:
@@ -8015,7 +8015,7 @@
 }
             
 
-/* Next.js shared header is in document flow; tune the reference hero spacing accordingly. */
+ 
 .dars-home-reference .dars-hero-v2{padding-top:72px;min-height:660px}
 .dars-home-reference .dars-hero-v2__title{max-width:810px}
 .dars-home-reference .dars-supply-bar{position:relative}
@@ -8023,11 +8023,11 @@
 @media(max-width:640px){.dars-home-reference .dars-hero-v2{padding-top:32px;padding-bottom:48px}}
 
 
-/* ============================================================
-   v21 — Emirates Signature Finish
-   Keep the homepage content and composition; add bespoke detailing
-   so the page feels crafted for this brand rather than template-led.
-============================================================ */
+
+
+
+
+
 .dars-home-reference .dars-hero-v2{background-size:cover;background-position:center 48%;}
 .dars-home-reference .dars-hero-v2__inner{position:relative;isolation:isolate;}
 .dars-home-reference .dars-hero-v2__inner:after{content:"";position:absolute;z-index:-1;right:39%;top:-13%;width:280px;height:280px;border:1px solid rgba(196,154,74,.18);border-radius:50%;box-shadow:0 0 0 24px rgba(196,154,74,.035),0 0 0 52px rgba(196,154,74,.025);pointer-events:none;animation:emsSignatureOrbit 24s ease-in-out infinite alternate;}

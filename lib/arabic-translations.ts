@@ -1,15 +1,15 @@
 import { pageArabicTranslations } from './arabic-translations-pages';
 import { blogArabicTranslations } from './arabic-translations-blog';
 
-/** Reviewed, in-code Arabic copy for shared navigation, CTAs and the most visible site sections.
- * Keys are normalized English text; add reviewed phrase translations here as site copy evolves.
- */
+
+
+
 export function normalizeTranslationKey(value: string) {
   return value.replace(/\s+/g, ' ').trim();
 }
 
 const entries: Record<string, string> = {
-  // Global navigation and common actions
+   
   'Skip to content': 'انتقل إلى المحتوى',
   'Website language': 'لغة الموقع',
   'Home': 'الرئيسية',
@@ -80,7 +80,7 @@ const entries: Record<string, string> = {
   'Custom aluminium doors, windows, partitions, cladding and fabrication in Dubai for villas, offices, shops and commercial properties across the UAE.': 'أبواب ونوافذ وفواصل وكسوة وتصنيع ألمنيوم حسب الطلب في دبي للفلل والمكاتب والمحلات والعقارات التجارية في جميع أنحاء الإمارات.',
   'Custom steel gates, pergola frames, canopy structures, parking systems and project-specific steel fabrication in Dubai and across the UAE.': 'بوابات فولاذية مخصصة وهياكل برغولا وهياكل مظلات وأنظمة مواقف سيارات وأعمال تصنيع فولاذية حسب متطلبات المشروع في دبي وجميع أنحاء الإمارات.',
 
-  // Homepage hero and first conversion points
+   
   'Professional Awning, Canopy & Shade Solutions in UAE': 'حلول احترافية للمظلات والكانوبي والتظليل في الإمارات',
   'Awning, Canopy installation, Garage Doors, Rolling Shutters & Gate Motor Experts': 'خبراء تركيب المظلات والكانوبي وأبواب المرآب والأبواب الدوارة ومحركات البوابات',
   'Across Dubai & the UAE': 'في دبي وجميع أنحاء الإمارات',
@@ -206,7 +206,7 @@ const entries: Record<string, string> = {
   'Which areas do you serve?': 'ما المناطق التي تغطيها خدماتكم؟',
   'How quickly can a technician visit?': 'ما سرعة وصول الفني؟',
 
-  // Shared service-page labels and section headings
+   
   'Clear written scope': 'نطاق عمل مكتوب وواضح',
   'Site-led planning': 'تخطيط وفقًا للموقع',
   'Repair support': 'دعم الإصلاح',
@@ -247,7 +247,7 @@ const entries: Record<string, string> = {
   'How we work': 'آلية عملنا',
   'Repair & Maintenance Support': 'دعم الإصلاح والصيانة',
   'WhatsApp Repair Team': 'تواصل مع فريق الإصلاح عبر واتساب',
-  // Remaining responsive, accessibility and service-template copy
+   
   'Designed around your project': 'مصمم بما يناسب مشروعك',
   'Complete shutter, shade &': 'حلول متكاملة للمصاريع والتظليل و',
   'aluminium solutions.': 'حلول الألمنيوم.',

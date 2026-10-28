@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from 'react';
 
-// Updates a transform directly (no React re-render per scroll event).
+ 
 export function ScrollProgress() {
   const bar = useRef<HTMLSpanElement>(null);
   useEffect(() => {

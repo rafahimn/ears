@@ -29,7 +29,7 @@ let patchedCss = 0;
 for (const file of files) {
   if (!file.endsWith('.css')) continue;
   const before = fs.readFileSync(file, 'utf8');
-  // Native CSS url() references to public assets are not automatically prefixed by Next.js basePath.
+   
   const after = before.replace(/url\((['"]?)(\/(?:wp-content|brand|rafahim|social-feed)\/[^)'"]+)(['"]?)\)/g,
     (_match, quote1, assetPath, quote2) => `url(${quote1}${withBasePath(assetPath)}${quote2})`);
   if (after !== before) {
@@ -38,7 +38,7 @@ for (const file of files) {
   }
 }
 
-// Make the PWA manifest work when the project is hosted below /<repository>/.
+ 
 const manifestPath = path.join(outDir, 'site.webmanifest');
 if (fs.existsSync(manifestPath) && basePath) {
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
@@ -48,7 +48,7 @@ if (fs.existsSync(manifestPath) && basePath) {
   fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 }
 
-// GitHub Pages must not process Next.js output through Jekyll.
+ 
 fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
 
 const routeChecks = [

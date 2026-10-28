@@ -1,8 +1,8 @@
-/* ==========================================================================
-   Navbar — single source of truth for the site header.
-   Utility strip scrolls away; the bar stays. Bar height never changes, so the
-   page never jumps while scrolling. Prefixed .nb-* to avoid legacy conflicts.
-   ========================================================================== */
+
+
+
+
+
 :root{
   --nb-ink:#0f2a22;--nb-ink-2:#173a2f;
   --nb-gold:#c5a15a;--nb-gold-deep:#8e6b2c;--nb-gold-soft:#e6d39b;
@@ -17,7 +17,7 @@
 .nb-skip:focus{transform:none}
 
 
-/* ---- Top utility strip (address · phone · email · language). Scrolls away; the bar stays. ---- */
+ 
 .nb-strip{height:var(--nb-strip-h);background:linear-gradient(100deg,#0c2820 0%,#143528 55%,#0f2c23 100%);color:#e9efe9;border-bottom:1px solid rgba(197,161,90,.22)}
 .nb-strip-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .nb-strip-right{display:flex;align-items:center;gap:clamp(14px,1.6vw,26px);min-width:0}
@@ -33,7 +33,7 @@
 .nb-strip .nb-lang button[aria-pressed="true"]{background:var(--nb-gold);color:#17271e}
 .nb-strip a:focus-visible,.nb-strip .nb-lang button:focus-visible{outline:2px solid var(--nb-gold-soft);outline-offset:2px;border-radius:8px}
 
-/* ---- Main bar ---- */
+ 
 .nb-bar{position:relative;height:var(--nb-bar-h);border-bottom:1px solid rgba(142,107,44,.2);transition:box-shadow .3s ease}
 .nb-bar:before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(251,249,244,.88);-webkit-backdrop-filter:saturate(1.4) blur(18px);backdrop-filter:saturate(1.4) blur(18px);transition:background .3s ease}
 .nb-header.is-scrolled .nb-bar{box-shadow:0 12px 34px rgba(15,42,34,.09)}
@@ -48,7 +48,7 @@
 .nb-brand-copy b{font-size:14px;font-weight:800;letter-spacing:.09em;color:var(--nb-ink)}
 .nb-brand-copy small{font-size:9px;font-weight:800;letter-spacing:.34em;color:var(--nb-gold-deep)}
 
-/* ---- Desktop navigation: one capsule, every service in a single line ---- */
+ 
 .nb-nav{flex:1 1 auto;min-width:0;display:flex;justify-content:center}
 .nb-track{display:flex;align-items:center;gap:2px;padding:5px;border:1px solid rgba(142,107,44,.28);border-radius:999px;background:linear-gradient(180deg,#fff,#f8f4e8);box-shadow:0 8px 22px rgba(15,42,34,.06),inset 0 1px 0 #fff}
 .nb-link{position:relative;display:inline-flex;align-items:center;height:40px;padding-inline:clamp(6px,.55vw,12px);border-radius:999px;font-size:clamp(11.5px,.84vw,13px);font-weight:650;color:var(--nb-text);white-space:nowrap;transition:background .2s,color .2s,box-shadow .2s}
@@ -57,7 +57,7 @@
 .nb-divider{width:1px;height:18px;margin-inline:3px;background:rgba(142,107,44,.35);flex:0 0 1px}
 .nb-link:focus-visible,.nb-burger:focus-visible,.nb-phone:focus-visible,.nb-cta:focus-visible,.nb-btn:focus-visible,.nb-lang button:focus-visible,.nb-sheet a:focus-visible{outline:2px solid var(--nb-gold-deep);outline-offset:3px;border-radius:8px}
 
-/* ---- Buttons ---- */
+ 
 .nb-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 20px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap;border:1px solid transparent;transition:transform .2s,box-shadow .2s,background .2s}
 .nb-btn svg{width:18px;height:18px}
 .nb-btn--gold{background:linear-gradient(135deg,#e6cd8a,#c5a15a);color:#17271e;box-shadow:0 10px 24px rgba(142,107,44,.28)}
@@ -65,12 +65,12 @@
 .nb-btn--ink{background:var(--nb-ink);color:#fff}
 .nb-btn--ink:hover{background:var(--nb-ink-2)}
 
-/* ---- Right-hand actions ---- */
+ 
 .nb-actions{display:flex;align-items:center;gap:12px;flex:0 0 auto}
 .nb-phone{display:grid;place-items:center;width:46px;height:46px;border:1px solid rgba(142,107,44,.35);border-radius:50%;background:#fff;color:var(--nb-ink);transition:background .2s,transform .2s,border-color .2s}
 .nb-phone svg{width:19px;height:19px}
 .nb-phone:hover{background:#f6efdc;border-color:var(--nb-gold);transform:translateY(-2px)}
-/* ---- Call button (replaces the old language switch in the bar) ---- */
+ 
 .nb-call{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 18px 0 5px;border:1px solid rgba(142,107,44,.35);border-radius:999px;background:#fff;color:var(--nb-ink);font-size:13.5px;font-weight:750;white-space:nowrap;transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}
 .nb-call i{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#1a4638,#0d2a21);color:var(--nb-gold-soft);transition:transform .25s}
 .nb-call i svg{width:17px;height:17px}
@@ -87,7 +87,7 @@
 .nb-burger{display:none;place-items:center;width:46px;height:46px;border:1px solid rgba(142,107,44,.35);border-radius:50%;background:#fff;color:var(--nb-ink);padding:0}
 .nb-burger svg{width:21px;height:21px}
 
-/* ---- Language switcher ---- */
+ 
 .nb-lang{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid rgba(142,107,44,.3);border-radius:999px;background:#fff}
 .nb-lang>svg{width:14px;height:14px;margin-inline:7px 4px;color:var(--nb-gold-deep)}
 .nb-lang button{border:0;background:transparent;color:var(--nb-text);font-size:12px;font-weight:700;line-height:1;padding:7px 10px;border-radius:999px;transition:background .2s,color .2s}
@@ -100,11 +100,11 @@
 .nb-lang--mobile button[aria-pressed="true"]{background:var(--nb-ink);color:#fff}
 
 
-/* ---- Scroll progress ---- */
+ 
 .nb-progress{position:absolute;inset-inline:0;bottom:-1px;height:2px;pointer-events:none}
 .nb-progress span{display:block;height:100%;transform:scaleX(0);transform-origin:left center;background:linear-gradient(90deg,var(--nb-gold-deep),var(--nb-gold-soft))}
 
-/* ---- Mobile sheet ---- */
+ 
 .nb-sheet{display:none}
 
 @media(max-width:1399px){
@@ -158,14 +158,14 @@
 @media(max-width:340px){
   .nb-sheet-grid{grid-template-columns:minmax(0,1fr)}
 }
-/* Hide the floating WhatsApp button while the mobile menu is open (it would cover the action bar). */
+ 
 .nb-lock .floating-actions{opacity:0;visibility:hidden;pointer-events:none}
 @media(max-width:360px){
   .nb-brand-copy small{display:none}
   .nb-phone{display:none}
 }
 
-/* RTL (Arabic): mirror directional icons and keep the progress bar growing from the reading edge */
+ 
 html[dir="rtl"] .nb-cta i svg,html[dir="rtl"] .nb-sheet-nav a svg,html[dir="rtl"] .nb-sheet-head a svg{transform:scaleX(-1)}
 html[dir="rtl"] .nb-progress span{transform-origin:right center}
 html[dir="rtl"] .nb-brand-copy{direction:ltr}
@@ -174,7 +174,7 @@ html[dir="rtl"] .nb-brand-copy{direction:ltr}
   .nb-sheet,.nb-link:after,.nb-cta,.nb-cta i,.nb-btn,.nb-link,.nb-bar,.nb-bar:before,.nb-brand-mark{transition-duration:.01ms!important;transition-delay:0s!important}
 }
 
-/* Phone numbers and emails stay left-to-right inside RTL pages */
+ 
 .nb-sheet-mail span{direction:ltr;unicode-bidi:isolate}
 
 html[dir="rtl"] .nb-strip-item span{direction:ltr}

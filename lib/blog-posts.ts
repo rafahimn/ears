@@ -18,7 +18,7 @@ export type BlogPost = {
 
 const upload = (name: string) => `/wp-content/uploads/2026/10/${name}`;
 
-/** Original, service-specific guidance for the ASCA Insights section. */
+ 
 export const blogPosts: BlogPost[] = [
   {
     slug: 'rolling-shutters-dubai-guide', serviceSlug: 'shutter',

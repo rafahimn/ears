@@ -1,4 +1,4 @@
-/** Reviewed Arabic translations for the service-specific Insights library. */
+ 
 export const blogArabicTranslations: Record<string, string> = {
   'INSIGHTS & SERVICE GUIDES': 'مقالات وأدلة الخدمات',
   'Practical guides for': 'أدلة عملية لاتخاذ ',

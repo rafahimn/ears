@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *' # Refresh public social posts daily (UTC)
+    - cron: '0 3 * * *'
 
 permissions:
   contents: read
@@ -28,8 +28,8 @@ jobs:
           node-version: 20
           cache: npm
 
-      # Detects the correct prefix automatically:
-      # empty for the configured custom domain, /repository-name for project Pages URLs.
+
+
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5

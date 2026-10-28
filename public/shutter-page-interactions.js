@@ -1,4 +1,4 @@
-/* Interactive behaviors adapted from the supplied rolling-shutter page. */
+ 
 (function () {
     const shutterHero = document.querySelector(
         '.dars-shutter-hero'
@@ -97,7 +97,7 @@
     });
 })();
 
-/* Independent interaction module */
+ 
 (function () {
     const section = document.querySelector('.dars-shutter-types');
 
@@ -365,10 +365,10 @@
         });
     });
 
-    /*
-     * Hero card থেকে selection এলে
-     * এই section-এর matching tab active হবে।
-     */
+    
+
+
+
     document.addEventListener(
         'darsShutterSystemSelected',
         function (event) {
@@ -411,7 +411,7 @@
     }
 })();
 
-/* Independent interaction module */
+ 
 (function () {
     const builder = document.querySelector('.dars-shutter-builder');
 
@@ -902,7 +902,7 @@
     updateSummary();
 })();
 
-/* Independent interaction module */
+ 
 (function () {
 
     const projectSection = document.querySelector(
@@ -949,11 +949,11 @@
     let touchStartX = 0;
     let touchEndX = 0;
 
-    /*
-     * Desktop: 3
-     * Tablet: 2
-     * Mobile: 1
-     */
+    
+
+
+
+
     function getVisibleCards() {
 
         if (window.innerWidth <= 640) {
@@ -1208,7 +1208,7 @@
         }
     );
 
-    /* Pause carousel on hover */
+     
     projectSection.addEventListener(
         'mouseenter',
         stopAutoplay
@@ -1219,7 +1219,7 @@
         startAutoplay
     );
 
-    /* Touch swipe */
+     
     track.addEventListener(
         'touchstart',
         function (event) {
@@ -1264,7 +1264,7 @@
         }
     );
 
-    /* Video play buttons */
+     
     projectSection
         .querySelectorAll(
             '.dars-real-project-card__play'
@@ -1300,9 +1300,9 @@
 
                     if (video.paused) {
 
-                        /*
-                         * Pause any other videos first.
-                         */
+                        
+
+
                         projectSection
                             .querySelectorAll(
                                 '.dars-real-project-card__video'
@@ -1369,7 +1369,7 @@
             );
         });
 
-    /* Reset play button when video ends */
+     
     projectSection
         .querySelectorAll(
             '.dars-real-project-card__video'
@@ -1415,7 +1415,7 @@
             );
         });
 
-    /* Responsive recalculation */
+     
     window.addEventListener(
         'resize',
         function () {
@@ -1447,7 +1447,7 @@
     startAutoplay();
 })();
 
-/* Independent interaction module */
+ 
 (function () {
 
     const faqSection = document.querySelector(

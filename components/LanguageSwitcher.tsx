@@ -17,7 +17,7 @@ function applyLanguage(next: Language, animate = false) {
   document.documentElement.dir = next === 'ar' ? 'rtl' : 'ltr';
   document.documentElement.dataset.siteLanguage = next;
   if (animate && document.body) {
-    // Replay a short, subtle reveal when the visitor changes language.
+     
     document.body.classList.remove('language-switching');
     void document.body.offsetWidth;
     document.body.classList.add('language-switching');

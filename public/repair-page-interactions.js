@@ -137,7 +137,7 @@
     });
   });
 
-  // Keep reference section links and cloned action cards on the current site's contact number.
+   
   root.querySelectorAll('a[href^="tel:"]').forEach((a) => { a.href = 'tel:+971552052347'; });
   root.querySelectorAll('a[href*="wa.me/"]').forEach((a) => { a.target = '_blank'; a.rel = 'noopener nofollow'; });
 

@@ -1,9 +1,9 @@
-/**
- * Keyword map based on the services actually offered on the website and the
- * search phrases visible across Dubai/UAE shutter, garage-door and fabrication
- * service pages. Keep each set focused on one page intent; do not paste every
- * keyword into every page.
- */
+
+
+
+
+
+
 export type ServiceSeo = {
   title: string;
   description: string;

@@ -12,7 +12,7 @@ export type SeoPageInput = {
   noIndex?: boolean;
 };
 
-/** Consistent, page-specific SEO metadata for the static-exported site. */
+ 
 export function createPageMetadata({
   title,
   description,

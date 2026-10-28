@@ -1,4 +1,4 @@
-/* Interactive motor selector, CTA jump links, package chooser and FAQ accordion. */
+ 
 
 (function boot(init) {
     if (document.readyState === 'loading') {
@@ -106,7 +106,7 @@
     });
 });
 
-/* ===== Interaction module ===== */
+ 
 (function boot(init) {
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init, { once: true });
@@ -638,7 +638,7 @@
     }
 });
 
-/* ===== Interaction module ===== */
+ 
 (function boot(init) {
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init, { once: true });
@@ -732,7 +732,7 @@
     });
 });
 
-/* ===== Interaction module ===== */
+ 
 (function boot(init) {
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init, { once: true });

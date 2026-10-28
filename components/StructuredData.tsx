@@ -1,7 +1,7 @@
 import { COORDINATES, EMAIL, MAP_URL, PHONE, SITE_NAME, SITE_URL, coverage } from '../lib/site';
 
 function jsonLd(value: unknown): string {
-  // Escape angle brackets so text cannot accidentally terminate the script tag.
+   
   return JSON.stringify(value).replace(/</g, '\\u003c');
 }
 

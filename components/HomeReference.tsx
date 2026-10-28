@@ -18,7 +18,7 @@ export function HomeReference() {
     const root = document.querySelector<HTMLElement>('.dars-home-reference');
     if (!root) return;
 
-    // Make each service image itself a direct link to its matching service page.
+     
     const serviceRoutes: Record<string, string> = {
       'rolling shutters': '/shutter/', 'awning': '/awning/', 'awnings': '/awning/',
       'canopy': '/canopy/', 'canopies': '/canopy/', 'garage doors': '/garage/',
