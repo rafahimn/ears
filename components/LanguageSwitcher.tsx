@@ -5,75 +5,77 @@ import { Icon } from './Icon';
 type Language = 'en' | 'ar';
 declare global { interface Window { google?: any; googleTranslateElementInit?: () => void } }
 
+const MOUNT_ID = 'google_translate_element';
+
+// Cookie is the source of truth: Google Translate itself reads it on page load.
 function readLanguage(): Language {
   if (typeof document === 'undefined') return 'en';
-  const cookies = document.cookie.split(';').map(v => v.trim());
-  const translateCookie = cookies.find(v => v.startsWith('googtrans='))?.slice('googtrans='.length);
-  if (translateCookie === '/en/ar' || translateCookie?.endsWith('/en/ar')) return 'ar';
-  try {
-    const stored = window.localStorage.getItem('site-language');
-    if (stored === 'ar' || stored === 'en') return stored;
-  } catch { /* Storage may be unavailable in privacy modes. */ }
-  return 'en';
+  const cookie = document.cookie.split(';').map(v => v.trim()).find(v => v.startsWith('googtrans='));
+  return cookie?.endsWith('/en/ar') ? 'ar' : 'en';
+}
+
+// One hidden Google Translate widget for the whole page (the header can render several switchers).
+function ensureTranslate() {
+  if (document.getElementById(MOUNT_ID)) return;
+  const mount = document.createElement('div');
+  mount.id = MOUNT_ID;
+  mount.className = 'google-translate-hidden';
+  mount.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(mount);
+  window.googleTranslateElementInit = () => {
+    if (!window.google?.translate?.TranslateElement) return;
+    new window.google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ar', autoDisplay: false }, MOUNT_ID);
+  };
+  const script = document.createElement('script');
+  script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  script.async = true;
+  document.head.appendChild(script);
+}
+
+function setTranslateCookie(next: Language) {
+  const host = window.location.hostname;
+  const domains = ['', `;domain=${host}`, `;domain=.${host}`];
+  if (next === 'ar') {
+    document.cookie = 'googtrans=/en/ar;path=/;max-age=31536000;SameSite=Lax';
+    if (host.includes('.')) document.cookie = `googtrans=/en/ar;path=/;domain=${host};max-age=31536000;SameSite=Lax`;
+  } else {
+    domains.forEach(d => { document.cookie = `googtrans=;path=/${d};max-age=0;SameSite=Lax`; });
+  }
 }
 
 export function LanguageSwitcher({ mobile = false, onSelect }: { mobile?: boolean; onSelect?: () => void }) {
   const [language, setLanguage] = useState<Language>('en');
+
   useEffect(() => {
-    const initialLanguage = readLanguage();
-    setLanguage(initialLanguage);
-    document.documentElement.lang = initialLanguage;
-    document.documentElement.dir = initialLanguage === 'ar' ? 'rtl' : 'ltr';
-    const boot = () => {
-      if (!window.google?.translate?.TranslateElement) return;
-      document.querySelectorAll<HTMLElement>('.google-translate-hidden').forEach((mount, index) => {
-        if (!mount.dataset.ready) {
-          if (!mount.id) mount.id = `google_translate_element_${index}`;
-          new window.google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ar', autoDisplay: false, layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE }, mount.id);
-          mount.dataset.ready = 'true';
-        }
-      });
-    };
-    window.googleTranslateElementInit = boot;
-    if (!document.querySelector('script[data-google-translate]')) {
-      const script = document.createElement('script');
-      script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-      script.async = true; script.dataset.googleTranslate = 'true'; document.head.appendChild(script);
-    } else boot();
-    return () => { window.googleTranslateElementInit = undefined; };
+    const current = readLanguage();
+    setLanguage(current);
+    document.documentElement.lang = current;
+    document.documentElement.dir = current === 'ar' ? 'rtl' : 'ltr';
+    ensureTranslate();
   }, []);
 
   const changeLanguage = (next: Language) => {
-    const value = next === 'ar' ? '/en/ar' : '/en/en';
-    // Persist the target language independently from Google Translate's own cookie.
-    try { window.localStorage.setItem('site-language', next); } catch { /* Continue with cookies if storage is blocked. */ }
-    document.cookie = `googtrans=${value};path=/;max-age=31536000;SameSite=Lax`;
-    if (window.location.hostname.includes('.') && !window.location.hostname.endsWith('.localhost')) {
-      document.cookie = `googtrans=${value};path=/;domain=${window.location.hostname};max-age=31536000;SameSite=Lax`;
-    }
+    if (next === language) return;
+    try { window.localStorage.setItem('site-language', next); } catch { /* Storage may be blocked in private modes. */ }
+    setTranslateCookie(next);
     document.documentElement.lang = next;
     document.documentElement.dir = next === 'ar' ? 'rtl' : 'ltr';
     setLanguage(next);
+    onSelect?.();
     const select = document.querySelector<HTMLSelectElement>('.goog-te-combo');
     if (select) {
-      select.value = next;
+      // Google's original-language option has an empty value.
+      select.value = next === 'ar' ? 'ar' : '';
       select.dispatchEvent(new Event('change', { bubbles: true }));
       window.setTimeout(() => window.location.reload(), 350);
     } else {
       window.location.reload();
     }
-    onSelect?.();
   };
 
-  const target: Language = language === 'en' ? 'ar' : 'en';
-  return <>
-    <div className="google-translate-hidden" aria-hidden="true" />
-    <div className={`language-switcher language-switcher-single ${mobile ? 'language-switcher-mobile' : ''}`} role="group" aria-label="Change website language">
-      <span className="language-globe"><Icon name="globe" /></span>
-      <button type="button" onClick={() => changeLanguage(target)} aria-label={target === 'ar' ? 'Switch website to Arabic' : 'Switch website to English'}>
-        {target === 'ar' ? 'العربية' : 'English'}
-      </button>
-      <Icon name="chevron" />
-    </div>
-  </>;
+  return <div className={`nb-lang${mobile ? ' nb-lang--mobile' : ''}`} role="group" aria-label="Website language" translate="no">
+    <Icon name="globe" aria-hidden="true" />
+    <button type="button" aria-pressed={language === 'en'} onClick={() => changeLanguage('en')} lang="en">EN</button>
+    <button type="button" aria-pressed={language === 'ar'} onClick={() => changeLanguage('ar')} lang="ar">العربية</button>
+  </div>;
 }

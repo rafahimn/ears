@@ -1,3 +1,22 @@
 "use client";
-import {useEffect,useState} from 'react';
-export function ScrollProgress(){const [p,setP]=useState(0);useEffect(()=>{const on=()=>{const h=document.documentElement.scrollHeight-window.innerHeight;setP(h>0?window.scrollY/h*100:0)};on();window.addEventListener('scroll',on,{passive:true});return()=>window.removeEventListener('scroll',on)},[]);return <div className="scroll-progress" style={{width:`${p}%`}}/>}
+import { useEffect, useRef } from 'react';
+
+// Updates a transform directly (no React re-render per scroll event).
+export function ScrollProgress() {
+  const bar = useRef<HTMLSpanElement>(null);
+  useEffect(() => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      if (bar.current) bar.current.style.transform = `scaleX(${ratio})`;
+    };
+    const onScroll = () => { if (!frame) frame = window.requestAnimationFrame(update); };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if (frame) window.cancelAnimationFrame(frame); };
+  }, []);
+  return <div className="nb-progress" aria-hidden="true"><span ref={bar} /></div>;
+}
