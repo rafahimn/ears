@@ -9,14 +9,18 @@ import {FAQ} from '../../components/FAQ';
 import {ServiceConfigurator} from '../../components/ServiceConfigurator';
 import {OriginalServiceInfo} from '../../components/OriginalServiceInfo';
 import {PremiumCraftService} from '../../components/PremiumCraftService';
+import {createPageMetadata} from '../../lib/seo';
+import {ServiceStructuredData} from '../../components/StructuredData';
+import {SERVICE_PAGE_SEO} from '../../lib/seo-keywords';
 
-export function generateStaticParams(){return Object.keys(serviceDetails).filter(x=>x!=='canopy-old'&&x!=='shutter'&&x!=='motor'&&x!=='garage'&&x!=='repair').map(slug=>({slug}));}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const d=serviceDetails[slug];if(!d)return {};return {title:`${d.title} | Emirates Aluminium Shutter LLC`,description:d.intro,alternates:{canonical:`/${slug}/`}};}
+export function generateStaticParams(){return services.map((service)=>service.slug).filter((slug)=>!['shutter','motor','garage','repair'].includes(slug)).map((slug)=>({slug}));}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const d=serviceDetails[slug];if(!d)return {};const seo=SERVICE_PAGE_SEO[slug];return createPageMetadata({title:seo?.title ?? d.title,description:seo?.description ?? d.intro,path:`/${slug}/`,keywords:seo?.keywords ?? [`${d.title.toLowerCase()} Dubai`,`${d.title.toLowerCase()} UAE`,'Emirates Aluminium Shutter LLC']});}
 export default async function ServicePage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params;const d=serviceDetails[slug];if(!d||slug==='canopy-old')notFound();
  const configKind=['shutter','garage','motor','repair'].includes(slug)?slug as 'shutter'|'garage'|'motor'|'repair':null;
- if(['awning','canopy','steel-work','aluminium-works','polycarbonate'].includes(slug)) return <PremiumCraftService slug={slug}/>;
+ if(['awning','canopy','steel-work','aluminium-works','polycarbonate'].includes(slug)) return <><ServiceStructuredData name={d.title} description={d.intro} path={`/${slug}/`} /><PremiumCraftService slug={slug}/></>;
  return <>
+  <ServiceStructuredData name={d.title} description={d.intro} path={`/${slug}/`} />
   <section className="service-hero-wrap"><div className="container"><div className="service-hero-box"><div className="service-hero-copy"><span className="eyebrow eyebrow-dark">{d.eyebrow}</span><h1>{d.title}</h1><p>{d.intro}</p><div className="hero-actions"><a className="btn btn-gold" href={waLink(`Hello, I would like a quotation for ${d.title}.`)} target="_blank" rel="noreferrer"><Icon name="whatsapp"/> Request a Quote</a><Link className="btn btn-outline-dark" href="/services/">All Services <Icon name="arrow"/></Link></div><div className="service-hero-meta"><span><Icon name="shield"/> Clear written scope</span><span><Icon name="ruler"/> Site-led planning</span><span><Icon name="wrench"/> Repair support</span></div></div><div className="service-hero-image"><img src={sitePath(d.image)} alt={d.title}/><div className="image-caption"><span className="live-dot"/> Made to measure <b>UAE service</b></div></div></div></div></section>
   <section className="section section-tight"><div className="container"><div className="service-nav-premium"><span>Jump to</span>{services.map(s=><Link key={s.slug} href={`/${s.slug}/`} className={s.slug===slug?'active':''}>{s.title}</Link>)}</div></div></section>
   <section className="section"><div className="container"><Reveal><div className="feature-strip">{d.bullets.map((x,i)=><div key={x}><span>{String(i+1).padStart(2,'0')}</span><p>{x}</p></div>)}</div></Reveal></div></section>

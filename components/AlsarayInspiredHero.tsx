@@ -7,7 +7,7 @@ export function AlsarayInspiredHero() {
   const message = 'Hello, I would like to request a quotation for Emirates Aluminium Shutter LLC. Please let me know what photos or details you need.';
 
   return (
-    <section className="alsaray-home-hero" id="top" aria-label="Emirates Aluminium Shutter services across the UAE">
+    <section className="alsaray-home-hero" id="top" aria-label="Emirates Aluminium Shutter LLC services across the UAE">
       <div className="alsaray-hero-image" aria-hidden="true" />
       <div className="alsaray-hero-vignette" aria-hidden="true" />
       <div className="alsaray-hero-orbit alsaray-hero-orbit-one" aria-hidden="true" />

@@ -1,12 +1,46 @@
-import { sitePath } from '../../lib/paths';
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import {Reveal} from '../../components/Reveal';
-import {Icon} from '../../components/Icon';
-import {services} from '../../lib/site';
-const posts=[
- ['Garage Door Buying Guide','How to compare panel, motor, hardware, measurement and warranty before choosing an automatic garage door.','garage'],
- ['Rolling Shutter Options Explained','Single-skin, insulated, vision and window-shutter systems — what changes and which properties they suit.','shutter'],
- ['When a Gate Motor Stops Working','The photos, video and system details that help a technician understand a gate automation fault faster.','motor'],
- ['Awning Planning for UAE Outdoor Spaces','Projection, operation, fabric, motorisation and practical shade coverage for villas and commercial spaces.','awning'],
-];
-export default function Blog(){return <><section className="page-hero-wrap"><div className="container"><div className="page-hero-box"><div><span className="eyebrow eyebrow-dark">INSIGHTS</span><h1>Useful guidance for <em>better project decisions.</em></h1><p>Practical articles covering doors, shutters, automation, shade, maintenance and fabrication.</p></div><div className="page-hero-art"><img src={sitePath("/wp-content/uploads/2026/10/Untitled-design-2.png")} alt="Project materials"/></div></div></div></section><section className="section"><div className="container"><div className="article-grid">{posts.map(([title,text,slug],i)=><Reveal key={title} delay={i*80}><article className="article-card"><div className="article-image"><img src={sitePath(services.find(s=>s.slug===slug)?.image||'/wp-content/uploads/2026/10/2277-1.jpg')} alt={title}/><span>Guide</span></div><div className="article-copy"><small>Dubai · UAE</small><h2>{title}</h2><p>{text}</p><Link href={`/${slug}/`}>Explore the related service <Icon name="arrow"/></Link></div></article></Reveal>)}</div></div></section></>}
+import { sitePath } from '../../lib/paths';
+import { Reveal } from '../../components/Reveal';
+import { BreadcrumbStructuredData } from '../../components/StructuredData';
+import { createPageMetadata } from '../../lib/seo';
+import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
+import { blogPosts } from '../../lib/blog-posts';
+
+export const metadata: Metadata = createPageMetadata({
+  title: 'Shutter, Garage Door & Fabrication Guides for Dubai',
+  description: 'Read practical service-by-service guides from Emirates Aluminium Shutter LLC about rolling shutters, garage doors, gate motors, awnings, canopies and fabrication across Dubai and the UAE.',
+  path: '/blog/',
+  keywords: [...PAGE_KEYWORDS.blog, 'Dubai shutter guides', 'garage door guides UAE', 'aluminium fabrication advice Dubai'],
+});
+
+export default function BlogPage() {
+  return <>
+    <BreadcrumbStructuredData items={[{ name: 'Home', path: '/' }, { name: 'Insights', path: '/blog/' }]} />
+    <section className="page-hero-wrap blog-hero-wrap">
+      <div className="container">
+        <div className="page-hero-box blog-hero-box">
+          <div>
+            <span className="eyebrow eyebrow-dark">INSIGHTS & SERVICE GUIDES</span>
+            <h1>Practical guides for <em>better project decisions.</em></h1>
+            <p>Explore clear, service-specific advice on shutters, doors, automation, shade and custom fabrication for Dubai properties.</p>
+          </div>
+          <div className="page-hero-art blog-page-hero-art"><img src={sitePath('/blog/blog-hero-dubai.webp')} alt="Premium aluminium rolling shutter at a modern Dubai residence at golden hour" fetchPriority="high" decoding="async" /></div>
+        </div>
+      </div>
+    </section>
+    <section className="section blog-listing-section">
+      <div className="container">
+        <div className="blog-listing-intro"><span className="eyebrow eyebrow-dark">THE SERVICE LIBRARY</span><h2>Choose a guide <em>for your project.</em></h2><p>Each article explains what to compare, what to prepare and what to confirm before work begins.</p></div>
+        <div className="article-grid blog-article-grid">
+          {blogPosts.map((post, index) => <Reveal key={post.slug} delay={index * 45}>
+            <Link className="article-card blog-card-link" href={`/blog/${post.slug}/`}>
+              <div className="article-image"><img src={sitePath(post.image)} alt={post.title} loading={index > 2 ? 'lazy' : 'eager'} /></div>
+              <div className="article-copy"><h2>{post.title}</h2><p>{post.description}</p></div>
+            </Link>
+          </Reveal>)}
+        </div>
+      </div>
+    </section>
+  </>;
+}

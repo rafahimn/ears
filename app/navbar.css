@@ -170,10 +170,6 @@ html[dir="rtl"] .nb-cta i svg,html[dir="rtl"] .nb-sheet-nav a svg,html[dir="rtl"
 html[dir="rtl"] .nb-progress span{transform-origin:right center}
 html[dir="rtl"] .nb-brand-copy{direction:ltr}
 
-/* Google Translate injects a banner and shifts <body>; keep the sticky header clean. */
-.goog-te-banner-frame,.skiptranslate iframe{display:none!important}
-body{top:0!important}
-
 @media(prefers-reduced-motion:reduce){
   .nb-sheet,.nb-link:after,.nb-cta,.nb-cta i,.nb-btn,.nb-link,.nb-bar,.nb-bar:before,.nb-brand-mark{transition-duration:.01ms!important;transition-delay:0s!important}
 }

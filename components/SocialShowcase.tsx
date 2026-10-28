@@ -97,21 +97,21 @@ export function SocialShowcase(){
           <span className="eyebrow eyebrow-dark">STAY CONNECTED</span>
           <h2 id="social-showcase-title">Follow our work. <em>See what’s next.</em></h2>
         </div>
-        <p>Project updates and installation moments from Emirates Aluminium Shutter.</p>
+        <p>Project updates and installation moments from Emirates Aluminium Shutter LLC.</p>
       </div>
 
       <div className="social-follow-grid">
-        <a className="social-follow-card social-follow-instagram" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Follow Emirates Aluminium Shutter on Instagram">
+        <a className="social-follow-card social-follow-instagram" href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Follow Emirates Aluminium Shutter LLC on Instagram">
           <span className="social-follow-orbit" aria-hidden="true"/>
           <span className="social-follow-card-top"><span className="social-follow-icon"><InstagramMark/></span><span className="social-follow-label">FOLLOW ON INSTAGRAM</span></span>
           <strong>@emiratesrollingshutter</strong>
           <span className="social-follow-description">New installations, shutter systems and project details.</span>
           <span className="social-follow-action">Follow Instagram <Icon name="arrow"/></span>
         </a>
-        <a className="social-follow-card social-follow-facebook" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Follow Emirates Aluminium Shutter on Facebook">
+        <a className="social-follow-card social-follow-facebook" href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Follow Emirates Aluminium Shutter LLC on Facebook">
           <span className="social-follow-orbit" aria-hidden="true"/>
           <span className="social-follow-card-top"><span className="social-follow-icon"><FacebookMark/></span><span className="social-follow-label">CONNECT ON FACEBOOK</span></span>
-          <strong>Emirates Aluminium Shutter</strong>
+          <strong>Emirates Aluminium Shutter LLC</strong>
           <span className="social-follow-description">Company updates and project announcements.</span>
           <span className="social-follow-action">Follow Facebook <Icon name="arrow"/></span>
         </a>
@@ -138,7 +138,7 @@ export function SocialShowcase(){
               const platform = 'Instagram';
               return <article className="social-post-card" key={`${post.platform}-${post.id}`} style={{animationDelay:`${Math.min(index,7)*55}ms`}}>
                 <a className={`social-post-link social-post-${post.platform}`} href={post.permalink} target="_blank" rel="noopener noreferrer" aria-label={`Open ${platform} post${posted?` from ${posted}`:''}`}>
-                  {post.image ? <img src={sitePath(post.image)} alt={caption?caption.slice(0,120):`${platform} post from Emirates Aluminium Shutter`} loading={index>3?'lazy':'eager'}/> : <span className="social-post-text-visual"><span className="social-post-platform-mark"><InstagramMark/></span><strong>{caption || 'Project update'}</strong></span>}
+                  {post.image ? <img src={sitePath(post.image)} alt={caption?caption.slice(0,120):`${platform} post from Emirates Aluminium Shutter LLC`} loading={index>3?'lazy':'eager'}/> : <span className="social-post-text-visual"><span className="social-post-platform-mark"><InstagramMark/></span><strong>{caption || 'Project update'}</strong></span>}
                   <span className="social-post-shade" aria-hidden="true"/>
                   <span className="social-post-source"><span className="social-post-platform-mark"><InstagramMark/></span><span>{platform}</span>{posted&&<time dateTime={post.timestamp}>{posted}</time>}</span>
                   <span className="social-post-open">View post <Icon name="arrow"/></span>

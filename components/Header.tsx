@@ -69,7 +69,7 @@ export function Header() {
     </div>
     <div className="nb-bar">
       <div className="nb-wrap nb-bar-inner">
-        <Link href="/" className="nb-brand" onClick={() => setSheet(false)} aria-label="Emirates Aluminium Shutter home">
+        <Link href="/" className="nb-brand" onClick={() => setSheet(false)} aria-label="Emirates Aluminium Shutter LLC home">
           <span className="nb-brand-mark"><img src={sitePath('/brand/logo.png')} alt="" width="52" height="58" /></span>
           <span className="nb-brand-copy" translate="no"><b>EMIRATES ALUMINIUM</b><small>SHUTTER LLC</small></span>
         </Link>
@@ -97,7 +97,6 @@ export function Header() {
       <div className="nb-sheet-scroll">
         <nav className="nb-sheet-nav" aria-label="Mobile navigation">
           <Link href="/" aria-current={isActive('/') ? 'page' : undefined}><span>Home</span><Icon name="arrow" /></Link>
-          <Link href="/about-us/" aria-current={isActive('/about-us/') ? 'page' : undefined}><span>About us</span><Icon name="arrow" /></Link>
           <Link href="/blog/" aria-current={isActive('/blog/') ? 'page' : undefined}><span>Insights</span><Icon name="arrow" /></Link>
         </nav>
         <div className="nb-sheet-head"><b>Services</b><Link href="/services/" aria-current={pathname === '/services' ? 'page' : undefined}><span>View all</span><Icon name="arrow" /></Link></div>
@@ -107,6 +106,7 @@ export function Header() {
             <span>{s.title}</span>
           </Link>)}
         </div>
+        <div className="nb-sheet-lang"><span>Website language</span><LanguageSwitcher mobile onSelect={() => setSheet(false)} /></div>
         <a className="nb-sheet-mail" href={`mailto:${EMAIL}`}><Icon name="mail" /><span translate="no">{EMAIL}</span></a>
       </div>
       <div className="nb-sheet-actions">

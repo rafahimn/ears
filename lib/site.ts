@@ -98,7 +98,7 @@ export const serviceDetails: Record<string, {
   awning:{
     eyebrow:'PROFESSIONAL AWNING SOLUTIONS',
     title:'Premium Awning Solutions for Comfortable Outdoor Spaces',
-    intro:'Custom fixed, retractable and motorized awnings planned around your property, projection, operating preference and UAE outdoor conditions.',
+    intro:'Custom fixed, retractable and motorized awnings in Dubai and across the UAE, planned around your property, projection, operating preference and outdoor conditions.',
     image:img('home-service-awning.webp'),
     bullets:['Weather-resistant materials','Manual and motorized options','Custom sizes and projection','Residential & commercial installation','UV and heat protection','Repair & fabric replacement','Automatic Sunshade Parda','Pergola & outdoor shade systems'],
     sections:[
@@ -174,7 +174,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   'aluminium-works':{
-    eyebrow:'ALUMINIUM WORKS',title:'Clean Aluminium Solutions for Modern Properties',intro:'Custom aluminium doors, windows, partitions, cladding and fabrication for villas, offices, shops and commercial properties.',image:img('home-service-aluminium.webp'),
+    eyebrow:'ALUMINIUM WORKS',title:'Clean Aluminium Solutions for Modern Properties',intro:'Custom aluminium doors, windows, partitions, cladding and fabrication in Dubai for villas, offices, shops and commercial properties across the UAE.',image:img('home-service-aluminium.webp'),
     bullets:['Aluminium doors','Windows','Partitions','Cladding','Custom fabrication','Project-specific finishes'],
     sections:[
       {kicker:'MODERN FINISHES',title:'Practical Aluminium Fabrication',text:'Aluminium solutions can combine a clean appearance with practical everyday operation and low-maintenance use.',items:['Doors and windows','Partitions','Cladding','Custom fabrication']},
@@ -189,7 +189,7 @@ export const serviceDetails: Record<string, {
     ]
   },
   'steel-work':{
-    eyebrow:'CUSTOM STEEL WORK',title:'Strong Steel Structures and Fabrication for Your Project',intro:'Custom steel gates, pergola frames, canopy structures, parking systems and project-specific metal fabrication.',image:img('home-service-steel.webp'),
+    eyebrow:'CUSTOM STEEL WORK',title:'Strong Steel Structures and Fabrication for Your Project',intro:'Custom steel gates, pergola frames, canopy structures, parking systems and project-specific steel fabrication in Dubai and across the UAE.',image:img('home-service-steel.webp'),
     bullets:['Steel gates','Pergola structures','Canopy frames','Parking structures','Welding & fabrication','Custom dimensions'],
     sections:[
       {kicker:'BUILT TO THE REQUIREMENT',title:'Steelwork Planned Around the Property',text:'Steelwork is planned around dimensions, use, access, structure and the desired finish.',items:['Gates','Pergolas','Canopy frames','Parking structures']},

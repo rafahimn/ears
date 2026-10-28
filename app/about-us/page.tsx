@@ -4,7 +4,19 @@ import {waLink,services} from '../../lib/site';
 import {Reveal} from '../../components/Reveal';
 import {Icon} from '../../components/Icon';
 import {OriginalServiceInfo} from '../../components/OriginalServiceInfo';
+import type { Metadata } from 'next';
+import { createPageMetadata } from '../../lib/seo';
+import { BreadcrumbStructuredData } from '../../components/StructuredData';
+import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
+
+export const metadata: Metadata = createPageMetadata({
+  title: 'About Us in Dubai',
+  description: 'Learn about Emirates Aluminium Shutter LLC and our practical approach to rolling shutters, garage doors, gate automation, shade systems and custom fabrication in Dubai and across the UAE.',
+  path: '/about-us/',
+  keywords: [...PAGE_KEYWORDS.about],
+});
 export default function About(){return <>
+ <BreadcrumbStructuredData items={[{ name: 'Home', path: '/' }, { name: 'About Us', path: '/about-us/' }]} />
  <section className="page-hero-wrap"><div className="container"><div className="page-hero-box about-hero"><div><span className="eyebrow eyebrow-dark">ABOUT THE COMPANY</span><h1>Practical solutions.<br/><em>Built around your space.</em></h1><p>A considered approach to every opening — from site-led planning and supply to installation, testing and after-install support.</p><a className="btn btn-gold" href={waLink()} target="_blank" rel="noreferrer"><Icon name="whatsapp"/> Start a Conversation</a></div><div className="page-hero-art"><img src={sitePath("/wp-content/uploads/2026/10/photo-1497366811353-6870744d04b2.avif")} alt="Modern commercial property"/><span>Dubai · UAE</span></div></div></div></section>
  <section className="section"><div className="container"><Reveal><div className="about-intro"><div><span className="eyebrow eyebrow-dark">ONE PARTNER</span><h2>The details matter. So does how <em>everything works together.</em></h2></div><p>We bring together doors, shutters, shade, automation and fabrication so customers can discuss the full requirement rather than coordinate disconnected suppliers.</p></div></Reveal><div className="about-values">{[['01','For Every Property','Villas, shops, warehouses, showrooms, offices and commercial entrances.'],['02','Site-led Planning','Opening size, access, wiring, motor load, safety and installation conditions are considered.'],['03','Supply & Installation','The selected system is prepared, installed, tested and handed over with practical guidance.'],['04','After-install Support','Repair, maintenance and warranty guidance continue after the installation day.']].map(([n,t,p])=><Reveal key={n}><article><span>{n}</span><h3>{t}</h3><p>{p}</p></article></Reveal>)}</div></div></section>
  <section className="section section-dark-ink"><div className="container"><Reveal><div className="dark-intro"><div><span className="eyebrow">GOOD SERVICE IS BUILT INTO EVERY STEP</span><h2>From requirement to <em>confident decision.</em></h2></div><p>A dependable process keeps the scope clear, the specification understandable and the handover practical.</p></div></Reveal><div className="about-process">{[['01','Start with the requirement','Tell us what you need and show the opening, property or fault.'],['02','Choose the right-fit system','Compare material, operation, finish, controls and practical use.'],['03','Keep the process clear','Confirm measurements, scope, pricing, timeline and warranty.'],['04','Support after installation','Use the system confidently and contact the team for repair or maintenance when needed.']].map(([n,t,p])=><div key={n}><span>{n}</span><h3>{t}</h3><p>{p}</p><Icon name="arrow"/></div>)}</div></div></section>

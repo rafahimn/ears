@@ -5,12 +5,16 @@ import { Reveal } from '../../components/Reveal';
 import { QuoteBuilder } from '../../components/QuoteBuilder';
 import { Icon } from '../../components/Icon';
 import { ServicesDirectory } from '../../components/ServicesDirectory';
+import { createPageMetadata } from '../../lib/seo';
+import { BreadcrumbStructuredData } from '../../components/StructuredData';
+import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
 
-export const metadata: Metadata = {
-  title: 'Our Services | Rolling Shutters, Garage Doors, Motors & Shade',
-  description: 'Explore rolling shutters, garage doors, gate motors, awnings, canopies, aluminium and steel fabrication, polycarbonate shutters, and repair services across Dubai and the UAE.',
-  alternates: { canonical: '/services/' },
-};
+export const metadata: Metadata = createPageMetadata({
+  title: 'Shutters, Garage Doors & Aluminium Services Dubai',
+  description: 'Explore rolling shutter installation and repair, garage doors, gate motors, awnings, canopies, aluminium fabrication, steel works and clear polycarbonate shutters in Dubai and across the UAE.',
+  path: '/services/',
+  keywords: [...PAGE_KEYWORDS.services],
+});
 
 const servicePrinciples = [
   ['01', 'Understand the opening', 'Review the property, dimensions, current system and how the opening will be used.'],
@@ -21,6 +25,7 @@ const servicePrinciples = [
 
 export default function Services() {
   return <>
+    <BreadcrumbStructuredData items={[{ name: 'Home', path: '/' }, { name: 'Services', path: '/services/' }]} />
     <section className="page-hero-wrap services-page-hero-wrap">
       <div className="container">
         <div className="page-hero-box services-page-hero">

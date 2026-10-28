@@ -9,7 +9,7 @@ export function FloatingActions() {
         href={waLink('Hello, I would like to discuss a service or request a quotation. I can share photos and project details on WhatsApp.')}
         target="_blank"
         rel="noreferrer"
-        aria-label="Chat with Emirates Aluminium Shutter on WhatsApp"
+        aria-label="Chat with Emirates Aluminium Shutter LLC on WhatsApp"
         title="Chat on WhatsApp"
       >
         <span className="float-wa-icon" aria-hidden="true">

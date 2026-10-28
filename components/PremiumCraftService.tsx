@@ -21,8 +21,8 @@ type Presentation = {
 const presentations: Record<string, Presentation> = {
   awning: {
     eyebrow: 'OUTDOOR SHADE, REIMAGINED',
-    title: 'Make more of your',
-    highlight: 'outdoor space.',
+    title: 'Awning installation for',
+    highlight: 'Dubai outdoor spaces.',
     intro: 'Tailor-made fixed, retractable and motorised awnings for balconies, terraces, patios, cafés and villas—planned around your shade requirements, projection and mounting conditions.',
     imageLabel: 'Shade that moves with your day',
     imageNote: 'Retractable · Fixed · Motorised',
@@ -37,8 +37,8 @@ const presentations: Record<string, Presentation> = {
   },
   canopy: {
     eyebrow: 'ARCHITECTURAL SHADE SYSTEMS',
-    title: 'Purposeful shade,',
-    highlight: 'beautifully built.',
+    title: 'Car parking & entrance',
+    highlight: 'canopies in Dubai.',
     intro: 'Custom canopy systems for villa entrances, car parks, walkways, terraces and commercial spaces. Each project is planned around coverage, structure, access and the look of the property.',
     imageLabel: 'Coverage designed for the space',
     imageNote: 'Parking · Entrances · Walkways',
@@ -53,8 +53,8 @@ const presentations: Record<string, Presentation> = {
   },
   'steel-work': {
     eyebrow: 'CUSTOM METAL FABRICATION',
-    title: 'Strength shaped',
-    highlight: 'around your project.',
+    title: 'Steel fabrication',
+    highlight: 'for Dubai projects.',
     intro: 'Steel fabrication for gates, pergola frames, canopy structures, parking areas and custom metalwork. We plan dimensions, use, access and finishing before fabrication begins.',
     imageLabel: 'Fabricated for the real-world load and layout',
     imageNote: 'Gates · Frames · Structures',
@@ -69,8 +69,8 @@ const presentations: Record<string, Presentation> = {
   },
   'aluminium-works': {
     eyebrow: 'MODERN ALUMINIUM SOLUTIONS',
-    title: 'Clean lines,',
-    highlight: 'made to fit.',
+    title: 'Aluminium doors & windows',
+    highlight: 'for Dubai properties.',
     intro: 'Made-to-measure aluminium doors, windows, partitions, cladding and custom fabrication for homes, offices, shops and commercial properties—with finish and function planned together.',
     imageLabel: 'Precision details for modern properties',
     imageNote: 'Doors · Windows · Partitions',
@@ -85,8 +85,8 @@ const presentations: Record<string, Presentation> = {
   },
   polycarbonate: {
     eyebrow: 'TRANSPARENT SHUTTER SYSTEMS',
-    title: 'Secure the frontage,',
-    highlight: 'keep it visible.',
+    title: 'Clear polycarbonate',
+    highlight: 'roller shutters in Dubai.',
     intro: 'Transparent polycarbonate roller shutters for selected shops, showrooms and retail displays where visibility matters even after closing. The opening, guides and operating method are reviewed before specification.',
     imageLabel: 'Visibility after closing time',
     imageNote: 'Clear slats · Shopfronts · Showrooms',
@@ -132,7 +132,7 @@ export function PremiumCraftService({ slug }: { slug: string }) {
               <div className="craft-hero-foot"><span><Icon name="ruler" /> Site-led planning</span><span><Icon name="shield" /> Clear scope first</span><span><Icon name="wrench" /> Installation support</span></div>
             </div>
             <div className="craft-hero-visual">
-              <div className="craft-visual-image"><img src={sitePath(detail.image)} alt={`${detail.title} — Emirates Aluminium Shutter project reference`} /></div>
+              <div className="craft-visual-image"><img src={sitePath(detail.image)} alt={`${detail.title} — Emirates Aluminium Shutter LLC project reference`} /></div>
               <div className="craft-visual-grain" aria-hidden="true" />
               <div className="craft-visual-index"><b>{services.find((s) => s.slug === slug)?.accent ?? '01'}</b><span>PROJECT<br />SPECIFICATION</span></div>
               <div className="craft-visual-caption"><span className="craft-caption-icon"><Icon name="spark" /></span><span><b>{view.imageLabel}</b><small>{view.imageNote}</small></span><span className="craft-caption-arrow"><Icon name="arrow" /></span></div>
