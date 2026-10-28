@@ -5,12 +5,12 @@ import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
 import { GarageDoorReference } from '../../components/GarageDoorReference';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Automatic Garage Door Installation & Repair Dubai',
-  description: 'Automatic garage door installation, motorisation and repair in Dubai for villas, homes and commercial properties. Compare door and motor options and request a site-based quotation.',
+  title: 'Garage Doors UAE | Sectional Doors',
+  description: 'Residential and sectional garage doors in Dubai and UAE, including insulated overhead, aluminium glass and frameless options, with motor support.',
   path: '/garage/',
   keywords: [...PAGE_KEYWORDS.garage],
 });
 
 export default function GaragePage() {
-  return <><ServiceStructuredData name={'Automatic Garage Door Installation & Repair Dubai'} description={'Automatic garage door installation, motorisation and repair in Dubai for villas, homes and commercial properties. Compare door and motor options and request a site-based quotation.'} path={'/garage/'} /><GarageDoorReference /></>;
+  return <><ServiceStructuredData name={'Residential & Sectional Garage Doors UAE'} description={'Residential and sectional garage doors in Dubai and UAE, including insulated overhead, aluminium glass and frameless options, with motor support.'} path={'/garage/'} /><GarageDoorReference /></>;
 }

@@ -5,12 +5,12 @@ import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
 import {RollingShutterReference} from '../../components/RollingShutterReference';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Rolling Shutter Installation & Repair in Dubai',
-  description: 'Rolling shutter installation, motorised shop shutters and repair in Dubai for shops, warehouses, showrooms and villas. Compare insulated, clear and manual options, then request a site-based quote.',
+  title: 'Rolling Shutter Doors UAE',
+  description: 'Premium rolling shutter doors for homes and businesses in Dubai and UAE, with steel, insulated aluminium, security grill and polycarbonate options.',
   path: '/shutter/',
   keywords: [...PAGE_KEYWORDS.shutter],
 });
 
 export default function ShutterPage(){
-  return <><ServiceStructuredData name={'Rolling Shutter Installation & Repair in Dubai'} description={'Rolling shutter installation, motorised shop shutters and repair in Dubai for shops, warehouses, showrooms and villas. Compare insulated, clear and manual options, then request a site-based quote.'} path={'/shutter/'} /><RollingShutterReference/></>;
+  return <><ServiceStructuredData name={'Rolling Shutter Doors UAE'} description={'Premium rolling shutter doors for homes and businesses in Dubai and UAE, with steel, insulated aluminium, security grill and polycarbonate options.'} path={'/shutter/'} /><RollingShutterReference/></>;
 }

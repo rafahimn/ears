@@ -10,8 +10,8 @@ import { BreadcrumbStructuredData } from '../../components/StructuredData';
 import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Shutters, Garage Doors & Aluminium Services Dubai',
-  description: 'Explore rolling shutter installation and repair, garage doors, gate motors, awnings, canopies, aluminium fabrication, steel works and clear polycarbonate shutters in Dubai and across the UAE.',
+  title: 'Shutters & Garage Doors UAE',
+  description: 'Explore rolling shutters, automatic doors and garage doors in Dubai and the UAE, plus gate motors, awnings, canopies and aluminium or steel fabrication.',
   path: '/services/',
   keywords: [...PAGE_KEYWORDS.services],
 });

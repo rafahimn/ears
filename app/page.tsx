@@ -6,8 +6,8 @@ import { createPageMetadata } from '../lib/seo';
 import { PAGE_KEYWORDS } from '../lib/seo-keywords';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Rolling Shutter Company in Dubai',
-  description: 'Rolling shutter installation and repair, automatic garage doors, gate motors, awnings, canopies and aluminium or steel fabrication in Dubai. Request a clear quotation.',
+  title: 'Rolling Shutters UAE & Dubai',
+  description: 'Premium, secure and stylish rolling shutters for homes and businesses in Dubai and UAE. Explore customized shutter solutions, automatic doors and garage doors.',
   path: '/',
   keywords: [...PAGE_KEYWORDS.home],
 });

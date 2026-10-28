@@ -1,18 +1,14 @@
-
-
-
-
-
-
 export type ServiceSeo = {
   title: string;
   description: string;
   keywords: string[];
 };
 
+// Page-specific keyword groups keep related terms together instead of repeating
+// every phrase on every page. Existing keyword targets are retained.
 export const SERVICE_PAGE_SEO: Record<string, ServiceSeo> = {
   awning: {
-    title: 'Awning Installation Dubai | Retractable & Motorised Awnings',
+    title: 'Awning Installation Dubai',
     description: 'Fixed, retractable and motorised awning installation in Dubai for villas, balconies, terraces, cafés and shops. Ask about custom sizes, shade coverage and repair support.',
     keywords: [
       'awning installation Dubai', 'retractable awning Dubai', 'motorised awning Dubai',
@@ -21,7 +17,7 @@ export const SERVICE_PAGE_SEO: Record<string, ServiceSeo> = {
     ],
   },
   canopy: {
-    title: 'Car Parking & Entrance Canopy Installation Dubai',
+    title: 'Car Parking Canopy Dubai',
     description: 'Custom car parking shades, entrance canopies and walkway covers in Dubai and the UAE. Discuss steel or aluminium frames, dimensions, fabrication and installation.',
     keywords: [
       'canopy installation Dubai', 'car parking canopy Dubai', 'car parking shade Dubai',
@@ -30,30 +26,36 @@ export const SERVICE_PAGE_SEO: Record<string, ServiceSeo> = {
     ],
   },
   'aluminium-works': {
-    title: 'Aluminium Doors, Windows & Fabrication Dubai',
+    title: 'Aluminium Fabrication Dubai',
     description: 'Custom aluminium doors, windows, partitions, cladding and aluminium fabrication in Dubai. Request site measurement, made-to-measure fabrication and installation for residential or commercial projects.',
     keywords: [
       'aluminium works Dubai', 'aluminium fabrication Dubai', 'aluminium doors Dubai',
       'aluminium windows Dubai', 'aluminium partition Dubai', 'aluminium cladding Dubai',
-      'custom aluminium fabrication UAE', 'aluminium contractor Dubai',
+      'custom aluminium fabrication UAE', 'aluminium contractor Dubai', 'aluminium roller shutters',
+      'aluminium slotted security shutter', 'aluminum manual rolling shutter',
     ],
   },
   'steel-work': {
-    title: 'Steel Fabrication, Gates & Canopies Dubai',
+    title: 'Steel Fabrication Dubai',
     description: 'Custom steel fabrication in Dubai for steel gates, pergola frames, canopy structures and car parking systems. Discuss project dimensions, welding, finishing and installation.',
     keywords: [
       'steel fabrication Dubai', 'steel gates Dubai', 'metal fabrication Dubai',
       'steel canopy Dubai', 'steel pergola Dubai', 'car parking structure Dubai',
       'custom steel works UAE', 'welding and fabrication Dubai',
+      'galvanised steel rolling shutters', 'fire rated steel rolling shutter',
+      'fire rated single skin roller shutter', 'fire rated double skin roller shutter',
+      'GI perforated roller shutter', 'GI single skin roller',
     ],
   },
   polycarbonate: {
-    title: 'Polycarbonate Roller Shutters Dubai | Clear Shopfronts',
+    title: 'Polycarbonate Roller Shutters Dubai',
     description: 'Transparent polycarbonate roller shutters for Dubai shops, showrooms and retail frontages. Compare clear slats, guide profiles, manual or motorised operation and installation options.',
     keywords: [
-      'polycarbonate roller shutters Dubai', 'transparent roller shutter Dubai',
+      'polycarbonate roller shutters Dubai', 'polycarbonate roller shutters in UAE',
+      'polycarbonate roller shutter', 'transparent roller shutter Dubai',
       'clear shop shutters Dubai', 'shopfront roller shutters Dubai',
       'vision shutters UAE', 'polycarbonate shutter installation Dubai',
+      'clear round pipe type shutter', 'roller shutter shop',
     ],
   },
 };
@@ -64,43 +66,99 @@ export const PAGE_KEYWORDS = {
     'garage door installation Dubai', 'garage door repair Dubai',
     'gate motor repair Dubai', 'aluminium works Dubai',
     'shutter maintenance Dubai', 'rolling shutters UAE',
+    'rolling shutters and automatic doors in UAE', 'rolling shutter doors',
+    'automatic doors UAE', 'garage doors UAE',
+    'secure and stylish rolling shutters', 'premium rolling shutters',
+    'rolling shutters for homes and businesses', 'customized rolling shutter solutions',
+    'automatic roller shutters', 'aluminium roller shutters', 'window roller shutters',
+    'residential garage doors in UAE', 'rolling shutters Dubai',
+    'rolling shutters Al Qusais Industrial Area 1', 'automatic doors Abu Dhabi', 'automatic doors in Abu Dhabi',
   ],
   services: [
     'shutter services Dubai', 'rolling shutter repair Dubai',
     'automatic garage doors Dubai', 'gate motor installation Dubai',
     'awning and canopy Dubai', 'aluminium fabrication Dubai',
     'steel fabrication Dubai', 'polycarbonate shutters Dubai',
+    'rolling shutters UAE', 'rolling shutters and automatic doors in UAE',
+    'rolling shutter doors', 'automatic doors UAE', 'garage doors UAE',
+    'secure and stylish rolling shutters', 'premium rolling shutters',
+    'rolling shutters for homes and businesses', 'customized rolling shutter solutions',
+    'high speed doors in UAE', 'rolling shutter motor in UAE',
+    'sectional garage doors in UAE', 'sectional overhead garage doors in UAE',
+    'residential garage doors in UAE', 'aluminium glass garage door in UAE',
+    'polycarbonate roller shutters in UAE', 'security grill rolling shutter in UAE',
+    'automatic roller shutters', 'aluminium roller shutters', 'window roller shutters',
+    'roller shutter shop', 'automatic doors Abu Dhabi', 'Dubai', 'UAE',
   ],
   shutter: [
     'rolling shutter installation Dubai', 'rolling shutter repair Dubai',
     'rolling shutter company Dubai', 'shop roller shutters Dubai',
     'warehouse shutters Dubai', 'automatic rolling shutters UAE',
     'motorised shutters Dubai', 'rolling shutter maintenance Dubai',
+    'rolling shutters UAE', 'rolling shutters and automatic doors in UAE',
+    'rolling shutter doors', 'secure and stylish rolling shutters', 'premium rolling shutters',
+    'rolling shutters for homes and businesses', 'customized rolling shutter solutions',
+    'galvanised steel rolling shutters', 'aluminum insulated rolling shutters',
+    'polycarbonate roller shutter', 'polycarbonate roller shutters in UAE',
+    'security grill rolling shutter in UAE', 'fire rated steel rolling shutter',
+    'high speed doors in UAE', 'automatic roller shutters', 'aluminium roller shutters',
+    'window roller shutters', 'roller shutter shop', 'aluminium slotted security shutter',
+    'aluminum insulated industrial shutter', 'aluminum insulated residential shutter',
+    'aluminum insulated window shutter', 'aluminum manual rolling shutter',
+    'aluminum spiral doors', 'clear round pipe type shutter',
+    'fire rated single skin roller shutter', 'fire rated double skin roller shutter',
+    'GI perforated roller shutter', 'GI single skin roller', 'grill type security shutter',
+    'industrial acrylic overhead door', 'benefits of installing rolling shutters',
+    'security grill vs regular rolling shutters', 'what are high speed doors and where are they used',
+    'rolling shutters Al Qusais Industrial Area 1', 'Dubai', 'UAE',
   ],
   garage: [
     'garage door installation Dubai', 'automatic garage doors Dubai',
     'garage door repair Dubai', 'villa garage doors Dubai',
     'garage door motor Dubai', 'commercial garage doors UAE',
+    'residential garage doors in UAE', 'aluminium glass garage door in UAE',
+    'sectional garage doors in UAE', 'sectional overhead garage doors in UAE',
+    'insulated sectional overhead garage doors', 'frameless glass garage door',
+    'aluminium glass garage doors', 'advantages of aluminium glass garage doors',
+    'sectional garage door maintenance', 'high speed doors for residential use',
+    'garage doors UAE', 'rolling shutters for homes and businesses',
+    'residential garage door motor', 'automatic doors UAE', 'Dubai', 'UAE',
   ],
   motor: [
     'gate motor installation Dubai', 'gate motor repair Dubai',
     'automatic gate motors Dubai', 'sliding gate motor Dubai',
     'swing gate motor Dubai', 'garage door automation Dubai',
     'gate remote repair Dubai', 'access automation UAE',
+    'rolling shutter motor in UAE', 'industrial jackshaft motor',
+    'residential garage door motor', 'rollup door motor',
+    'how rolling shutter motors work', 'automatic doors UAE', 'garage doors UAE',
+    'Dubai', 'UAE',
   ],
   repair: [
     'rolling shutter repair Dubai', 'garage door repair Dubai',
     'gate motor repair Dubai', 'automatic door repair Dubai',
     'shutter maintenance Dubai', 'garage door maintenance UAE',
-    'roller shutter motor repair Dubai',
+    'roller shutter motor repair Dubai', 'automatic door maintenance in Abu Dhabi',
+    'sectional garage door maintenance', 'how rolling shutter motors work',
+    'rolling shutter doors', 'automatic doors UAE', 'garage doors UAE',
+    'Dubai', 'Abu Dhabi', 'UAE',
   ],
   about: [
     'Emirates Aluminium Shutter LLC', 'shutter company Dubai',
     'garage door company Dubai', 'aluminium and steel works Dubai',
+    'rolling shutters UAE', 'automatic doors UAE', 'garage doors UAE',
+    'Al Qusais Industrial Area 1', 'automatic doors in Abu Dhabi', 'Dubai', 'Abu Dhabi', 'UAE',
   ],
   blog: [
     'rolling shutter guide Dubai', 'garage door buying guide UAE',
     'gate motor troubleshooting', 'shutter maintenance advice',
-    'awning planning Dubai',
+    'awning planning Dubai', 'benefits of installing rolling shutters',
+    'security grill vs regular rolling shutters',
+    'what are high speed doors and where are they used',
+    'insulated sectional overhead garage doors',
+    'advantages of aluminium glass garage doors', 'how rolling shutter motors work',
+    'sectional garage door maintenance', 'automatic door maintenance in Abu Dhabi',
+    'high speed doors for residential use', 'rolling shutters and automatic doors in UAE',
+    'polycarbonate roller shutters in UAE', 'Dubai', 'Abu Dhabi', 'UAE',
   ],
 } as const;

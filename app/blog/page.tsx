@@ -8,8 +8,8 @@ import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
 import { blogPosts } from '../../lib/blog-posts';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Shutter, Garage Door & Fabrication Guides for Dubai',
-  description: 'Read practical service-by-service guides from Emirates Aluminium Shutter LLC about rolling shutters, garage doors, gate motors, awnings, canopies and fabrication across Dubai and the UAE.',
+  title: 'Shutter & Garage Door Guides UAE',
+  description: 'Guides to rolling shutter benefits, security grills, high-speed doors, sectional garage doors, shutter motors and automatic door maintenance in Dubai and UAE.',
   path: '/blog/',
   keywords: [...PAGE_KEYWORDS.blog, 'Dubai shutter guides', 'garage door guides UAE', 'aluminium fabrication advice Dubai'],
 });

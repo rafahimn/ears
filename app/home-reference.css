@@ -115,7 +115,7 @@
 
  
 .dars-hero-v2__inner {
-    width: min(1250px, calc(100% - 48px));
+    width: min(1500px, calc(100% - 48px));
     margin: 0 auto;
 
     display: grid;
@@ -124,7 +124,7 @@
         minmax(410px, .88fr);
 
     align-items: center;
-    gap: clamp(55px, 7vw, 100px);
+    gap: clamp(32px, 4vw, 72px);
 }
 
  
@@ -1324,7 +1324,7 @@
 
 
 .dars-emergency-wrap {
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
     padding: 44px 0 70px;
 }
@@ -1754,7 +1754,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
 }
 
@@ -2589,7 +2589,7 @@
 }
 
 .dars-packages-v3__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
 }
 
@@ -3402,7 +3402,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
 }
 
@@ -4200,7 +4200,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
 }
 
@@ -4828,7 +4828,7 @@
 }
 
 .dars-reviews__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
 }
 
@@ -7127,7 +7127,7 @@
 }
 
 .dars-supply-bar__container {
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
     padding: 13px;
 
@@ -7354,7 +7354,7 @@
     position: relative;
     z-index: 1;
 
-    width: min(1240px, calc(100% - 48px));
+    width: min(1440px, calc(100% - 48px));
     margin: 0 auto;
 }
 

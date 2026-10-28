@@ -23,9 +23,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'rolling-shutters-dubai-guide', serviceSlug: 'shutter',
     title: 'How to Choose Rolling Shutters for a Dubai Property',
-    description: 'Compare shutter types, materials, motor options and installation details before choosing a rolling shutter for a shop, villa, warehouse or commercial entrance.',
+    description: 'Explore the benefits of installing rolling shutters and compare steel, insulated aluminium, security grill, polycarbonate and automatic options for homes and businesses in the UAE.',
     image: upload('home-service-rolling-shutter.webp'),
-    keywords: ['rolling shutters Dubai', 'rolling shutter installation Dubai', 'shop shutters UAE', 'automatic roller shutter'],
+    keywords: ['rolling shutters Dubai', 'rolling shutter installation Dubai', 'shop shutters UAE', 'automatic roller shutter', 'rolling shutters UAE', 'rolling shutter doors', 'secure and stylish rolling shutters', 'premium rolling shutters', 'rolling shutters for homes and businesses', 'galvanised steel rolling shutters', 'aluminum insulated rolling shutters', 'security grill rolling shutter in UAE', 'fire rated steel rolling shutter', 'aluminium slotted security shutter', 'aluminum manual rolling shutter', 'aluminum spiral doors', 'clear round pipe type shutter', 'GI perforated roller shutter', 'GI single skin roller', 'grill type security shutter', 'benefits of installing rolling shutters', 'security grill vs regular rolling shutters', 'what are high speed doors and where are they used', 'high speed doors in UAE', 'industrial acrylic overhead door'],
     intro: 'A suitable rolling shutter should match the opening size, daily operating pattern, security needs and appearance of the property. In Dubai, heat, dust and frequent operation also make correct specification and routine care important. Use this guide to prepare the right questions before requesting a site assessment.',
     sections: [
       { heading: 'Start with the opening and its purpose', body: 'A shopfront, warehouse loading bay and residential garage do not have the same requirements. The opening dimensions, available headroom, side clearance and surrounding structure help determine which shutter arrangement will fit and operate correctly.', points: ['Measure the clear width and height of the opening.', 'Explain how often the shutter opens and closes each day.', 'Share photos of the opening, side guides and available space above it.'] },
@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Planning a Canopy for Parking, Entrances and Outdoor Areas',
     description: 'Learn how location, span, clearance, frame design and roofing materials affect a custom canopy for Dubai homes and commercial properties.',
     image: upload('home-service-canopy.webp'),
-    keywords: ['car parking canopy Dubai', 'entrance canopy Dubai', 'custom canopy UAE', 'canopy fabrication Dubai'],
+    keywords: ['car parking canopy Dubai', 'entrance canopy Dubai', 'custom canopy UAE', 'canopy fabrication Dubai', 'rolling shutters and automatic doors in UAE', 'garage doors UAE'],
     intro: 'A canopy should provide useful shade while fitting the site, access route and building appearance. Planning the location and clearances before choosing the frame and roofing material helps avoid conflicts with vehicles, doors, walkways and services.',
     sections: [
       { heading: 'Define what the canopy needs to cover', body: 'Parking, a building entrance, a walkway and a terrace need different coverage and access. Think about the sun direction, vehicle movement, people passing below, drainage and how the structure will meet the existing building or ground.', points: ['Share the intended use and approximate coverage area.', 'Check vehicle height, turning space and pedestrian clearance.', 'Identify nearby walls, utilities, drains and existing structures.'] },
@@ -53,9 +53,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'garage-door-planning-dubai', serviceSlug: 'garage',
     title: 'A Practical Guide to Choosing an Automatic Garage Door',
-    description: 'Understand garage opening measurements, door style, motor operation, safety features and maintenance before installing a garage door in Dubai.',
+    description: 'Compare residential and sectional overhead garage doors in the UAE, including insulated, aluminium glass and frameless options, plus motor operation and maintenance.',
     image: upload('home-service-garage-door.webp'),
-    keywords: ['automatic garage door Dubai', 'garage door installation Dubai', 'garage door repair Dubai', 'motorised garage door UAE'],
+    keywords: ['automatic garage door Dubai', 'garage door installation Dubai', 'garage door repair Dubai', 'motorised garage door UAE', 'garage doors UAE', 'residential garage doors in UAE', 'aluminium glass garage door in UAE', 'sectional garage doors in UAE', 'sectional overhead garage doors in UAE', 'insulated sectional overhead garage doors', 'advantages of aluminium glass garage doors', 'frameless glass garage door', 'sectional garage door maintenance', 'high speed doors for residential use'],
     intro: 'A garage door needs to fit the opening and the available space inside and above it. Usage frequency, vehicle access, electrical supply and security needs all affect the right configuration. A site assessment is the best way to confirm a suitable system before ordering.',
     sections: [
       { heading: 'Check the garage layout first', body: 'Door styles require different clearances. Headroom, side room, ceiling obstructions and driveway slope can influence which design is practical. If replacing an existing door, the condition of the frame and tracks should also be reviewed.', points: ['Measure opening width, height and available headroom.', 'Photograph the ceiling, tracks, side walls and driveway.', 'Mention any existing door problems or structural changes.'] },
@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Choosing and Maintaining a Gate Motor in Dubai',
     description: 'Review gate weight, travel, usage frequency, controls and safety devices before choosing a sliding or swing gate automation system.',
     image: upload('home-service-gate-motor.webp'),
-    keywords: ['gate motor Dubai', 'gate motor installation Dubai', 'gate motor repair Dubai', 'sliding gate automation UAE'],
+    keywords: ['gate motor Dubai', 'gate motor installation Dubai', 'gate motor repair Dubai', 'sliding gate automation UAE', 'rolling shutter motor in UAE', 'industrial jackshaft motor', 'residential garage door motor', 'rollup door motor', 'how rolling shutter motors work'],
     intro: 'Gate automation works best when the gate itself moves freely and the motor is matched to its mechanical load. Gate type, weight, travel distance, daily cycles and site exposure all influence the choice of motor and control system.',
     sections: [
       { heading: 'Check the gate before selecting a motor', body: 'A motor should not be used to compensate for a gate that binds, drags or has damaged hardware. Sliding gates need a suitable track and rollers; swing gates require appropriate hinges and geometry. The gate condition should be assessed first.', points: ['Identify whether the gate slides or swings.', 'Share a photo of the gate, track or hinges and motor area.', 'Report dragging, uneven gaps, noise or manual resistance.'] },
@@ -98,9 +98,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'shutter-door-repair-maintenance-guide', serviceSlug: 'repair',
     title: 'Rolling Shutter and Automatic Door Repair: What to Check',
-    description: 'Learn to recognise common warning signs, prepare useful photos for a technician and plan safe preventive maintenance for shutters and automatic doors.',
+    description: 'Learn common shutter and automatic door faults, rolling shutter motor basics, sectional garage door maintenance and how to plan automatic door maintenance in Abu Dhabi.',
     image: upload('home-service-repair.webp'),
-    keywords: ['rolling shutter repair Dubai', 'automatic door repair Dubai', 'shutter maintenance Dubai', 'garage door service UAE'],
+    keywords: ['rolling shutter repair Dubai', 'automatic door repair Dubai', 'shutter maintenance Dubai', 'garage door service UAE', 'automatic doors UAE', 'automatic doors in Abu Dhabi', 'automatic door maintenance in Abu Dhabi', 'sectional garage door maintenance', 'how rolling shutter motors work'],
     intro: 'A shutter or automatic door that slows down, becomes noisy or stops unexpectedly needs a careful diagnosis. Symptoms can come from the curtain, guides, rollers, motor, control board, power supply or safety devices. Recording the fault helps a technician narrow down the cause.',
     sections: [
       { heading: 'Recognise the warning signs', body: 'Uneven movement, scraping sounds, a door that stops partway, repeated motor trips or controls that respond intermittently can indicate a developing fault. The same symptom can have several causes, so it should not be treated as a definite diagnosis.', points: ['Record whether the problem occurs while opening or closing.', 'Note unusual sounds, movement and any indicator lights.', 'Take photos of visible damage without removing guards.'] },
@@ -145,7 +145,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Are Polycarbonate Roller Shutters Right for Your Shopfront?',
     description: 'Explore visibility, profile design, support frames, operation and care considerations for clear roller shutters in retail stores and showrooms.',
     image: upload('home-service-polycarbonate.webp'),
-    keywords: ['polycarbonate roller shutters Dubai', 'clear shop shutters Dubai', 'transparent roller shutter UAE', 'shopfront shutters Dubai'],
+    keywords: ['polycarbonate roller shutters Dubai', 'clear shop shutters Dubai', 'transparent roller shutter UAE', 'shopfront shutters Dubai', 'polycarbonate roller shutter', 'polycarbonate roller shutters in UAE', 'roller shutter shop'],
     intro: 'Polycarbonate roller shutters are considered for selected retail frontages where visibility after closing is important. Their suitability depends on the opening dimensions, supporting profiles, operating frequency, local requirements and the specification of the proposed system.',
     sections: [
       { heading: 'Decide whether visibility is the priority', body: 'Clear shutter sections can keep displays and showroom products visible while the entrance is closed. They are not the right answer for every opening, so the security goals, exposure and required level of privacy should be discussed first.', points: ['Identify whether the display must remain visible after hours.', 'Consider privacy, lighting and the appearance of the frontage.', 'Check property or retail-centre rules for shopfront systems.'] },

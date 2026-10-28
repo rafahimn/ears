@@ -5,12 +5,12 @@ import { PAGE_KEYWORDS } from '../../lib/seo-keywords';
 import { GateMotorReference } from '../../components/GateMotorReference';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Gate Motor Installation & Repair in Dubai',
-  description: 'Gate motor installation and repair in Dubai for sliding gates, swing gates and garage doors. Ask about compatible remotes, photocells, control boards and access automation.',
+  title: 'Gate & Shutter Motors UAE',
+  description: 'Gate and rolling shutter motor installation and repair in Dubai and the UAE, including garage door motors, roll-up door motors, remotes and controls.',
   path: '/motor/',
   keywords: [...PAGE_KEYWORDS.motor],
 });
 
 export default function MotorPage() {
-  return <><ServiceStructuredData name={'Gate Motor Installation & Repair in Dubai'} description={'Gate motor installation and repair in Dubai for sliding gates, swing gates and garage doors. Ask about compatible remotes, photocells, control boards and access automation.'} path={'/motor/'} /><GateMotorReference /></>;
+  return <><ServiceStructuredData name={'Gate & Shutter Motors UAE'} description={'Gate and rolling shutter motor installation and repair in Dubai and the UAE, including garage door motors, roll-up door motors, remotes and controls.'} path={'/motor/'} /><GateMotorReference /></>;
 }

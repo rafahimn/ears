@@ -49,6 +49,10 @@ export const serviceDetails: Record<string, {
       {q:'Can you repair an existing rolling shutter?',a:'Yes. The curtain, guides, barrel, bearings, motor and controls can be reviewed before repair.'},
       {q:'Can a manual shutter be converted to automatic?',a:'Some existing shutters can be upgraded, subject to frame, size, mechanism and condition.'},
       {q:'What safety and control options are available?',a:'Options may include remotes, switches, receivers and suitable safety accessories.'},
+      {q:'What are the benefits of installing rolling shutters?',a:'Rolling shutters can provide controlled access, privacy and a physical barrier at a property opening. Depending on the selected system, insulated shutters may also support comfort, while the final security level depends on the complete specification and installation.'},
+      {q:'How do security grill shutters compare with regular rolling shutters?',a:'A security grill rolling shutter can allow more visibility and airflow through the opening, while a conventional solid curtain offers more visual privacy. The right choice depends on the frontage, display needs, security objectives and site requirements.'},
+      {q:'What are high speed doors and where are they used?',a:'High speed doors are designed for rapid repeated opening cycles and are commonly considered for selected commercial or industrial openings. High speed doors in the UAE, including possible residential applications, need a suitability check for the opening, usage, safety requirements and manufacturer specification.'},
+      {q:'Which rolling shutter materials and specialist profiles can I compare?',a:'Depending on the project, options may include galvanised steel rolling shutters, GI single-skin or perforated roller shutters, aluminium roller shutters, aluminium slotted security shutters, manually operated or insulated industrial, residential and window shutters, grill-type security shutters and transparent polycarbonate systems. Fire-rated single-skin or double-skin roller shutters, aluminium spiral doors and industrial acrylic overhead doors require their own specification and suitability review.'},
     ]
   },
   polycarbonate:{
@@ -93,6 +97,10 @@ export const serviceDetails: Record<string, {
       {q:'How long does installation take?',a:'Timing depends on the door specification, fabrication schedule, site access and installation conditions.'},
       {q:'Is online payment required to request a quote?',a:'No. The website is designed around enquiry, measurement and confirmed quotation; payment follows the approved project terms.'},
       {q:'Can I send photos instead of filling out a form?',a:'Yes. Photos, approximate dimensions and a short video are useful for the initial review.'},
+      {q:'Which residential garage door styles are available in the UAE?',a:'Depending on the opening, residential garage doors in the UAE may include sectional garage doors and sectional overhead garage doors, with selected aluminium glass or frameless glass garage door designs where suitable.'},
+      {q:'What are the advantages of aluminium glass garage doors?',a:'Aluminium glass garage doors can create a contemporary appearance and allow daylight into suitable garages. Glass type, frame design, privacy, safety and weather performance must be selected for the property and opening.'},
+      {q:'What are insulated sectional overhead garage doors?',a:'These doors use sectional panels designed with an insulation layer and seals. The final thermal and acoustic performance depends on panel construction, perimeter seals, installation quality and the specified system.'},
+      {q:'How should a sectional garage door be maintained?',a:'Sectional garage door maintenance may include inspection of tracks, rollers, hinges, springs, cables, seals and the opener. Spring and cable work can be hazardous, so repairs should be handled by a qualified technician.'},
     ]
   },
   awning:{
@@ -152,6 +160,7 @@ export const serviceDetails: Record<string, {
       {q:'Can you replace a faulty motor without replacing the gate?',a:'In many cases yes, if the existing gate and mechanical system are suitable for the replacement motor.'},
       {q:'What safety accessories can be added?',a:'Options may include photocells, receivers, remotes, control boards and related safety accessories.'},
       {q:'Do you offer maintenance and repair support?',a:'Yes. Existing motors, remotes, sensors and control systems can be inspected and serviced.'},
+      {q:'How do rolling shutter motors work?',a:'A rolling shutter motor drives the shutter barrel or shaft to raise and lower the curtain. Motor selection depends on shutter weight, shaft arrangement, duty cycle and controls; the correct system may differ from an industrial jackshaft motor, residential garage door motor or roll-up door motor.'},
     ]
   },
   repair:{
@@ -171,6 +180,7 @@ export const serviceDetails: Record<string, {
       {q:'How do you decide whether to repair or replace the motor?',a:'The decision is based on fault symptoms, motor condition, compatibility, parts availability and overall system condition.'},
       {q:'Will the repair scope be confirmed before work starts?',a:'Yes. The approved repair scope and any additional work are confirmed before proceeding.'},
       {q:'Can you replace only remotes, receivers or sensors?',a:'Yes, where compatible replacement parts are available.'},
+      {q:'Do you offer automatic door maintenance in Abu Dhabi?',a:'Service availability depends on the property location, technician schedule and the type of automatic door. Share the Abu Dhabi location, system details and a short fault video so the team can confirm the appropriate maintenance options.'},
     ]
   },
   'aluminium-works':{
