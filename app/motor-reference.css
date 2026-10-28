@@ -110,7 +110,7 @@
 }
 
 .dars-motor-hero__container {
-    width: min(1440px, calc(100% - 48px));
+    width: min(1250px, calc(100% - 48px));
     margin: 0 auto;
 
     display: grid;
@@ -169,7 +169,7 @@
 
     color: var(--dars-motor-text);
 
-    font-size: clamp(52px, 5.4vw, 74px);
+    font-size: clamp(38px, 5.2vw, 64px);
     font-weight: 800;
     line-height: 1.01;
     letter-spacing: -2.8px;
@@ -1203,7 +1203,7 @@
 }
 
 .dars-motor-selector__container {
-    width: min(1440px, calc(100% - 48px));
+    width: min(1240px, calc(100% - 48px));
     margin: 0 auto;
 }
 
@@ -2806,7 +2806,7 @@
 }
 
 .dars-motor-brands-process__container {
-    width: min(1440px, calc(100% - 48px));
+    width: min(1240px, calc(100% - 48px));
     margin: 0 auto;
 }
 
