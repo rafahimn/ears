@@ -14,7 +14,13 @@ export function BusinessStructuredData() {
       '@type': 'HomeAndConstructionBusiness',
       '@id': businessId,
       name: SITE_NAME,
+      alternateName: ['Emirates Aluminium Rolling Shutter LLC', 'Emirates Rolling Shutter'],
       url: SITE_URL,
+      sameAs: [
+        'https://www.instagram.com/emiratesrollingshutter/',
+        'https://www.facebook.com/share/1JCefsHk6L/',
+        MAP_URL,
+      ],
       telephone: PHONE,
       email: EMAIL,
       logo: `${SITE_URL}/brand/logo.png`,
@@ -48,6 +54,7 @@ export function BusinessStructuredData() {
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
       name: SITE_NAME,
+      alternateName: 'Emirates Aluminium Rolling Shutter LLC',
       publisher: { '@id': businessId },
     },
   ];
