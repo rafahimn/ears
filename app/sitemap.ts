@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog/', priority: 0.75, changeFrequency: 'weekly' },
     { path: '/privacy-policy/', priority: 0.2, changeFrequency: 'yearly' },
     { path: '/terms-conditions/', priority: 0.2, changeFrequency: 'yearly' },
-    { path: '/rafahim/', priority: 0.25, changeFrequency: 'monthly' },
+    { path: '/ra-fahim/', priority: 0.25, changeFrequency: 'monthly' },
   ];
 
   const dedicatedServiceRoutes = new Set(['shutter', 'garage', 'motor', 'repair']);

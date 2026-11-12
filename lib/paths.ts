@@ -22,6 +22,6 @@ export function markupWithBasePath(markup: string): string {
   return markup
     .replace(/\b(href|src|poster|action|data-src)=(["'])\/(?!\/)([^"']*)\2/gi,
       (_match, attribute, quote, rest) => `${attribute}=${quote}${sitePath(`/${rest}`)}${quote}`)
-    .replace(/url\((['"]?)(\/(?:wp-content|brand|rafahim|social-feed)\/[^)'"]+)(['"]?)\)/gi,
+    .replace(/url\((['"]?)(\/(?:wp-content|brand|rafahim|ra-fahim|social-feed)\/[^)'"]+)(['"]?)\)/gi,
       (_match, quote1, asset, quote2) => `url(${quote1}${sitePath(asset)}${quote2})`);
 }

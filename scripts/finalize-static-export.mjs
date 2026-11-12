@@ -30,7 +30,7 @@ for (const file of files) {
   if (!file.endsWith('.css')) continue;
   const before = fs.readFileSync(file, 'utf8');
    
-  const after = before.replace(/url\((['"]?)(\/(?:wp-content|brand|rafahim|social-feed)\/[^)'"]+)(['"]?)\)/g,
+  const after = before.replace(/url\((['"]?)(\/(?:wp-content|brand|rafahim|ra-fahim|social-feed)\/[^)'"]+)(['"]?)\)/g,
     (_match, quote1, assetPath, quote2) => `url(${quote1}${withBasePath(assetPath)}${quote2})`);
   if (after !== before) {
     fs.writeFileSync(file, after);
@@ -78,6 +78,7 @@ const routeChecks = [
   'terms-conditions/index.html',
   'sitemap.xml',
   'robots.txt',
+  'ra-fahim/index.html',
   'rafahim/index.html',
 ];
 const missing = routeChecks.filter((route) => !fs.existsSync(path.join(outDir, route)));
