@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 };
 
 const personSchema = {
-  '@context': 'https://schema.org', '@type': 'Person', name: 'RA Fahim', alternateName: 'rafahimn',
+  '@context': 'https://schema.org', '@type': 'Person', name: 'RA Fahim', alternateName: 'itsrafahim',
   jobTitle: 'Web Developer & Creator', image: '/ra-fahim/ra-fahim.png',
-  sameAs: ['https://www.facebook.com/rafahimn', 'https://www.instagram.com/rafahimn', 'https://github.com/rafahim', 'https://rafahim.com'],
+  sameAs: ['https://www.facebook.com/itsrafahim', 'https://www.instagram.com/itsrafahim', 'https://www.youtube.com/@itsrafahim', 'https://github.com/rafahim', 'https://rafahim.com'],
   email: 'mailto:dev@rafahim.com',
 };
 const skills = [
@@ -27,16 +27,18 @@ const skills = [
   { number: '03', title: 'Product thinking', text: 'Turning a practical idea into a complete user experience—from interface details to the systems behind it.' },
 ];
 const links = [
-  { title: 'Facebook', subtitle: 'Connect on Facebook', href: 'https://www.facebook.com/rafahimn', icon: 'facebook' },
-  { title: 'Instagram', subtitle: 'Follow on Instagram', href: 'https://www.instagram.com/rafahimn', icon: 'instagram' },
+  { title: 'Facebook', subtitle: 'Connect on Facebook', href: 'https://www.facebook.com/itsrafahim', icon: 'facebook' },
+  { title: 'Instagram', subtitle: 'Follow on Instagram', href: 'https://www.instagram.com/itsrafahim', icon: 'instagram' },
+  { title: 'YouTube', subtitle: 'Watch on YouTube', href: 'https://www.youtube.com/@itsrafahim', icon: 'youtube' },
   { title: 'Portfolio', subtitle: 'Explore my work', href: 'https://rafahim.com', icon: 'external' },
   { title: 'GitHub', subtitle: 'See my code', href: 'https://github.com/rafahim', icon: 'github' },
 ] as const;
 
-function ProfileGlyph({ name }: { name: 'facebook' | 'instagram' | 'github' | 'external' | 'code' }) {
+function ProfileGlyph({ name }: { name: 'facebook' | 'instagram' | 'youtube' | 'github' | 'external' | 'code' }) {
   const common = { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true as const };
   if (name === 'facebook') return <svg {...common}><path d="M14 8h3V4h-3a5 5 0 0 0-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9a1 1 0 0 1 1-1Z" /></svg>;
   if (name === 'instagram') return <svg {...common}><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.6 6.5h.01"/></svg>;
+  if (name === 'youtube') return <svg {...common}><path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.3 5 12 5 12 5s-6.3 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2C2 8.75 2 12 2 12s0 3.25.4 4.8a2.5 2.5 0 0 0 1.76 1.77C5.7 19 12 19 12 19s6.3 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77C22 15.25 22 12 22 12s0-3.25-.4-4.8Z"/><path d="m10 15 5-3-5-3v6Z"/></svg>;
   if (name === 'github') return <svg {...common}><path d="M9 19c-4.2 1.3-4.2-2.1-5.9-2.5M15 21v-3.2a2.8 2.8 0 0 0-.8-2.2c2.7-.3 5.6-1.3 5.6-6A4.7 4.7 0 0 0 18.5 6a4.3 4.3 0 0 0-.1-3.2S17.3 2.5 15 4a12 12 0 0 0-6 0C6.7 2.5 5.6 2.8 5.6 2.8A4.3 4.3 0 0 0 5.5 6a4.7 4.7 0 0 0-1.3 3.6c0 4.7 2.9 5.7 5.6 6A2.8 2.8 0 0 0 9 17.8V21"/></svg>;
   if (name === 'code') return <svg {...common}><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg>;
   return <svg {...common}><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5"/></svg>;
